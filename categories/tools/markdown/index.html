@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jamieslau.github.io","root":"/","scheme":"Gemini","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="一、正文1、标题,”#”越多，字体越小，“#”后面有空格，对应h1-h6 1234567891011# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题  一级标题二级标题三级标题四级标题五级标题六级标题2、 1234567一级标题&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;二级标题-">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Markdown文件的基本常用编写语法">
+<meta property="og:url" content="https://jamieslau.github.io/categories/tools/markdown/index.html">
+<meta property="og:site_name" content="Jamie&#39;s Blog">
+<meta property="og:description" content="一、正文1、标题,”#”越多，字体越小，“#”后面有空格，对应h1-h6 1234567891011# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题  一级标题二级标题三级标题四级标题五级标题六级标题2、 1234567一级标题&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;二级标题-">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-01T15:46:31.516Z">
+<meta property="article:modified_time" content="2020-08-01T15:46:31.516Z">
+<meta property="article:author" content="JamiesLau">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://jamieslau.github.io/categories/tools/markdown/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Markdown文件的基本常用编写语法 | Jamie's Blog
+</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Jamie's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a lazy man</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+  <a href="https://github.com/JamiesLau" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+  
+
+          <div class="content page posts-expand">
+            
+
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Markdown文件的基本常用编写语法
+</h1>
+
+<div class="post-meta">
+  
+  <ul class="breadcrumb">
+          
+            <li><a href="/categories/">CATEGORIES</a></li>
+            <li><a href="/categories/tools/">TOOLS</a></li>
+          <li>MARKDOWN</li>
+        
+  </ul>
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h4 id="一、正文"><a href="#一、正文" class="headerlink" title="一、正文"></a>一、正文</h4><p>1、标题,”#”越多，字体越小，“#”后面有空格，对应h1-h6</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line"></span><br><span class="line">## 二级标题</span><br><span class="line"></span><br><span class="line">### 三级标题</span><br><span class="line"></span><br><span class="line">#### 四级标题</span><br><span class="line"></span><br><span class="line">##### 五级标题</span><br><span class="line"></span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>2、</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">一级标题</span><br><span class="line"></span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line"></span><br><span class="line">二级标题</span><br><span class="line"></span><br><span class="line">------------</span><br></pre></td></tr></table></figure>
+
+<p>3、</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题 #</span><br><span class="line"></span><br><span class="line">## 二级标题 ##</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="二、列表"><a href="#二、列表" class="headerlink" title="二、列表"></a>二、列表</h4><p> 无序列表：用*、+、- 来创建</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* 1		</span><br><span class="line">* 2</span><br><span class="line">* 3</span><br><span class="line">+ 1</span><br><span class="line">+ 2</span><br><span class="line">+ 3</span><br><span class="line">- 1</span><br><span class="line">- 2</span><br><span class="line">- 3</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<p>有序列表：根据第一行列表的数字顺序来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 列表1</span><br><span class="line">2. 列表2</span><br><span class="line">3. 列表3</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>列表1</p>
+</li>
+<li><p>列表2</p>
+</li>
+<li><p>别表3</p>
+</li>
+</ol>
+<h4 id="三、区块引用"><a href="#三、区块引用" class="headerlink" title="三、区块引用"></a>三、区块引用</h4><p>对某一部分的内容做一些说明或者引用一些话</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* 所有的渺小都可以变得伟大</span><br><span class="line">	&gt; 某某人说的</span><br><span class="line">* 前方高能</span><br><span class="line">	&gt; 注意：这里是为了提醒前面有很刺激的事情发生，请做好准备</span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li><p>所有的渺小都可以变得伟大</p>
+<blockquote>
+<p>某人说的</p>
+</blockquote>
+</li>
+<li><p>前方高能</p>
+<blockquote>
+<p>注意：这里是为了提醒前面有很刺激的事情发生，请做好准备 </p>
+</blockquote>
+</li>
+</ul>
+<p>无序列表下发的便是引用，可以有多种用途，用法是在语句前面加一个&gt;,注意是英文的右尖括号</p>
+<p>嵌套引用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; 一级引用</span><br><span class="line">&gt;&gt; 二级引用</span><br><span class="line">&gt;&gt;&gt; 三级引用</span><br><span class="line">&gt;&gt;&gt;&gt; 四级引用</span><br><span class="line">&gt;&gt;&gt;&gt;&gt; 五级引用</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+<blockquote>
+<p>四级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h4 id="四、华丽分割线"><a href="#四、华丽分割线" class="headerlink" title="四、华丽分割线"></a>四、华丽分割线</h4><p> 分割线可以由*、-、_、（星号、减号、底线）三个符号表示，注意至少三个，且不需要连续，有空格也可以</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line">* * *</span><br><span class="line">*******</span><br><span class="line">---</span><br><span class="line">- - -</span><br><span class="line">-----------</span><br><span class="line">_ _ _</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<h4 id="五、链接"><a href="#五、链接" class="headerlink" title="五、链接"></a>五、链接</h4><p>行内式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http:&#x2F;&#x2F;www.baidu.com)一下</span><br></pre></td></tr></table></figure>
+
+
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a>一下</p>
+<p>[ ]内放文字，( )内放链接</p>
+<p>参数式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[name]: http:&#x2F;&#x2F;www.baidu.com&#x2F;name &quot;名称&quot;</span><br><span class="line">[name]: http:&#x2F;&#x2F;www.baidu.com&#x2F;home &quot;首页&quot;</span><br><span class="line">[中文]: &#x2F;home&#x2F;name &quot;写的&quot;</span><br><span class="line"></span><br><span class="line">这里是[name],这里是[home],这里是[中文]</span><br></pre></td></tr></table></figure>
+
+<p>这里是<a href="http://www.baidu.com/name" target="_blank" rel="noopener" title="名称">name</a>,这里是 [home],这里是<a href="/home/name" title="写的">中文</a>  </p>
+<p>把链接当成参数，适合多出使用相同链接的场景</p>
+<h4 id="六、图片"><a href="#六、图片" class="headerlink" title="六、图片"></a>六、图片</h4><p>行内式和参数式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">行内式</span><br><span class="line">！[我是图片](https:&#x2F;&#x2F;ww.cnblogs.com&#x2F;images&#x2F;log_small.gif)</span><br><span class="line">![](&#x2F;post&#x2F;hello_hexo.jpg)</span><br><span class="line"></span><br><span class="line">参数式</span><br><span class="line">[博客园]: https:&#x2F;&#x2F;www.cnblogs.com&#x2F;images&#x2F;log_small.gif</span><br><span class="line">参数式图片，这里是！[博客园]</span><br></pre></td></tr></table></figure>
+
+<h4 id="七、代码框"><a href="#七、代码框" class="headerlink" title="七、代码框"></a>七、代码框</h4><p>第一种，单行用ˋ</p>
+<p><code>&lt;p&gt;&lt;a href=&quot;/home&quot; title=&quot;说明&quot;&gt;门前大桥下&lt;/a&gt;&lt;/p&gt;</code></p>
+<p>第二种，多行用三个ˋ</p>
+<p>ˋ ˋ ˋ</p>
+<p><code>&lt;p&gt;&lt;a href=&quot;/home&quot; title=&quot;说明&quot;&gt;门前大桥下&lt;/a&gt;&lt;/p&gt;</code>​</p>
+<p>ˋ ˋ ˋ</p>
+<h4 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">|	name	|	age		|sex	|</span><br><span class="line">|:----:|:---:|:--------:|:------:|</span><br><span class="line">|	tony	|	20		|	男	|</span><br><span class="line">|	lucy	|	19		|	女	|</span><br><span class="line"></span><br><span class="line">表头1	|	表头2</span><br><span class="line">-------------|------------</span><br><span class="line">Content Cell	| Content Cell</span><br><span class="line">Content Cell	| Content Cell</span><br><span class="line"></span><br><span class="line">学号|姓名|分数</span><br><span class="line">-|-|-</span><br><span class="line">小明|男|85</span><br><span class="line">小路|男|90</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">name</th>
+<th align="center">age</th>
+<th align="center">sex</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">tony</td>
+<td align="center">20</td>
+<td align="center">男</td>
+</tr>
+<tr>
+<td align="center">lucy</td>
+<td align="center">19</td>
+<td align="center">女</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>分数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>小明</td>
+<td>男</td>
+<td>89</td>
+</tr>
+<tr>
+<td>小路</td>
+<td>男</td>
+<td>95</td>
+</tr>
+</tbody></table>
+<h4 id="九、强调"><a href="#九、强调" class="headerlink" title="九、强调"></a>九、强调</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*字体倾斜*</span><br><span class="line">_字体倾斜_</span><br><span class="line">**字体加粗**</span><br><span class="line">__ 字体加 __</span><br></pre></td></tr></table></figure>
+
+<p><em>字体倾斜</em><br><em>字体倾斜</em><br><strong>字体加粗</strong><br><strong>字体加粗</strong></p>
+<p>一个星号或者是一个下划线包起来，会转换为<em>倾斜，如果2个，会转换为<strong>加粗</strong></em></p>
+<h4 id="十、转义"><a href="#十、转义" class="headerlink" title="十、转义"></a>十、转义</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* \\</span><br><span class="line">* \ˋ</span><br><span class="line">* \~</span><br><span class="line">* \*</span><br><span class="line">* \_</span><br><span class="line">* \-</span><br><span class="line">* \+</span><br><span class="line">* \.</span><br><span class="line">* \!</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>\</li>
+<li>\ˋ</li>
+<li>~</li>
+<li>*</li>
+<li>_</li>
+<li>-</li>
+<li>+</li>
+<li>.</li>
+<li>!</li>
+</ul>
+<h4 id="十一、删除线"><a href="#十一、删除线" class="headerlink" title="十一、删除线"></a>十一、删除线</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~请删除我吧~~</span><br></pre></td></tr></table></figure>
+
+<p><del>请删除我吧</del></p>
+<p>常用基本就这些了，还有常用的，后续在补充上去！</p>
+
+      </div>
+      
+      
+      
+    </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/categories/">CATEGORIES</a></li>
+            <li><a href="/categories/tools/">TOOLS</a></li>
+          <li>MARKDOWN</li>
+        
+  </ul>
+
+    
+    
+    
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、正文"><span class="nav-number">1.</span> <span class="nav-text">一、正文</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number"></span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number"></span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、列表"><span class="nav-number">2.</span> <span class="nav-text">二、列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、区块引用"><span class="nav-number">3.</span> <span class="nav-text">三、区块引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、华丽分割线"><span class="nav-number">4.</span> <span class="nav-text">四、华丽分割线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、链接"><span class="nav-number">5.</span> <span class="nav-text">五、链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、图片"><span class="nav-number">6.</span> <span class="nav-text">六、图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#七、代码框"><span class="nav-number">7.</span> <span class="nav-text">七、代码框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#八、表格"><span class="nav-number">8.</span> <span class="nav-text">八、表格</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#九、强调"><span class="nav-number">9.</span> <span class="nav-text">九、强调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#十、转义"><span class="nav-number">10.</span> <span class="nav-text">十、转义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#十一、删除线"><span class="nav-number">11.</span> <span class="nav-text">十一、删除线</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JamiesLau"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">JamiesLau</p>
+  <div class="site-description" itemprop="description">Record & Share</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/JamiesLau" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;JamiesLau" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ljmshishuaige@gmail.com" title="E-Mail → mailto:ljmshishuaige@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/Jamies%E5%95%8A" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;Jamies啊" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/ljmshishuaige" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;ljmshishuaige" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-university fa-fw"></i>
+      LINKS
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/" title="https:&#x2F;&#x2F;github.com&#x2F;" rel="noopener" target="_blank">GitHub</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://jamieslau.github.io/" title="https:&#x2F;&#x2F;jamieslau.github.io">MyBlog1</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/JamiesLau/demo" title="https:&#x2F;&#x2F;github.com&#x2F;JamiesLau&#x2F;demo" rel="noopener" target="_blank">MyBlog2</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JamiesLau</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">1k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+
+
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+</body>
+</html>
