@@ -10,7 +10,7 @@
 
 <p><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;Welcome to <a href="https://jamieslau.github.io/">Jamie’s Blog</a>! This is my very first blog post. It’s a great honor to have my blog captured by you. Blog related resources exist in <a href="https://github.com/JamiesLau/JamiesLau.github.io" target="_blank" rel="noopener">https://github.com/JamiesLau/JamiesLau.github.io</a>. If you want more information，please visit my blog or you can ask me on <a href="https://github.com/JamiesLau/JamiesLau.github.io/issues" target="_blank" rel="noopener">GitHub</a>.</font></p>
 <hr>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p><font size="3">互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界。<a id="more"></a>在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</font></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界。<a id="more"></a>在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</font></p>
 <h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p><font size="3">GitHub是全球最大的社交编程及代码托管网站。这里聚集了世界上各路技术大牛和最优的代码库。通过邮箱注册免费的github账户，可以用git对服务器仓库进行源代码的管理。</font></p>
 <h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><p><font size="3">GitHub Pages是用来托管GitHub上静态网页的免费站点，很多大牛用它来搭建个人博客.它具有足有的免费空间来管理自己的资料，灵活设计属于自己的域名、DIY网站主题和使用他人开发好的插件，环境搭建、系统维护、文件存储都有GitHub处理，你只需要专注于文章创作。</font></p>
 <h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p><font size="3">Hexo是一个基于node.js的静态博客网站生成器，能够极速生成静态页面，支持Markdown，一键部署到GitHub Pages，具有丰富的插件支持，所以熟悉hexo和Markdown语法对于大家个人博客是非常有必要的。hexo会解析Markdown语法生成对应的html，主题就是css样式。</font></p>
@@ -213,6 +213,67 @@
       <tags>
         <tag>工具</tag>
         <tag>文档</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机网络</title>
+    <url>/2021/04/26/internet/</url>
+    <content><![CDATA[<p><img src="/2021/04/26/internet/blog3.jpeg" alt></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">计算机网络如同一个遍布全球的蜘蛛网,将全世界连在一起。</font></p>
+<a id="more"></a>
+
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p><font size="3">计算机网络，是指将地理位置不同的具有独立功能的多台计算机及其外部设备，通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现资源共享和信息传递的计算机系统。</font></p>
+<p><font size="3">组成设备：<br>1、两台以上的计算机及终端组成<br>2、前端处理机（FEP）或通行处理机或通行控制处理机（CCP）<br>3、路由器、交换机等连接设备<br>4、通行线路</font><br><font size="3">计算机网络的软件部分包括 协议 和 应用软件 两部分；协议是计算机网络的核心，由 语法、语义、时序 构成</font></p>
+<h3 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h3><p><font size="3">定义：将计算机网络体系结构的通行协议划分为七层；描述了网络活动的特点<br>应用层、表示层、会话层、传输层、网络层、数据链路层、物理层</font></p>
+<h4 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h4><p><font size="3">应用层是操作系统或网络应用层析提供访问网络服务的接口；所有的应用程序的网络在此展开</font></p>
+<h4 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h4><p><font size="3">表示层对上层数据或信息进行交换，保证一个主机应用层信息可以被另一个主机的应用程序理解；表示层完成对的数据转换：包括数据的加密、解密、压缩、格式转换等</font></p>
+<h4 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h4><p><font size="3">会话层管理主机之间的会话进程，负责建立、管理、终止进程之间的会话（session缓存）；<br>会话层还利用在数据中插入校验点来实现数据的同步。</font><br><font size="3">有关会话层、表示层、应用层重点：<br>数据传输基本单位为报文<br>包含的主要协议：<br>FTP（文件传输协议）；<br>Telnet（远程登录协议）；<br>DNS（域名解析协议）；<br>SMTP（邮件传送协议）；<br>POPS协议（邮局协议）；<br>HTTP协议（HyPer Text Transfer Protocol）</font></p>
+<h4 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h4><p><font size="3">传输层负责建立一个可靠的端到端（主机到主机）的链接，负责将上层数据分段并提供端到端的、可靠的或不可靠的传输；还要处理端到端的差错控制和流量控制问题</font></p>
+<p><font size="3">有关传输层的重点：</font></p>
+<p><font size="3">包含的主要协议：TCP协议（Transmission Control Protocol，传输控制协议、UDP协议（User Datagram Protocol，用户数据报协议）</font></p>
+<h4 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h4><p><font size="3">网络层目的是实现两端系统之间的数据透明传送，具体功能包括寻址、路由选择、连接的建立、保持和终止等。它提供的服务使传输层不需要了解网络中的数据传输和交换技术。简单说就是”路由选择，路由及逻辑寻址“</font></p>
+<p><font size="3">网络层涉及协议：IP协议:提供不可靠、无连接的传送服务，IP协议主要功能有：无连接数据报传输、数据报路由选择和差错控制。</font></p>
+<p><font size="3">有关网络层的重点：<br>网络层负责对子网间的数据包进行路由选择；还可以实现拥塞控制、网际互联等功能；<br>基本数据单位是IP数据报<br>包括主要协议：IP协议、地址解析协议ARP、逆地址解析协议RARP、因特网报文协议ICMP、因特网组管理协议IGMP<br>重要的设备：路由器</font></p>
+<h4 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h4><p><font size="3">数据链路层最基本的服务是将原子网络层来的数据可靠地传输到临结点的目标机网络层；数据组合成数据块，在数据链路层中数据块为帧（frame），帧是数据链路层的传送单位； 作用包括：物理地址寻址、数据封装成帧、流量控制、数据检错、重发等</font></p>
+<p><font size="3">有关数据链路层的重点：<br>数据链路层为网路层提供可靠的数据传输<br>基本单位为帧<br>主要协议：以太网协议<br>两个重要设备：网桥、交换机</font></p>
+<h4 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h4><p><font size="3">为上层协议提供一个传数据的可靠物理媒体，物理层确保原始的数据可在各种物理媒体上传输；物理层两个重要设备：中继器（repeater，也叫放大器）、接线器；物理层只负责传输0和1二进制bit流</font></p>
+<h3 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h3><p><font size="3">数据传输基本单位为报文</font></p>
+<p><font size="3">包含的主要协议：<br>FTP（文件传输协议）；<br>Telnet（远程登录协议）；<br>DNS（域名解析协议）；<br>SMTP（邮件传送协议）；<br>POPS协议（邮局协议）；<br>HTTP协议（HyPer Text Transfer Protocol）</font></p>
+<h4 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h4><p><font size="3">Hypertext Transfer Protocol 超文本传输协议，基于请求与相应模式的、应用层和网络协议规定客户端和服务器的数据传输格式，就是一种约定；客户端和服务器通信实现细节</font><br><font size="3">网络模型：<br>应用层   —&gt;HTTP协议<br>传输层   —&gt;TCP协议/UDP协议<br>网络层  —-&gt;IP协议<br>物理层</font></p>
+<p><font size="3">保持连接：http请求和响应，现在客户端和服务器建立tcp连接，不会完成一次http请求响应即关闭，可以在一次tcp连接上完成多次http请求和响应</font></p>
+<h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><p><font size="3">uniform resource locator 统一资源定位符，互联网上标准资源的地址</font></p>
+<p><font size="3">HTTP使用URL来建立连接和传输数据：如：如：<a href="http://www.itcast.cn:8080/news/index.html?uid=123&amp;page=1" target="_blank" rel="noopener">http://www.itcast.cn:8080/news/index.html?uid=123&amp;page=1</a><br>url格式：schema://host[:port#]/path/..[?query-string]<br>scheme：协议：“http”,常见协议有HTTP,HTTPS,FTP等<br>host：域名/IP：“<a href="http://www.iicast.cn&quot;,可以使用IP地址作为域名使用" target="_blank" rel="noopener">www.iicast.cn&quot;,可以使用IP地址作为域名使用</a><br>port：端口：“8080”，端口可省略，默认端口（HTTP:80，HTTPS:443，FTP:21)<br>path：资源路径：“/news/index.html”<br>query-string：发送参数：“uid=123&amp;page=1”,运行有多个参数，用”&amp;“作为分隔符</font></p>
+<h4 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h4><p><font size="3">HTTP请求<br>由三部分组成：请求行、请求头、（空一行）、请求体</font></p>
+<p><font size="3">常用请求方法<br>GET：从服务器获取资源<br>POST：在服务器新建一个资源<br>PUT：在服务器更新资源（客户提供改变后的完整资源）<br>DELETE：从服务器删除资源</font></p>
+<p><font size="3">数据传输格式<br>1、键值对：？xx=11&amp;xxx=22<br>2、Json数据：<br>{<br>“属性名1” : “属性值”,<br>“属性名2” : “属性值”<br>}</font></p>
+<h4 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h4><p><font size="3">由三部分组成：状态行(协议版本号、状态码、状态消息)、响应行、响应正文<br>状态码：三位数字组成<br>1xx：指示信息–表示请求已接收，继续处理<br>2xx：成功–表示请求已被成功接收、理解、接受<br>3xx：重定向–要完成请求必须进行更进一步的操作<br>4xx：客户端错误–请求有语法错误或请求无法实现<br>5xx：服务器端错误–服务器未能实现合法的请求</font></p>
+<h4 id="TCP-IP协议"><a href="#TCP-IP协议" class="headerlink" title="TCP/IP协议"></a>TCP/IP协议</h4><p><font size="3">定义：网络通讯协议<br>1、应用层：应用程序之间互相沟通的层<br>2、传输层：提供了数据传送，应用程序之间的通信服务<br>3、网络互联层：负责提供基本的数据封包传送功能，让数据包到达目的主机<br>4、网络接口层：接收数据，并进行传输</font></p>
+<h3 id="Windows网络命令"><a href="#Windows网络命令" class="headerlink" title="Windows网络命令"></a>Windows网络命令</h3><p><font size="3">1、ping命令：用于检测网络是否畅通，以及网络时延情况（工作在ICMP协议上）</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ping 主机名</span><br><span class="line">ping 域名</span><br><span class="line">ping IP地址</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">2、ipconfig命令：显示当前TCP/IP配置的设置信息，检验人工设置的TCP/IP设置是否正确；了解计算机是否成功租用到了一个IP地址</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ipconfig:不带任何参数时，显示每个已近配置了的接口的IP地址、子网掩码和缺省网关值</span><br><span class="line"></span><br><span class="line">ipconfig&#x2F;all:当使用all选项时，ipconfig能为DNS和WINS服务器显示它已近配置且所有使用的附加信息；能够显示内置于本地网卡中的物理地址（MAC）</span><br><span class="line"></span><br><span class="line">ipconfig&#x2F;release和ipconfig&#x2F;renew：这两个附加选项，只能在向DHCP服务器租用IP地址的计算机使用。输入ipconfig &#x2F;release，所有接口的租用IP地址便重新交付给DHCP服务器(归还IP地址)。输入ipconfig&#x2F;renew，本地计算机便设法与DHCP服务器取得联系，并租用一个IP地址。大多数情况下网卡将被重新赋予和以前所赋予的相同的IP地址。</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">3、arp命令（地址转换协议）</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ARP是TCP&#x2F;IP协议族中的一个重要协议，用于确定对应IP地址的网卡物理地址。使用arp命令，能够查看本地计算机或另一台计算机的ARP高速缓存中的当前内容。</span><br><span class="line"></span><br><span class="line">arp -a:用于查看高速缓存中的所有项目</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">4、netstat命令</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况</span><br><span class="line">netstat -a	&#x2F;&#x2F; 显示所有连接和监听端口</span><br><span class="line">netstat -n	&#x2F;&#x2F; 以数字格式显示IP地址</span><br><span class="line">netstat -o	&#x2F;&#x2F; 显示每个连接所属的处理id</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">5、net命令</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、net view 查看远程主机的所有共享资源	</span><br><span class="line">net view &#x2F;IP</span><br><span class="line"></span><br><span class="line">2、net use	把远程主机的某个共享资源映射到本地盘符，图形界面方法使用</span><br><span class="line">net use:&#x2F;IP&#x2F;sharename</span><br><span class="line"></span><br><span class="line">3、net start	启动远程主机上的服务，当和远程主机建立连接，发现它的某些服务没有启动使用此命令</span><br><span class="line">net start servername</span><br><span class="line"></span><br><span class="line">4、net stop	关闭主机的某个服务</span><br><span class="line"></span><br><span class="line">5、net user	查看和账户有关的情况，包括新建账户、删除账户、查看特定账户、激活或禁用账户</span><br><span class="line">net user abcd 1234 &#x2F;add，新建一个用户名为abcd,密码为1234的账号，默认为user组成</span><br><span class="line">net user abcd &#x2F;del，将用户名为abcd的用户删除</span><br><span class="line">net user abcd &#x2F;active:no，将用户名为abcd的用户禁用</span><br><span class="line">net user abcd &#x2F;active:yes，激活用户名为abcd的用户</span><br><span class="line">net user abcd，查看用户名为abcd的用户的情况</span><br><span class="line"></span><br><span class="line">6、net localgroup	查看所有和用户组有关的信息和进行相关操作</span><br><span class="line">netlocalgroup roupname username &#x2F;add</span><br><span class="line"></span><br><span class="line">7、net time	查看远程主机当前的时间</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="常用DOS指令"><a href="#常用DOS指令" class="headerlink" title="常用DOS指令"></a>常用DOS指令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">win+R	cmd运行窗口</span><br><span class="line"></span><br><span class="line">1、ipconfig&#x2F;all		查看电脑物理地址（mac)信息</span><br><span class="line"></span><br><span class="line">2、arp -a	查看IP地址和物理地址对应关系</span><br><span class="line"></span><br><span class="line">3、ping 网络地址  	查看当前计算机和要访问的计算机之间的连通情况（如ping www.baidu.com)</span><br><span class="line"></span><br><span class="line">4、cls		清屏</span><br><span class="line"></span><br><span class="line">5、盘符：	切换对应的盘符</span><br><span class="line"></span><br><span class="line">6、cd 文件名	进入对应的文件夹（目录）</span><br><span class="line"></span><br><span class="line">7、dir		显示文件夹中的文件目录</span><br><span class="line"></span><br><span class="line">8、cd..		返回上一级</span><br><span class="line"></span><br><span class="line">9、cd&#x2F;		返回根目录</span><br><span class="line"></span><br><span class="line">10、md 文件夹名称		新建文件夹</span><br><span class="line"></span><br><span class="line">11、rd 名字  		删除目录，(不能删除有内容的文件夹）</span><br><span class="line">D:\Users\Administrator&gt;rd D:\Users\Administrator\6</span><br><span class="line"></span><br><span class="line">12、copy 想复制的目录结构和名字   目标目录</span><br><span class="line">D:\Users\Administrator&gt;copy D:\Users\Administrator\6\1.txt D:\Users\Administrator\7</span><br><span class="line">已复制         1 个文件。</span><br><span class="line"></span><br><span class="line">13、move 想剪切的目录结构和名字   目标目录</span><br><span class="line">D:\Users\Administrator&gt;move D:\Users\Administrator\6\1.txt D:\Users\Administrator\7</span><br><span class="line">移动了         1 个文件</span><br><span class="line"></span><br><span class="line">14、del 文件路径\名字	删除目录内的所有文件，注意：如果只写目录，会删除该目录中</span><br><span class="line"></span><br><span class="line">15、del *.*		删除当前目录中的所有文件（不是文件夹）</span><br><span class="line"></span><br><span class="line">16、del 具体的文件目录和名字		可以单独删除某一个文件</span><br><span class="line">D:\1\2\5&gt;del D:\1\2\5\a.txt</span><br><span class="line"></span><br><span class="line">17、format：盘符	格式化，清空数据</span><br><span class="line"></span><br><span class="line">18、键盘上、下、重复之前的代码</span><br><span class="line"></span><br><span class="line">19、exit		关闭dos窗口	</span><br><span class="line"></span><br><span class="line">20、Ctrl+C	退出当前执行的命令</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>测试使用</category>
+      </categories>
+      <tags>
+        <tag>计算机网络</tag>
+        <tag>命令</tag>
       </tags>
   </entry>
 </search>
