@@ -10,8 +10,7 @@
 
 <p><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;Welcome to <a href="https://jamieslau.github.io/">Jamie’s Blog</a>! This is my very first blog post. It’s a great honor to have my blog captured by you. Blog related resources exist in <a href="https://github.com/JamiesLau/JamiesLau.github.io" target="_blank" rel="noopener">https://github.com/JamiesLau/JamiesLau.github.io</a>. If you want more information，please visit my blog or you can ask me on <a href="https://github.com/JamiesLau/JamiesLau.github.io/issues" target="_blank" rel="noopener">GitHub</a>.</font></p>
 <hr>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p><font size="3">互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界；在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</font></p>
-<a id="more"></a>
+<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p><font size="3">互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界。<a id="more"></a>在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</font></p>
 <h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p><font size="3">GitHub是全球最大的社交编程及代码托管网站。这里聚集了世界上各路技术大牛和最优的代码库。通过邮箱注册免费的github账户，可以用git对服务器仓库进行源代码的管理。</font></p>
 <h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><p><font size="3">GitHub Pages是用来托管GitHub上静态网页的免费站点，很多大牛用它来搭建个人博客.它具有足有的免费空间来管理自己的资料，灵活设计属于自己的域名、DIY网站主题和使用他人开发好的插件，环境搭建、系统维护、文件存储都有GitHub处理，你只需要专注于文章创作。</font></p>
 <h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p><font size="3">Hexo是一个基于node.js的静态博客网站生成器，能够极速生成静态页面，支持Markdown，一键部署到GitHub Pages，具有丰富的插件支持，所以熟悉hexo和Markdown语法对于大家个人博客是非常有必要的。hexo会解析Markdown语法生成对应的html，主题就是css样式。</font></p>
@@ -20,26 +19,21 @@
   </entry>
   <entry>
     <title>重拾记忆</title>
-    <url>/2021/04/24/%E9%87%8D%E6%8B%BE%E8%AE%B0%E5%BF%86/</url>
-    <content><![CDATA[<p><img src="/2021/04/24/%E9%87%8D%E6%8B%BE%E8%AE%B0%E5%BF%86/blog1.jpeg" alt></p>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><font size="3">
-很久不见，甚是想念。</font>
-
-<p><font size="3">重拾记忆，保持那份热爱，不忘初心。</font></p>
+    <url>/2021/04/24/recall_memory/</url>
+    <content><![CDATA[<p><img src="/2021/04/24/recall_memory/blog1.jpeg" alt></p>
+<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p><font size="3">好久不见，甚是想念。</font><br><font size="3">重拾记忆，保持那份热爱，不忘初心。</font></p>
 <a id="more"></a>
-<p>还是在在学习GitHub时，偶然发现hexo主题，然后兴致勃勃借助这两个平台搭建自己的个人博客网站，简单的进行个性化设计；本来想着能不断学习，坚持发布，但由于github网站电脑访问验证问题，考虑到工作学习的原因，后来就断更了。想想真的是一时兴起，未能坚持住。只能说自己还要学习的东西太多了，个人博客未能安排上日程。</p>
-<p>互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界；在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；<br>你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</p>
-<p>互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界；在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；<br>你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</p>
-<p>互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界；在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；<br>你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</p>
-<p>互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界；在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；<br>你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</p>
-<p>互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界；在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；<br>你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。<br></p>
+<p><font size="3">还是在学习GitHub时，偶然发现hexo主题，一时兴起借助这两个平台搭建自己的个人博客网站，百度学习了配置主题设置，简单个性化设计；本来想着能不断学习，坚持发布，但由于github突然访问需要验证，并考虑到工作学习的时间原因，后来就断更了。想想真的是一时兴起，未能坚持住；还有只能说自己还要学习的东西太多了，个人博客搭建未能安排上日程。最近下班和同事聊天谈到搭建自己的博客网站，想到自己去年也搭建了一个，再不修一下怕是要塌了吧。这次重拾当年的记忆，保持那份热爱，坚持更新；不是为了写给别人看，更重要是写给自己、总结经验、记录生活、成就自己。</font></p>
+<h5 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h5><p><font size="3">重拾记忆并没有那么简单，一点点回忆主题的配置文件，启动本地预览、生成、发布的命令，老实说是有点简单，但是太久没运行命令，那些指令都在脑中的内存中差不多都清除掉了。好记性不如烂笔头，还好有当时记录的笔记，一顿摸索算是用git、hexo命令启动运行本地预览成功了。尝试修改更新头像、修改样式更新上传线上，这些到算兴奋起来。为了再次熟悉配置，又按照之前写过的配置文件检查了一遍。总之，目前还远远不够，仅仅还是个开始，还有好些功能需要去探索，去学习搭建。</font></p>
+<h5 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h5><p><font size="3">对于next主题配置，绝大部分是不知道，只能按照自己的需求去百度，找到NexT使用文档或其他博文，加上自身的自学能力，一点点修改完善。改一点点本地就预览一次，生怕出错，但其中还是踩了几个坑，就连本地预览都出错，一度挫败感涌上心头，只能修改回之前的配置或是删除安装文件，庆幸的是一点点改回去没问题，不然真的是要崩溃。这些问题也只因自己的无知买单，借鉴需谨慎，否则随便入坑。在失败中探索，积累经验。最简的办法，无非是在B站找到对应配置功能的博主视频，按照人家的步骤操作。在解决问题时，也意外发现两个非常棒的next主题博客，从中也悟出了一些启发，学到了好的设计思想，打算重构一下我的博客网站，毕竟把我的和人家对比起来，真的是差太远了。</font></p>
+<h5 id="重构"><a href="#重构" class="headerlink" title="重构"></a>重构</h5><p><font size="3">首先从另存内容，删除之前写的文章开始，看了别的分类和标签，才知道自己傻乎乎的不会定义文章分类和标签，导致不会自动生成对应的链接，再新建博客文章，重新定义，终于知道为什么之前写的没有日志，还好找到了视频学习一下。next主题框架功能齐全，只是自己不会利用，还这么费劲的自己设计，想想自己真是无知，而不是一个劲的闭门造车。然后完善字数、阅读时间和其他辅助功能，每天补上之前写好的博文。</font></p>
 ]]></content>
       <categories>
-        <category>不忘初心</category>
+        <category>日常记录</category>
       </categories>
       <tags>
-        <tag>导航</tag>
-        <tag>分享</tag>
+        <tag>记录</tag>
+        <tag>反思</tag>
       </tags>
   </entry>
 </search>
