@@ -37,7 +37,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Markdown语法说明</title>
+    <title>markdown语法说明</title>
     <url>/2021/04/25/mark_down/</url>
     <content><![CDATA[<p><img src="/2021/04/25/mark_down/blog2.jpg" alt></p>
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Markdown一个Web上使用的文本到HTML的转换工具，可以通过简单、易读写的文本格式生成结构化的HTML文档。非常喜欢它的简洁的格式。</font></p>
@@ -208,7 +208,7 @@
 <p><font size="3">常用基本就这些了，还有常用的，后续补充上去！</font></p>
 ]]></content>
       <categories>
-        <category>工具命令</category>
+        <category>工具使用</category>
       </categories>
       <tags>
         <tag>工具</tag>
