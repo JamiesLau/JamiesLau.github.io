@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jamieslau.github.io","root":"/","scheme":"Gemini","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="前言Linux是一套免费使用和自由传播的类Unix操作系统，它主要受到Minix和Unix思想的启发，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它支持32位和64位硬件。Linux继承了Unix网络为和兴的设计思想，是一个性能稳定的多用户网络操作系统。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux命令">
+<meta property="og:url" content="https://jamieslau.github.io/2021/04/30/linux/index.html">
+<meta property="og:site_name" content="Jamie&#39;s Blog">
+<meta property="og:description" content="前言Linux是一套免费使用和自由传播的类Unix操作系统，它主要受到Minix和Unix思想的启发，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它支持32位和64位硬件。Linux继承了Unix网络为和兴的设计思想，是一个性能稳定的多用户网络操作系统。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jamieslau.github.io/2021/04/30/linux/blog6.jpg">
+<meta property="og:image" content="https://jamieslau.github.io/2021/04/30/linux/win.png">
+<meta property="og:image" content="https://jamieslau.github.io/2021/04/30/linux/Linux.png">
+<meta property="article:published_time" content="2021-04-30T15:41:54.000Z">
+<meta property="article:modified_time" content="2021-04-30T15:55:26.732Z">
+<meta property="article:author" content="JamiesLau">
+<meta property="article:tag" content="命令">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jamieslau.github.io/2021/04/30/linux/blog6.jpg">
+
+<link rel="canonical" href="https://jamieslau.github.io/2021/04/30/linux/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Linux命令 | Jamie's Blog</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?2524933d3b9ec387b30b6a05dee53a90";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line toggle-line-first"></span>
+        <span class="toggle-line toggle-line-middle"></span>
+        <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Jamie's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a lazy man</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+  <a href="https://github.com/JamiesLau" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jamieslau.github.io/2021/04/30/linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="JamiesLau">
+      <meta itemprop="description" content="Record & Share">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jamie's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux命令
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-04-30 23:41:54 / 修改时间：23:55:26" itemprop="dateCreated datePublished" datetime="2021-04-30T23:41:54+08:00">2021-04-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">工具使用</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="/2021/04/30/linux/blog6.jpg" alt></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Linux是一套免费使用和自由传播的类Unix操作系统，它主要受到Minix和Unix思想的启发，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它支持32位和64位硬件。Linux继承了Unix网络为和兴的设计思想，是一个性能稳定的多用户网络操作系统。</font></p>
+<a id="more"></a>
+
+
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h5 id="Linux特点"><a href="#Linux特点" class="headerlink" title="Linux特点"></a>Linux特点</h5><p><font size="3">稳定、免费<br>安全性高<br>多任务，多用户<br>耗资源少<br>内核下，它支持多种电子产品，Android手机，PDA</font></p>
+<h5 id="Linux和Windows的区别"><a href="#Linux和Windows的区别" class="headerlink" title="Linux和Windows的区别"></a>Linux和Windows的区别</h5><p><font size="3">1、使用费用不同：<br>​    Linux是开源项目，免费<br>​    Windows是需要付费</font></p>
+<p><font size="3">2、适用使用对象不同：<br>​    Linux适合企业公司服务器系统架构<br>​    Windows适合大众使用</font></p>
+<p><font size="3">3、操作风格不同：<br>​    Linux很多情况需要通过命令来进行操作<br>​    Windows面向大众化，操作上符合普通人操作习惯，大多是通过界面的操作</font></p>
+<p><font size="3">4、支持的软件不同：<br>​    Linux平台只有开发者维护，缺少资金的大量支持，软件方面数量和质量缺乏<br>​    Windows使用人数较多，支持Windows软件在数量和质量上都比Linux有优势</font></p>
+<p><font size="3">5、文件格式不同：<br>​    Linux是shell<br>​    Windows操作系统内核是NT</font></p>
+<p><font size="3">6、安全性不同：<br>​    Linux相比Windows安全很多，使用Linux是不需要安装额外的安全软件<br>​    Windows系统安全性低，需要安装安全防护软件来保护计算机</font></p>
+<p><font size="3">7、可定制性：<br>​    Linux提供更高的定制性，支持开发者通过编码来定义适合自己的操作系统<br>    Windows操作范围大多收到微软的限制，基本上是系统怎样设置，用户就只能规矩操作</font></p>
+<p><font size="3">8、程序可移植性不同：<br>​    Linux可移植性好，不仅可以在不同的Linux之间移植，还可以移植到Windows上<br>    Windows的程序可移植性差，程序基本不兼容Linux</font></p>
+<h3 id="Linux安装"><a href="#Linux安装" class="headerlink" title="Linux安装"></a>Linux安装</h3><h5 id="虚拟机介绍"><a href="#虚拟机介绍" class="headerlink" title="虚拟机介绍"></a>虚拟机介绍</h5><p><font size="3">安装虚拟机，通过虚拟机安装Linux操作系统<br>虚拟机：一台虚拟的计算机，通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。</font></p>
+<p><img src="/2021/04/30/linux/win.png" alt></p>
+<p><font size="3">虚拟机软件：<br>​    VMware Workstation:是一款功能强大的桌面虚拟计算机软件，收费。<br>​    VirtualBox:是一款开源虚拟机软件。</font></p>
+<h5 id="虚拟机及Linux安装"><a href="#虚拟机及Linux安装" class="headerlink" title="虚拟机及Linux安装"></a>虚拟机及Linux安装</h5><p><font size="3">将杀毒软件、防火墙关闭<br>使用管理员权限进行安装<br>5个服务需要启动<br>Linux安装：<br>切换鼠标、键盘    Ctri+alt<br>Linux系统：管理员：root    密码：123456</font></p>
+<h5 id="Linux目录介绍"><a href="#Linux目录介绍" class="headerlink" title="Linux目录介绍"></a>Linux目录介绍</h5><p><img src="/2021/04/30/linux/Linux.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;：Linux系统根目录&lt;&#x2F;font&gt;</span><br><span class="line"></span><br><span class="line">&#x2F;etc：（etcetera)系统配置文件存放的目录，不建议在此目录存放可执行文件</span><br><span class="line"></span><br><span class="line">&#x2F;usr：（unix shared resources)应用程序存放目录</span><br><span class="line"></span><br><span class="line">&#x2F;root：系统管理员root的家目录</span><br><span class="line"></span><br><span class="line">&#x2F;home：家目录，每个用户登录Linux之后，默认进入的目录</span><br><span class="line"></span><br><span class="line">&#x2F;lost+found：系统异常产生错误时，将一些遗失的片段放置此目录下</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Linux常用命令-重点"><a href="#Linux常用命令-重点" class="headerlink" title="Linux常用命令 [重点]"></a>Linux常用命令 [重点]</h3><h5 id="磁盘管理命令"><a href="#磁盘管理命令" class="headerlink" title="磁盘管理命令"></a>磁盘管理命令</h5><p><font size="3">ls</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ls：列出目录内容</span><br><span class="line">参数：</span><br><span class="line">	-a查询所有文件和文件夹，包含隐藏的	ls -a</span><br><span class="line">	-l查询详细列表	ls -l	简写为ll</span><br><span class="line">	-h友好展示信息	ll -h</span><br><span class="line">	ls 目录名	展示某个目录下的内容</span><br><span class="line"></span><br><span class="line">例子：查看&#x2F;etc目录下的内容</span><br><span class="line">命令：ll -h &#x2F;etc</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">cd (change directory)：切换目录</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cd ..&#x2F;	向上一层目录</span><br><span class="line">cd &#x2F;	切换到Linux的根目录</span><br><span class="line">cd &#x2F;目录名	任意目录切换到指定目录中	&#x2F;目录名	Linux的绝对路径</span><br><span class="line">cd ~	切换到当前用户家目录	root用户家目录&#x2F;root</span><br><span class="line">cd -	切换到上一次访问的目录，只能有两个目录互相切换</span><br><span class="line"></span><br><span class="line">Linux绝对：cd &#x2F;etc&#x2F;x1	先切换到&#x2F;目录，然后在&#x2F;目录中找到etc目录，在ext中找子目录x1,</span><br><span class="line">在任意目录都可以随意切换</span><br><span class="line"></span><br><span class="line">Linux相对：cd x1&#x2F;x2	在当前目录中寻找子目录x1,在x1中寻找子目录路x2,</span><br><span class="line">必须确定当前目录下有子目录x1</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">pwd (print working directory)：显示当前的所在目录，返回绝对路径</font></p>
+<p><font size="3">mkdir (make directory)：创建目录</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p 文件夹名称</span><br><span class="line">	-p父目录不存在情况下先生成父目录（praents)</span><br><span class="line">	</span><br><span class="line">例子1：在&#x2F;root&#x2F;t3目录下创建一个t4目录</span><br><span class="line">位置：&#x2F;root	t3和t4都不存在</span><br><span class="line">命令：mkdir -p t3&#x2F;t4</span><br><span class="line"></span><br><span class="line">例子2：需要在&#x2F;root&#x2F;t1目录下创建t2目录</span><br><span class="line">位置：root</span><br><span class="line">命令：相对：mkdir t1&#x2F;t2</span><br><span class="line">	 绝对：mkdir &#x2F;root&#x2F;t1&#x2F;t2</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="文件浏览命令"><a href="#文件浏览命令" class="headerlink" title="文件浏览命令"></a>文件浏览命令</h5><p><font size="3">日志文件、XML、properties文件<br>cat 文件名    快捷查看当前文件的内容，适合查看少量信息的文件<br>more 文件名    分页显示文件内容</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">more操作</span><br><span class="line">	Enter	向下n行，需要定义，默认为1行</span><br><span class="line">	空格键		向下滚动一屏或Ctrl+F</span><br><span class="line">	B	返回上一屏或Ctrl+B</span><br><span class="line">	q	退出more</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">less -mN 文件名    分页显示文件内容，标注每行的行号</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">less操作</span><br><span class="line">	Enter	向下n行，需要定义，默认为1行</span><br><span class="line">	空格键	向下滚动一屏或Ctrl+F</span><br><span class="line">	B	返回上一屏或Ctrl+B</span><br><span class="line">	q	退出more</span><br><span class="line">	适用于大量数据的查看</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">tail -数字 文件名    可以快速查看文件后X行的内容<br>例如：tail -10 文件名    查看文件的后10行内容</font></p>
+<h5 id="文件操作命令"><a href="#文件操作命令" class="headerlink" title="文件操作命令"></a>文件操作命令</h5><p><font size="3">touch 文件    创建文件</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例子：touch &#x2F;test.txt</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">Alt+P    进入上传界面<br>复制文件：<br>cp 需要复制的文件  复制的位置    </font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">例子1：把&#x2F;root&#x2F;demo.java文件复制到&#x2F;root&#x2F;t1目录中	位置：root</span><br><span class="line">命令：cp demo.java t1</span><br><span class="line">	 cp &#x2F;root&#x2F;demo.java &#x2F;root&#x2F;t1</span><br><span class="line"></span><br><span class="line">例子2：把&#x2F;rootdemo.java复制到&#x2F;root&#x2F;t1目录中，改名为ddd.java	位置：root</span><br><span class="line">命令：cp demo.java t1&#x2F;ddd.java</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">复制目录：<br>cp -r 需要复制的目录  复制的位置</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;t5目录复制到&#x2F;root&#x2F;t1目录中	位置：root</span><br><span class="line">命令：cp -r t5 t1</span><br><span class="line">	 cp -r &#x2F;root&#x2F;t5 &#x2F;root&#x2F;t1</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">文件移动<br>mv (move)    移动或更名现有的文件或目录<br>文件/目录移动:<br>mv 需要移动的文件 移动的位置</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;t5目录移动到&#x2F;root&#x2F;t3目录中	位置：root</span><br><span class="line">命令：mv t5 t3</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">文件/目录更名操作:</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;demo.java改名为he.java	位置：root</span><br><span class="line">命令：mv demo.java he.java</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">文件删除：<br>rm (remove)    删除文件或目录<br>删除文件；</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm 文件名</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">删除目录：</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">rm -rf 目录名</span><br><span class="line"></span><br><span class="line">例子：删除&#x2F;root&#x2F;t5目录	位置：root	t5目录下有子目录或文件</span><br><span class="line">命令：rm -rf t5</span><br><span class="line"></span><br><span class="line">注意：</span><br><span class="line">	rm -rf *	删除当前目录下所有内容</span><br><span class="line">	rm -rf &#x2F;*	删除Linux系统根目录下所有文件</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">查找命令：<br>find    查找文件或目录</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">find 目录名 -name &#39;需要查找的字符串&#39;</span><br><span class="line">*表示0~多个任意字符</span><br><span class="line"></span><br><span class="line">例子：查找&#x2F;root目录下，所有以ins开头的文件或目录	位置：root</span><br><span class="line">命令：find &#x2F;root -name &#39;ins*&#39;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="文件编辑命令"><a href="#文件编辑命令" class="headerlink" title="文件编辑命令"></a>文件编辑命令</h5><p><font size="3">Windows是有记事本<br>Linux有类似记事本的功能    VIM编辑器<br>vim命令</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vim 文件名	进入“一般模式”</span><br><span class="line">“i” 切换到“插入模式”</span><br><span class="line">“:” 切换到底行模式</span><br><span class="line">“Esc” 从插入模式退出到“一般模式”</span><br><span class="line">“:wq” 保存并退出操作</span><br><span class="line">“:q!” 强制退出不保存操作</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="grep和管道"><a href="#grep和管道" class="headerlink" title="grep和管道"></a>grep和管道</h5><p><font size="3">grep 正则表达式    字符串搜索工作<br>gerp -i 需要搜索的字符串    搜索的文件<br>-i 忽略大小写查找数据<br>符合规则，就返回返回规则的行<br>管道命令：可以链接多个Linux命令</font></p>
+<p><font size="3">|<br>命令1 | 命令2 | 命令3..<br>例子：查询当前目录中，所有带ins关键字的行数据    位置：/root<br>查询当前木兰路内容 ll<br>命令：ll | grep ins</font></p>
+<h5 id="压缩、解压命令-（重要）"><a href="#压缩、解压命令-（重要）" class="headerlink" title="压缩、解压命令 （重要）"></a>压缩、解压命令 （重要）</h5><p><font size="3">压缩包：<br>*.tar    打包，大小不会进行压缩<br>*.tar.gz    打包并压缩文件大小<br>压缩：（参数顺序不变）</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf 压缩包名字.tar.gz 需要压缩的内容</span><br><span class="line">例如：tar  -zcvf demo.tar.gz * 将当前目录下所有进行打包压缩，文件名 demo.tar.gz</span><br></pre></td></tr></table></figure>
+<p><font size="3">解压：（参数顺序不变）</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf 需要解药的压缩包名称	解药到当前目录</span><br><span class="line">tar -zxvf 需要解药的压缩包名称 -C 指定压缩路径	解药到指定目录中</span><br><span class="line"></span><br><span class="line">例子：需要把&#x2F;root&#x2F;t&#x2F;demo.tar.gz压缩包解压到指定目录中，指定目录&#x2F;root&#x2F;t&#x2F;t1  位置&#x2F;root&#x2F;t</span><br><span class="line">命令：tar -zxvf demo.tar.gz -C &#x2F;root&#x2F;t&#x2F;t1</span><br><span class="line">	 tar -zxvf demo.tar.gz -C t1</span><br></pre></td></tr></table></figure>
+<h5 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h5><p><font></font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ps -ef	查看系统进程</span><br><span class="line"></span><br><span class="line">例子：查看进行中和vim相关的进程</span><br><span class="line">命令：ps -ef|grep -i vim</span><br><span class="line"></span><br><span class="line">Kill -9 pid号	强制杀死某个进程</span><br><span class="line"></span><br><span class="line">例子：查看进程和vim相关的进程有哪些，并将vim进程杀死</span><br><span class="line">命令：ps -ef|grep -i vim</span><br><span class="line">	 Kill -9 pid号</span><br><span class="line"></span><br><span class="line">ifconfig	查看网络配置</span><br><span class="line">ping ip地址	测试和目标的连通性，会持续不断一直测试，直到Ctrl+C</span><br><span class="line"></span><br><span class="line">Linux centos重启命令:reboot	</span><br><span class="line">Linux centos关机命令：halt</span><br></pre></td></tr></table></figure>
+<h5 id="其他命令（了解）"><a href="#其他命令（了解）" class="headerlink" title="其他命令（了解）"></a>其他命令（了解）</h5><p><font size="3">setup    网络设置<br>文件权限<br>chmod (change mode) 变更文件或目录的权限<br>Linux权限格式：&lt;类型&gt;&lt;用户&gt;&lt;组&gt;&lt;其他用户&gt;</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">字母法：chmod u&#x2F;g&#x2F;o&#x2F;a +&#x2F;-&#x2F;&#x3D;  rwx  文件</span><br><span class="line">u	user表示该文件的所有者root,所属用户权限</span><br><span class="line">g	group表示与该文件的所有者属于同一组(group)者，即用户组,所属组权限</span><br><span class="line">o	other表示其他以外的人，其他用户权限</span><br><span class="line">a	all表示这三者皆是，所有用户的权限</span><br><span class="line">+	增加权限</span><br><span class="line">-	撤销权限</span><br><span class="line">&#x3D;	设定权限</span><br><span class="line">如：   -rw-r--r--.  1  root  root  31  4月  28 06:28  aa.txt</span><br><span class="line">修改：chmod  u+x  aa.txt</span><br><span class="line">结果	  -rwxr--r--.  1  root  root  31  4月  28 06:28  aa.txt</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所属用户的权限为所有权限</span><br><span class="line">命令：chmod u&#x3D;rwx demo.java</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所属用户组用户的权限为r-x</span><br><span class="line">命令：chmod g&#x3D;rx demo.java</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所有用户的权限为r--</span><br><span class="line">chmod a&#x3D;r demo.java</span><br><span class="line"></span><br><span class="line">数字法：“rwx&quot;权限用数字来代替</span><br><span class="line">第一位代表文件类型，info ls命令查看</span><br><span class="line">rwx：</span><br><span class="line">r 可读权限,数字代号“4”	</span><br><span class="line">w 可写程序，“2”	</span><br><span class="line">x 可执行权限“1”	</span><br><span class="line">- 不具有任何权限  “0”</span><br><span class="line">如：执行chmod  u&#x3D;rwx，g&#x3D;rx,o&#x3D;r  aa.txt  </span><br><span class="line">等同于 ：chmod u&#x3D;7,g&#x3D;5,o&#x3D;4  aa.txt  或  chmod 754 a.txt</span><br><span class="line">chmod  751  file</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%91%BD%E4%BB%A4/" rel="tag"># 命令</a>
+              <a href="/tags/Linux/" rel="tag"># Linux</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/04/28/test_base/" rel="prev" title="软件测试基础">
+      <i class="fa fa-chevron-left"></i> 软件测试基础
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+
+
+
+
+
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">2.</span> <span class="nav-text">Linux</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux特点"><span class="nav-number">2.0.1.</span> <span class="nav-text">Linux特点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux和Windows的区别"><span class="nav-number">2.0.2.</span> <span class="nav-text">Linux和Windows的区别</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux安装"><span class="nav-number">3.</span> <span class="nav-text">Linux安装</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#虚拟机介绍"><span class="nav-number">3.0.1.</span> <span class="nav-text">虚拟机介绍</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#虚拟机及Linux安装"><span class="nav-number">3.0.2.</span> <span class="nav-text">虚拟机及Linux安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Linux目录介绍"><span class="nav-number">3.0.3.</span> <span class="nav-text">Linux目录介绍</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux常用命令-重点"><span class="nav-number">4.</span> <span class="nav-text">Linux常用命令 [重点]</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#磁盘管理命令"><span class="nav-number">4.0.1.</span> <span class="nav-text">磁盘管理命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文件浏览命令"><span class="nav-number">4.0.2.</span> <span class="nav-text">文件浏览命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文件操作命令"><span class="nav-number">4.0.3.</span> <span class="nav-text">文件操作命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文件编辑命令"><span class="nav-number">4.0.4.</span> <span class="nav-text">文件编辑命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#grep和管道"><span class="nav-number">4.0.5.</span> <span class="nav-text">grep和管道</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#压缩、解压命令-（重要）"><span class="nav-number">4.0.6.</span> <span class="nav-text">压缩、解压命令 （重要）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#系统命令"><span class="nav-number">4.0.7.</span> <span class="nav-text">系统命令</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他命令（了解）"><span class="nav-number">4.0.8.</span> <span class="nav-text">其他命令（了解）</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JamiesLau"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">JamiesLau</p>
+  <div class="site-description" itemprop="description">Record & Share</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/JamiesLau" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;JamiesLau" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ljmshishuaige@gmail.com" title="E-Mail → mailto:ljmshishuaige@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/Jamies%E5%95%8A" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;Jamies啊" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/ljmshishuaige" title="Google → https:&#x2F;&#x2F;plus.google.com&#x2F;ljmshishuaige" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>Google</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-university fa-fw"></i>
+      LINKS
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/" title="https:&#x2F;&#x2F;github.com&#x2F;" rel="noopener" target="_blank">GitHub</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://jamieslau.github.io/" title="https:&#x2F;&#x2F;jamieslau.github.io">MyBlog1</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/JamiesLau/demo" title="https:&#x2F;&#x2F;github.com&#x2F;JamiesLau&#x2F;demo" rel="noopener" target="_blank">MyBlog2</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JamiesLau</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">20k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">18 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+
+
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+</body>
+</html>
