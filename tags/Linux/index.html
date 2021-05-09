@@ -487,6 +487,19 @@
 
   
 
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el         : '#valine-comments',
+      path       : location.pathname,
+    }, {"enable":true,"appId":"c6gSjO4sTcdXeAWG9FKqPh0L-gzGzoHsz","appKey":"XSLpc9w8LnxJAz1YphdcsMzF","placeholder":"Just go go","avatar":"robohash","meta":["nick","mail","link"],"pageSize":10,"language":null,"visitor":true,"comment_count":true,"recordIP":true,"serverURLs":null}
+    ));
+  }, window.Valine);
+});
+</script>
+
   
 <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
