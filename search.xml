@@ -542,4 +542,47 @@
         <tag>理论</tag>
       </tags>
   </entry>
+  <entry>
+    <title>GitHub使用说明</title>
+    <url>/2021/05/09/git_tool/</url>
+    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Github，一个面向开源及私有软件项目的托管平台。</font></p>
+<a id="more"></a>
+
+
+
+<h3 id="GitHub简介"><a href="#GitHub简介" class="headerlink" title="GitHub简介"></a>GitHub简介</h3><p><font size="3">GitHub是最大的开源代码托管平台，旨在促进在一个共同项目上工作的个人之间的代码托管、版本控制和协作；因为只支持git作为唯一的版本库格式进行托管，故名GitHub，付费用户可以建私人仓库，我们一般的免费用户只能使用公共仓库，也就是代码要公开。</font></p>
+<p><font size="3">github相关词语介绍：<br>1.Repository    仓库，用来存放项目代码，每个项目对应一个仓库<br>2.Star    收藏，收藏项目<br>3.Fork    复制克隆项目<br>&nbsp;&nbsp;你的开源项目，别人想在你这个项目的基础上做些改进，然后应用到自己项目，然后他fork项目，他的主页就多了一个项目，（本质上在原有项目的基础上新建了一个分支），他可以随意改进，不影响原有项目<br>4. Pull Request    发起请求<br>&nbsp;&nbsp;如别人Fork你的项目后，在该基础上改进，为让更多人受益，想把自己的合并到原有项目里向你发起pull request，待你review代码测试OK，接受他的请求，就可以改进原有项目<br>5. Watch    关注，watch某个项目，该项目更新后能收到通知提醒<br>6. Issue    事务卡片、问题，发现代码bug，给项目提个issue/问题，然后被修复OK就可以close</font></p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p><font size="3">git管理github托管项目代码</font></p>
+<p><font size="3">Git工作区域<br>1.Git Repository（git仓库）最终确定的文件保存到仓库，成为一个新的版本，对他人可见；<br>2.暂存区    暂存已经修改的文件最后统一提交到git仓库中；<br>3.工作区（Working Directory）添加、编辑、修改文件等动作；</font></p>
+<p><img src="/2021/05/09/git_tool/status.png" alt></p>
+<p><font size="3">目标文件夹Shift+右键==》Powershell窗口==》输入start cmd 回车==》进入cmd窗口</font></p>
+<p><font size="3">git命令</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">克隆</span><br><span class="line"></span><br><span class="line">git clone git@github.com:JamiesLau&#x2F;demo.git</span><br><span class="line"></span><br><span class="line">Git本地仓库管理</span><br><span class="line"></span><br><span class="line">git status	&#x2F;&#x2F;查看工作区中文件的状态</span><br><span class="line"></span><br><span class="line">git add first.txt	&#x2F;&#x2F; 将文件添加到暂存区</span><br><span class="line"></span><br><span class="line">git commit -m &quot;first commit&quot;	&#x2F;&#x2F; 提交到git仓库</span><br><span class="line"></span><br><span class="line">git config --global user.email &quot;you@example.com&quot;	&#x2F;&#x2F; 设置用户名 邮箱           </span><br><span class="line"></span><br><span class="line">git config --global user.name &quot;Your Name&quot;	&#x2F;&#x2F; 设置用户名</span><br><span class="line"></span><br><span class="line">git config --list	&#x2F;&#x2F; 查看设置</span><br><span class="line"></span><br><span class="line">git log	&#x2F;&#x2F; 查看log</span><br><span class="line"></span><br><span class="line">git reset id (log 查看commit的id)	 &#x2F;&#x2F;能将文件从仓库回退到暂存区</span><br><span class="line"></span><br><span class="line">git push	&#x2F;&#x2F; 文件push到远端</span><br><span class="line"></span><br><span class="line">rm -rf second.txt</span><br><span class="line"></span><br><span class="line">git rm second.txt</span><br><span class="line"></span><br><span class="line">git commit -m &quot;提交描述&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Git远程仓库"><a href="#Git远程仓库" class="headerlink" title="Git远程仓库"></a>Git远程仓库</h3><p><font size="3">使用远程仓库的目的：备份、实现代码共享集中化管理<br>git puh </font></p>
+<p><img src="/2021/05/09/git_tool/git.png" alt></p>
+<p><font size="3">本地仓库同步到git远程仓库</font></p>
+<p><img src="/2021/05/09/git_tool/working.png" alt></p>
+<p><font size="3">Git克隆操作<br>目的：将远程仓库GitHub对应的项目复制到本地<br>git clone 仓库地址</font></p>
+<p><font size="3">问题1：</font></p>
+<p><img src="/2021/05/09/git_tool/question1.png" alt></p>
+<p><font size="3">如果在GitHub网站上编辑了README文件，所有在本地需要先使用 git pull 命令更新然后在git push</font></p>
+<p><font size="3">问题2：</font></p>
+<p><img src="/2021/05/09/git_tool/question2.png" alt></p>
+<p><font size="3">GitHub Pages 搭建完整<br>个人热点<br>访问：https://用户名.github.io</font></p>
+<p><font size="3">搭建步骤：<br>1）创建个人站点==》新建仓库（注：仓库名必须是【用户名.github.io】）<br>2）在仓库下新建index.html的文件即可</font></p>
+<p><font size="3">1、github pages 仅支持静态网页<br>2、仓库里面只能是.html文件</font></p>
+<p><font size="3">Project Pages项目站点<br>https://用户名.github.io/仓库名<br>搭建<br>1）进入项目首页 ，点击settings<br>2）在settings页面，GitHub Pages点击【Launch automatic page generator】来自动生成主题页面<br>3）新建站点基础信息设置<br>4）选择主题<br>5）生成网页</font></p>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">安装</span><br><span class="line"></span><br><span class="line">前提已经安装了node、git</span><br><span class="line"></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init JamiesLau	(博客名)初始化</span><br><span class="line"></span><br><span class="line">进入博客目录安装依赖</span><br><span class="line"></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">本地使用</span><br><span class="line"></span><br><span class="line">hexo s -p 5555	发布，本地预览</span><br><span class="line"></span><br><span class="line">&lt;http:&#x2F;&#x2F;localhost:5555&gt;	本地查看自带主题hexo</span><br><span class="line"></span><br><span class="line">使用sublime修改_config.yml配置JamiesLau博客</span><br><span class="line"></span><br><span class="line">根据[https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;](https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;setup)文档说明配置基本信息</span><br><span class="line"></span><br><span class="line">url: &lt;https:&#x2F;&#x2F;JamiesLau.github.io&gt;</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">  type: git</span><br><span class="line"></span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;JamiesLau&#x2F;JamiesLau.github.io.git</span><br><span class="line"></span><br><span class="line">  branch: master</span><br><span class="line"></span><br><span class="line">安装插件</span><br><span class="line"></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">hexo发布至github</span><br><span class="line"></span><br><span class="line">设置github邮箱、用户名</span><br><span class="line"></span><br><span class="line">hexo g	生成</span><br><span class="line"></span><br><span class="line">hexo d	提交</span><br><span class="line"></span><br><span class="line">个性化主题</span><br><span class="line"></span><br><span class="line">hexo new page tags 	生成页面</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>工具使用</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
 </search>
