@@ -545,7 +545,10 @@
   <entry>
     <title>GitHub使用说明</title>
     <url>/2021/05/09/git_tool/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Github，一个面向开源及私有软件项目的托管平台。</font></p>
+    <content><![CDATA[<img src="/2021/05/09/git_tool/github.png" style="zoom:50%">
+
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Github，一个面向开源及私有软件项目的托管平台。</font></p>
 <a id="more"></a>
 
 
