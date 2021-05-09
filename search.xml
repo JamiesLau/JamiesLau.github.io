@@ -1,39 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/06/21/posts/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<p><img src="/2020/06/21/posts/hello_hexo.jpg" alt></p>
-<!-- <img src="/2020/06/21/posts/hello_hexo.jpg" class="" title="examplename"> -->
-
-<p><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;Welcome to <a href="https://jamieslau.github.io/">Jamie’s Blog</a>! This is my very first blog post. It’s a great honor to have my blog captured by you. Blog related resources exist in <a href="https://github.com/JamiesLau/JamiesLau.github.io" target="_blank" rel="noopener">https://github.com/JamiesLau/JamiesLau.github.io</a>. If you want more information，please visit my blog or you can ask me on <a href="https://github.com/JamiesLau/JamiesLau.github.io/issues" target="_blank" rel="noopener">GitHub</a>.</font></p>
-<hr>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界。<a id="more"></a>在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</font></p>
-<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p><font size="3">GitHub是全球最大的社交编程及代码托管网站。这里聚集了世界上各路技术大牛和最优的代码库。通过邮箱注册免费的github账户，可以用git对服务器仓库进行源代码的管理。</font></p>
-<h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><p><font size="3">GitHub Pages是用来托管GitHub上静态网页的免费站点，很多大牛用它来搭建个人博客.它具有足有的免费空间来管理自己的资料，灵活设计属于自己的域名、DIY网站主题和使用他人开发好的插件，环境搭建、系统维护、文件存储都有GitHub处理，你只需要专注于文章创作。</font></p>
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p><font size="3">Hexo是一个基于node.js的静态博客网站生成器，能够极速生成静态页面，支持Markdown，一键部署到GitHub Pages，具有丰富的插件支持，所以熟悉hexo和Markdown语法对于大家个人博客是非常有必要的。hexo会解析Markdown语法生成对应的html，主题就是css样式。</font></p>
-<p><font size="3">经过一番苦心搭建再创作，哈哈哈，这就算是终于开篇了吧，一个在互联网Lazing的工具人@Jamie’s，see you。</font></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>重拾记忆</title>
-    <url>/2021/04/24/recall_memory/</url>
-    <content><![CDATA[<p><img src="/2021/04/24/recall_memory/blog1.jpeg" alt></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">好久不见，甚是想念。</font><br><font size="3">重拾记忆，保持那份热爱，不忘初心。</font></p>
+    <title>Hexo使用</title>
+    <url>/2021/04/26/hello_hexo/</url>
+    <content><![CDATA[<p><img src="/2021/04/26/hello_hexo/blog4.png" alt></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</font></p>
 <a id="more"></a>
-<p><font size="3">还是在学习GitHub时，偶然发现hexo主题，一时兴起借助这两个平台搭建自己的个人博客网站，百度学习了配置主题设置，简单个性化设计；本来想着能不断学习，坚持发布，但由于github突然访问需要验证，并考虑到工作学习的时间原因，后来就断更了。想想真的是一时兴起，未能坚持住；还有只能说自己还要学习的东西太多了，个人博客搭建未能安排上日程。最近下班和同事聊天谈到搭建自己的博客网站，想到自己去年也搭建了一个，再不修一下怕是要塌了吧。这次重拾当年的记忆，保持那份热爱，坚持更新；不是为了写给别人看，更重要是写给自己、总结经验、记录生活、成就自己。</font></p>
-<h3 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h3><p><font size="3">重拾记忆并没有那么简单，一点点回忆主题的配置文件，启动本地预览、生成、发布的命令，老实说是有点简单，但是太久没运行命令，那些指令都在脑中的内存中差不多都清除掉了。好记性不如烂笔头，还好有当时记录的笔记，一顿摸索算是用git、hexo命令启动运行本地预览成功了。尝试修改更新头像、修改样式更新上传线上，这些到算兴奋起来。为了再次熟悉配置，又按照之前写过的配置文件检查了一遍。总之，目前还远远不够，仅仅还是开始，还有好多功能需要去探索，去学习搭建优化。</font></p>
-<h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><p><font size="3">对于next主题配置，绝大部分是不知道，只能按照自己的需求去百度，找到NexT使用文档或其他博文，加上自身的自学能力，一点点修改完善。改一点点本地就预览一次，生怕出错，但其中还是踩了几个坑，就连本地预览都出错，一度挫败感涌上心头，只能修改回之前的配置或是删除安装文件，庆幸的是一点点改回去没问题，不然真的是要崩溃。这些问题也只因自己的无知买单，借鉴需谨慎，否则随便入坑。在失败中探索，积累经验。最简的办法，无非是在B站找到对应配置功能的博主视频，按照人家的步骤操作。在解决问题时，也意外发现两个非常棒的next主题博客，从中也悟出了一些启发，学到了好的设计思想，打算重构一下我的博客网站，毕竟把我的和人家对比起来，真的是差太远了。</font></p>
-<h3 id="重构"><a href="#重构" class="headerlink" title="重构"></a>重构</h3><p><font size="3">首先从另存内容，删除之前写的文章开始，看了别的分类和标签，才知道自己傻乎乎的不会定义文章分类和标签，导致不会自动生成对应的链接，再新建博客文章，重新定义，终于知道为什么之前写的没有日志，还好找到了视频学习一下。next主题框架功能齐全，只是自己不会利用，还费劲的自己设计，想想自己真是无知，而不是闭门造车。日后完善友链、、留言板、统计阅读量、打赏、评论等其他辅助功能，同时上传之前写好的博文，持续总结更新。</font></p>
+
+
+<h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p><font size="3">hexo是一个基于Node.js的静态博客网站生成器，是一个快速、简洁且高效的博客框架，作者是来自台湾的 <a href="http://mailto:tommy351@gmail.com/" target="_blank" rel="noopener">Tommy Chen</a>，依赖少易于安装使用，利用靓丽的主题生成静态网页。</font></p>
+<p><font size="3">特点：<br>1.依赖少（仅依赖node），易于安装；<br>2.速度快，支持多进程，利用靓丽的主题，几百篇文章可以秒生成静态网页；<br>3.流畅的撰写，支持GitHub Flavored Markdown和所有Octopress的插件;<br>4.高扩展性、自订性，hexo支持EJS、Swig和Stylus;<br>5.兼容于Windows、Mac &amp; Linux;</font></p>
+<h3 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h3><h5 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h5><font size="3">
+   widows:到git官网下载，Download git，下载安装后通过Git Bash命令行工具来使用git
+   linux:最早git就是Linux上编写的，只需要一行代码</font>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install	&#x2F;&#x2F; linux命令安装</span><br><span class="line"></span><br><span class="line">git --version &#x2F;&#x2F; 安装后查看版本</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h5><font size="3">
+   hexo是基于nodejs编写的，需要安装node.js里面的npm工具
+   Windows：通过nvs（推荐）或者nvm安装，确保勾选add to path
+   Mac：使用Homebrew或MacPorts安装
+   Linux：（DEB/RPM-based）：从NodeSource安装</font>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">&#x2F;&#x2F; 检查是否安装成功</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h5><font size="3">
+   ​前面git和nodejs安装好后，使用npm安装Hexo，先创建一个文件夹blog，然后cd到这个文件夹，右键git bash打开</font>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli	&#x2F;&#x2F; 输入命令安装</span><br><span class="line"></span><br><span class="line">hexo -v	&#x2F;&#x2F; 查看版本</span><br><span class="line"></span><br><span class="line">hexo init myblog&#x2F;&#x2F; 初始化hexo</span><br><span class="line"></span><br><span class="line">cd myblog	</span><br><span class="line"></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">新建完成后，指定文件夹目录简介：<br>&nbsp;&nbsp;&nbsp;node_modules：依赖包<br>&nbsp;&nbsp;&nbsp;public：存放生成的页面，网站文件，发布的站点文件<br>&nbsp;&nbsp;&nbsp;scaffolds：生成文字的一些模板<br>&nbsp;&nbsp;&nbsp;source：用来存放你的文章，资源文件夹<br>&nbsp;&nbsp;&nbsp;themes：主题<br>&nbsp;&nbsp;&nbsp;config.yml：博客的配置文件<br>&nbsp;&nbsp;&nbsp;tag：标签文件<br>&nbsp;&nbsp;&nbsp;archive：归档文件夹<br>&nbsp;&nbsp;&nbsp;category：分类文件夹</font></p>
+<h5 id="安装Next主题"><a href="#安装Next主题" class="headerlink" title="安装Next主题"></a>安装Next主题</h5><font size="3">
+   ​hexo提供了默认主题landscape，如果需要更改，先在themes目录创建一个next文件夹，然后在hexo站点目录下右击打开Git Bash Here，输入命令</font>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next.git themes&#x2F;next</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">在blog目录下_config.yml里面theme的配置修改为next</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
+<h5 id="Github创建配置和使用"><a href="#Github创建配置和使用" class="headerlink" title="Github创建配置和使用"></a>Github创建配置和使用</h5><font size="3">
+   首先需要在github账户下，新建仓库new repository
+   创建一个和用户名相同的仓库，后面加.github.io，这样到后面部署到github page的时候才会被识别，也就是xxxx.github.io，其他xxxx是注册github的用户名;</font>
+
+<p>   <font size="3">生成SSH密钥添加到github，github的setting中；</font></p>
+<p>   <font size="3">id_rsa是你这台电脑的私人密钥，不能给别看的；</font></p>
+<p>   <font size="3">id_rsa.pub是公共秘钥，可以随便给别人看，把这个公钥放在github上，这样当你链接github自己的账户时，就会根据公共匹配你的私钥，通过git上传你的文件到github上。</font></p>
+<p>   <font size="3">找到SSH keys设置选项，点击New SSh key</font></p>
+<p>   <font size="3">在gitbash中，查看是否成功</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<h5 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将Hexo部署到GitHub</h5><font size="3">
+   将hexo和github关联起来，将hexo生成的文章部署到github上，打开站点配置文件_config.yml</font>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deply:</span><br><span class="line"></span><br><span class="line">type: git</span><br><span class="line"></span><br><span class="line">repo: https:&#x2F;&#x2F;jamieslau.github.io&#x2F;index.html</span><br><span class="line"></span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
+<font size="3">需先按照deploy-git,也就是部署的命令，这样你才能用命令部署到github</font>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">执行hexo命令</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean	&#x2F;&#x2F; 清除之前生成的东西，可以不加</span><br><span class="line"></span><br><span class="line">hexo generate	&#x2F;&#x2F; 生成静态文章，hexo g 缩写</span><br><span class="line"></span><br><span class="line">hexo deploy	&#x2F;&#x2F; 部署文章， hexo d 缩写</span><br><span class="line"></span><br><span class="line">hexo s	&#x2F;&#x2F; 发布，本地预览</span><br><span class="line"></span><br><span class="line">http:&#x2F;&#x2F;localhost:4000	&#x2F;&#x2F; 本地查看</span><br><span class="line"></span><br><span class="line">使用sublime修改config.yml配置JamiesLau博客</span><br></pre></td></tr></table></figure><br><font size="3">deploy时需要输入username和password</font></p>
+<p><font size="3">创建一个新帖子</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new 帖子名称&#x2F;&#x2F; 创建新帖子，hexo n 帖子名称   缩写</span><br><span class="line"></span><br><span class="line">Sublime编辑帖子标签、分类</span><br><span class="line"></span><br><span class="line">title: 重拾记忆</span><br><span class="line">date: 2021-04-24 20:00:39</span><br><span class="line">tags:</span><br><span class="line"> - 记录</span><br><span class="line"> - 分享</span><br><span class="line">categories: 日常记录</span><br><span class="line"></span><br><span class="line">编辑正文，开始你的创作</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
-        <category>日常记录</category>
+        <category>工具使用</category>
       </categories>
       <tags>
-        <tag>记录</tag>
-        <tag>反思</tag>
+        <tag>hexo</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>杭州之旅</title>
+    <url>/2021/05/06/holiday1/</url>
+    <content><![CDATA[<p><font size="3">于2021年五一假期拍摄</font></p>
+<p><font size="3">记录一下杭州之旅，见许久想见的人，看未曾看过的风景！</font></p>
+<a id="more"></a>
+
+<p><font size="4">九溪烟树</font></p>
+<p><font size="3">不知名的绿色，看上去像是小号的枫树叶，透过阳光下显得格外的嫩绿。都说杭州的西湖龙井非常有名，这次一睹满山的龙井茶树，只可惜错过了采摘时那嫩绿的景观，只剩下修剪过后的枝头。</font><br><img src="/2021/05/06/holiday1/hz1.jpg" style="zoom:40%"></p>
+<img src="/2021/05/06/holiday1/hz2.jpg" style="zoom:40%">
+
+<br>
+
+<p><font size="4">西湖名胜</font></p>
+<p><font size="3">每年五一西湖断桥上的人人桥都要上热搜，今年我们也从众一下去看看，景色还是非常棒的。但游客非常多，这就考验拍摄技术了，找好角度赶紧抓拍，再慢一点就可能被游客挡住镜头了。还有好多地方没时间看，也没记录到，希望以后有机会补上。</font><br><img src="/2021/05/06/holiday1/hz3.jpg" style="zoom:40%"></p>
+<img src="/2021/05/06/holiday1/hz4.jpg" style="zoom:40%">
+
+<img src="/2021/05/06/holiday1/hz5.jpg" style="zoom:40%">
+
+<br>
+
+<p><font size="4">见许久想见的人</font></p>
+<p><font size="3">积攒了很多的思念，这次我们见面了，两个多月未见，甚是想念。去哪里玩不重要，重要的是要和你去玩。在一起玩的几天，聊了很多，对彼此有了更多的了解，我感觉我们相处的还是很愉快的。就是没能多拍几张照片记录一下，希望下次换个地方我们一起玩，互相了解更多，有机会记录更多的我们。</font><br><img src="/2021/05/06/holiday1/hz6.jpg" style="zoom:40%"></p>
+<br>
+
+<p><font size="4">西溪且留下</font></p>
+<p><font size="3">由于那天上午下雨，取消了部分行程，正好去看看同学，逛逛西溪国家湿地公园，进入这里的第一感觉就是清新，好多未曾见过的花草树木，里面还有地方特色景点商铺，是个游玩的好地方，还有里面的游船真的是绝了，看别人坐是一番景色，想象自己坐定是独有一番意境。唯一遗憾的是这次没能和你一起玩，错过了一次这么好的机会，这就当是我先来体验攻略一下吧，留着这片风景给我们下次玩。</font><br><img src="/2021/05/06/holiday1/hz7.jpg" style="zoom:40%"></p>
+<img src="/2021/05/06/holiday1/hz8.jpg" style="zoom:40%">
+
+<img src="/2021/05/06/holiday1/hz9.jpg" style="zoom:40%">
+
+<img src="/2021/05/06/holiday1/hz10.jpg" style="zoom:40%">
+
+<br>
+
+
+<p><font size="3">杭州之旅，见想见的人，看想看的景，离别略带不舍，回忆甚是难忘，珍惜这段美好的时光，期待我们下次再见。</font></p>
+]]></content>
+      <categories>
+        <category>假日生活</category>
+      </categories>
+      <tags>
+        <tag>假日</tag>
+        <tag>照片</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机网络</title>
+    <url>/2021/04/26/internet/</url>
+    <content><![CDATA[<p><img src="/2021/04/26/internet/blog3.jpeg" alt></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">计算机网络如同一个遍布全球的蜘蛛网,将全世界连在一起。</font></p>
+<a id="more"></a>
+
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p><font size="3">计算机网络，是指将地理位置不同的具有独立功能的多台计算机及其外部设备，通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现资源共享和信息传递的计算机系统。</font></p>
+<p><font size="3">组成设备：<br>1、两台以上的计算机及终端组成<br>2、前端处理机（FEP）或通行处理机或通行控制处理机（CCP）<br>3、路由器、交换机等连接设备<br>4、通行线路</font><br><font size="3">计算机网络的软件部分包括 协议 和 应用软件 两部分；协议是计算机网络的核心，由 语法、语义、时序 构成</font></p>
+<h3 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h3><p><font size="3">定义：将计算机网络体系结构的通行协议划分为七层；描述了网络活动的特点<br>应用层、表示层、会话层、传输层、网络层、数据链路层、物理层</font></p>
+<h4 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h4><p><font size="3">应用层是操作系统或网络应用层析提供访问网络服务的接口；所有的应用程序的网络在此展开</font></p>
+<h4 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h4><p><font size="3">表示层对上层数据或信息进行交换，保证一个主机应用层信息可以被另一个主机的应用程序理解；表示层完成对的数据转换：包括数据的加密、解密、压缩、格式转换等</font></p>
+<h4 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h4><p><font size="3">会话层管理主机之间的会话进程，负责建立、管理、终止进程之间的会话（session缓存）；<br>会话层还利用在数据中插入校验点来实现数据的同步。</font><br><font size="3">有关会话层、表示层、应用层重点：<br>数据传输基本单位为报文<br>包含的主要协议：<br>FTP（文件传输协议）；<br>Telnet（远程登录协议）；<br>DNS（域名解析协议）；<br>SMTP（邮件传送协议）；<br>POPS协议（邮局协议）；<br>HTTP协议（HyPer Text Transfer Protocol）</font></p>
+<h4 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h4><p><font size="3">传输层负责建立一个可靠的端到端（主机到主机）的链接，负责将上层数据分段并提供端到端的、可靠的或不可靠的传输；还要处理端到端的差错控制和流量控制问题</font></p>
+<p><font size="3">有关传输层的重点：</font></p>
+<p><font size="3">包含的主要协议：TCP协议（Transmission Control Protocol，传输控制协议、UDP协议（User Datagram Protocol，用户数据报协议）</font></p>
+<h4 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h4><p><font size="3">网络层目的是实现两端系统之间的数据透明传送，具体功能包括寻址、路由选择、连接的建立、保持和终止等。它提供的服务使传输层不需要了解网络中的数据传输和交换技术。简单说就是”路由选择，路由及逻辑寻址“</font></p>
+<p><font size="3">网络层涉及协议：IP协议:提供不可靠、无连接的传送服务，IP协议主要功能有：无连接数据报传输、数据报路由选择和差错控制。</font></p>
+<p><font size="3">有关网络层的重点：<br>网络层负责对子网间的数据包进行路由选择；还可以实现拥塞控制、网际互联等功能；<br>基本数据单位是IP数据报<br>包括主要协议：IP协议、地址解析协议ARP、逆地址解析协议RARP、因特网报文协议ICMP、因特网组管理协议IGMP<br>重要的设备：路由器</font></p>
+<h4 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h4><p><font size="3">数据链路层最基本的服务是将原子网络层来的数据可靠地传输到临结点的目标机网络层；数据组合成数据块，在数据链路层中数据块为帧（frame），帧是数据链路层的传送单位； 作用包括：物理地址寻址、数据封装成帧、流量控制、数据检错、重发等</font></p>
+<p><font size="3">有关数据链路层的重点：<br>数据链路层为网路层提供可靠的数据传输<br>基本单位为帧<br>主要协议：以太网协议<br>两个重要设备：网桥、交换机</font></p>
+<h4 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h4><p><font size="3">为上层协议提供一个传数据的可靠物理媒体，物理层确保原始的数据可在各种物理媒体上传输；物理层两个重要设备：中继器（repeater，也叫放大器）、接线器；物理层只负责传输0和1二进制bit流</font></p>
+<h3 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h3><p><font size="3">数据传输基本单位为报文</font></p>
+<p><font size="3">包含的主要协议：<br>FTP（文件传输协议）；<br>Telnet（远程登录协议）；<br>DNS（域名解析协议）；<br>SMTP（邮件传送协议）；<br>POPS协议（邮局协议）；<br>HTTP协议（HyPer Text Transfer Protocol）</font></p>
+<h4 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h4><p><font size="3">Hypertext Transfer Protocol 超文本传输协议，基于请求与相应模式的、应用层和网络协议规定客户端和服务器的数据传输格式，就是一种约定；客户端和服务器通信实现细节</font><br><font size="3">网络模型：<br>应用层   —&gt;HTTP协议<br>传输层   —&gt;TCP协议/UDP协议<br>网络层  —-&gt;IP协议<br>物理层</font></p>
+<p><font size="3">保持连接：http请求和响应，现在客户端和服务器建立tcp连接，不会完成一次http请求响应即关闭，可以在一次tcp连接上完成多次http请求和响应</font></p>
+<h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><p><font size="3">uniform resource locator 统一资源定位符，互联网上标准资源的地址</font></p>
+<p><font size="3">HTTP使用URL来建立连接和传输数据：如：如：<a href="http://www.itcast.cn:8080/news/index.html?uid=123&amp;page=1" target="_blank" rel="noopener">http://www.itcast.cn:8080/news/index.html?uid=123&amp;page=1</a><br>url格式：schema://host[:port#]/path/..[?query-string]<br>scheme：协议：“http”,常见协议有HTTP,HTTPS,FTP等<br>host：域名/IP：“<a href="http://www.iicast.cn&quot;,可以使用IP地址作为域名使用" target="_blank" rel="noopener">www.iicast.cn&quot;,可以使用IP地址作为域名使用</a><br>port：端口：“8080”，端口可省略，默认端口（HTTP:80，HTTPS:443，FTP:21)<br>path：资源路径：“/news/index.html”<br>query-string：发送参数：“uid=123&amp;page=1”,运行有多个参数，用”&amp;“作为分隔符</font></p>
+<h4 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h4><p><font size="3">HTTP请求<br>由三部分组成：请求行、请求头、（空一行）、请求体</font></p>
+<p><font size="3">常用请求方法<br>GET：从服务器获取资源<br>POST：在服务器新建一个资源<br>PUT：在服务器更新资源（客户提供改变后的完整资源）<br>DELETE：从服务器删除资源</font></p>
+<p><font size="3">数据传输格式<br>1、键值对：？xx=11&amp;xxx=22<br>2、Json数据：<br>{<br>“属性名1” : “属性值”,<br>“属性名2” : “属性值”<br>}</font></p>
+<h4 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h4><p><font size="3">由三部分组成：状态行(协议版本号、状态码、状态消息)、响应行、响应正文<br>状态码：三位数字组成<br>1xx：指示信息–表示请求已接收，继续处理<br>2xx：成功–表示请求已被成功接收、理解、接受<br>3xx：重定向–要完成请求必须进行更进一步的操作<br>4xx：客户端错误–请求有语法错误或请求无法实现<br>5xx：服务器端错误–服务器未能实现合法的请求</font></p>
+<h4 id="TCP-IP协议"><a href="#TCP-IP协议" class="headerlink" title="TCP/IP协议"></a>TCP/IP协议</h4><p><font size="3">定义：网络通讯协议<br>1、应用层：应用程序之间互相沟通的层<br>2、传输层：提供了数据传送，应用程序之间的通信服务<br>3、网络互联层：负责提供基本的数据封包传送功能，让数据包到达目的主机<br>4、网络接口层：接收数据，并进行传输</font></p>
+<h3 id="Windows网络命令"><a href="#Windows网络命令" class="headerlink" title="Windows网络命令"></a>Windows网络命令</h3><p><font size="3">1、ping命令：用于检测网络是否畅通，以及网络时延情况（工作在ICMP协议上）</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ping 主机名</span><br><span class="line">ping 域名</span><br><span class="line">ping IP地址</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">2、ipconfig命令：显示当前TCP/IP配置的设置信息，检验人工设置的TCP/IP设置是否正确；了解计算机是否成功租用到了一个IP地址</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ipconfig:不带任何参数时，显示每个已近配置了的接口的IP地址、子网掩码和缺省网关值</span><br><span class="line"></span><br><span class="line">ipconfig&#x2F;all:当使用all选项时，ipconfig能为DNS和WINS服务器显示它已近配置且所有使用的附加信息；能够显示内置于本地网卡中的物理地址（MAC）</span><br><span class="line"></span><br><span class="line">ipconfig&#x2F;release和ipconfig&#x2F;renew：这两个附加选项，只能在向DHCP服务器租用IP地址的计算机使用。输入ipconfig &#x2F;release，所有接口的租用IP地址便重新交付给DHCP服务器(归还IP地址)。输入ipconfig&#x2F;renew，本地计算机便设法与DHCP服务器取得联系，并租用一个IP地址。大多数情况下网卡将被重新赋予和以前所赋予的相同的IP地址。</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">3、arp命令（地址转换协议）</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ARP是TCP&#x2F;IP协议族中的一个重要协议，用于确定对应IP地址的网卡物理地址。使用arp命令，能够查看本地计算机或另一台计算机的ARP高速缓存中的当前内容。</span><br><span class="line"></span><br><span class="line">arp -a:用于查看高速缓存中的所有项目</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">4、netstat命令</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况</span><br><span class="line">netstat -a	&#x2F;&#x2F; 显示所有连接和监听端口</span><br><span class="line">netstat -n	&#x2F;&#x2F; 以数字格式显示IP地址</span><br><span class="line">netstat -o	&#x2F;&#x2F; 显示每个连接所属的处理id</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">5、net命令</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、net view 查看远程主机的所有共享资源	</span><br><span class="line">net view &#x2F;IP</span><br><span class="line"></span><br><span class="line">2、net use	把远程主机的某个共享资源映射到本地盘符，图形界面方法使用</span><br><span class="line">net use:&#x2F;IP&#x2F;sharename</span><br><span class="line"></span><br><span class="line">3、net start	启动远程主机上的服务，当和远程主机建立连接，发现它的某些服务没有启动使用此命令</span><br><span class="line">net start servername</span><br><span class="line"></span><br><span class="line">4、net stop	关闭主机的某个服务</span><br><span class="line"></span><br><span class="line">5、net user	查看和账户有关的情况，包括新建账户、删除账户、查看特定账户、激活或禁用账户</span><br><span class="line">net user abcd 1234 &#x2F;add，新建一个用户名为abcd,密码为1234的账号，默认为user组成</span><br><span class="line">net user abcd &#x2F;del，将用户名为abcd的用户删除</span><br><span class="line">net user abcd &#x2F;active:no，将用户名为abcd的用户禁用</span><br><span class="line">net user abcd &#x2F;active:yes，激活用户名为abcd的用户</span><br><span class="line">net user abcd，查看用户名为abcd的用户的情况</span><br><span class="line"></span><br><span class="line">6、net localgroup	查看所有和用户组有关的信息和进行相关操作</span><br><span class="line">netlocalgroup roupname username &#x2F;add</span><br><span class="line"></span><br><span class="line">7、net time	查看远程主机当前的时间</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="常用DOS指令"><a href="#常用DOS指令" class="headerlink" title="常用DOS指令"></a>常用DOS指令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">win+R	cmd运行窗口</span><br><span class="line"></span><br><span class="line">1、ipconfig&#x2F;all		查看电脑物理地址（mac)信息</span><br><span class="line"></span><br><span class="line">2、arp -a	查看IP地址和物理地址对应关系</span><br><span class="line"></span><br><span class="line">3、ping 网络地址  	查看当前计算机和要访问的计算机之间的连通情况（如ping www.baidu.com)</span><br><span class="line"></span><br><span class="line">4、cls		清屏</span><br><span class="line"></span><br><span class="line">5、盘符：	切换对应的盘符</span><br><span class="line"></span><br><span class="line">6、cd 文件名	进入对应的文件夹（目录）</span><br><span class="line"></span><br><span class="line">7、dir		显示文件夹中的文件目录</span><br><span class="line"></span><br><span class="line">8、cd..		返回上一级</span><br><span class="line"></span><br><span class="line">9、cd&#x2F;		返回根目录</span><br><span class="line"></span><br><span class="line">10、md 文件夹名称		新建文件夹</span><br><span class="line"></span><br><span class="line">11、rd 名字  		删除目录，(不能删除有内容的文件夹）</span><br><span class="line">D:\Users\Administrator&gt;rd D:\Users\Administrator\6</span><br><span class="line"></span><br><span class="line">12、copy 想复制的目录结构和名字   目标目录</span><br><span class="line">D:\Users\Administrator&gt;copy D:\Users\Administrator\6\1.txt D:\Users\Administrator\7</span><br><span class="line">已复制         1 个文件。</span><br><span class="line"></span><br><span class="line">13、move 想剪切的目录结构和名字   目标目录</span><br><span class="line">D:\Users\Administrator&gt;move D:\Users\Administrator\6\1.txt D:\Users\Administrator\7</span><br><span class="line">移动了         1 个文件</span><br><span class="line"></span><br><span class="line">14、del 文件路径\名字	删除目录内的所有文件，注意：如果只写目录，会删除该目录中</span><br><span class="line"></span><br><span class="line">15、del *.*		删除当前目录中的所有文件（不是文件夹）</span><br><span class="line"></span><br><span class="line">16、del 具体的文件目录和名字		可以单独删除某一个文件</span><br><span class="line">D:\1\2\5&gt;del D:\1\2\5\a.txt</span><br><span class="line"></span><br><span class="line">17、format：盘符	格式化，清空数据</span><br><span class="line"></span><br><span class="line">18、键盘上、下、重复之前的代码</span><br><span class="line"></span><br><span class="line">19、exit		关闭dos窗口	</span><br><span class="line"></span><br><span class="line">20、Ctrl+C	退出当前执行的命令</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>测试使用</category>
+      </categories>
+      <tags>
+        <tag>命令</tag>
+        <tag>计算机网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux命令</title>
+    <url>/2021/04/30/linux/</url>
+    <content><![CDATA[<p><img src="/2021/04/30/linux/blog6.jpg" alt></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Linux是一套免费使用和自由传播的类Unix操作系统，它主要受到Minix和Unix思想的启发，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它支持32位和64位硬件。Linux继承了Unix网络为和兴的设计思想，是一个性能稳定的多用户网络操作系统。</font></p>
+<a id="more"></a>
+
+
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h5 id="Linux特点"><a href="#Linux特点" class="headerlink" title="Linux特点"></a>Linux特点</h5><p><font size="3">稳定、免费<br>安全性高<br>多任务，多用户<br>耗资源少<br>内核下，它支持多种电子产品，Android手机，PDA</font></p>
+<h5 id="Linux和Windows的区别"><a href="#Linux和Windows的区别" class="headerlink" title="Linux和Windows的区别"></a>Linux和Windows的区别</h5><p><font size="3">1、使用费用不同：<br>​    Linux是开源项目，免费<br>​    Windows是需要付费</font></p>
+<p><font size="3">2、适用使用对象不同：<br>​    Linux适合企业公司服务器系统架构<br>​    Windows适合大众使用</font></p>
+<p><font size="3">3、操作风格不同：<br>​    Linux很多情况需要通过命令来进行操作<br>​    Windows面向大众化，操作上符合普通人操作习惯，大多是通过界面的操作</font></p>
+<p><font size="3">4、支持的软件不同：<br>​    Linux平台只有开发者维护，缺少资金的大量支持，软件方面数量和质量缺乏<br>​    Windows使用人数较多，支持Windows软件在数量和质量上都比Linux有优势</font></p>
+<p><font size="3">5、文件格式不同：<br>​    Linux是shell<br>​    Windows操作系统内核是NT</font></p>
+<p><font size="3">6、安全性不同：<br>​    Linux相比Windows安全很多，使用Linux是不需要安装额外的安全软件<br>​    Windows系统安全性低，需要安装安全防护软件来保护计算机</font></p>
+<p><font size="3">7、可定制性：<br>​    Linux提供更高的定制性，支持开发者通过编码来定义适合自己的操作系统<br>    Windows操作范围大多收到微软的限制，基本上是系统怎样设置，用户就只能规矩操作</font></p>
+<p><font size="3">8、程序可移植性不同：<br>​    Linux可移植性好，不仅可以在不同的Linux之间移植，还可以移植到Windows上<br>    Windows的程序可移植性差，程序基本不兼容Linux</font></p>
+<h3 id="Linux安装"><a href="#Linux安装" class="headerlink" title="Linux安装"></a>Linux安装</h3><h5 id="虚拟机介绍"><a href="#虚拟机介绍" class="headerlink" title="虚拟机介绍"></a>虚拟机介绍</h5><p><font size="3">安装虚拟机，通过虚拟机安装Linux操作系统<br>虚拟机：一台虚拟的计算机，通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。</font></p>
+<p><img src="/2021/04/30/linux/win.png" alt></p>
+<p><font size="3">虚拟机软件：<br>​    VMware Workstation:是一款功能强大的桌面虚拟计算机软件，收费。<br>​    VirtualBox:是一款开源虚拟机软件。</font></p>
+<h5 id="虚拟机及Linux安装"><a href="#虚拟机及Linux安装" class="headerlink" title="虚拟机及Linux安装"></a>虚拟机及Linux安装</h5><p><font size="3">将杀毒软件、防火墙关闭<br>使用管理员权限进行安装<br>5个服务需要启动<br>Linux安装：<br>切换鼠标、键盘    Ctri+alt<br>Linux系统：管理员：root    密码：123456</font></p>
+<h5 id="Linux目录介绍"><a href="#Linux目录介绍" class="headerlink" title="Linux目录介绍"></a>Linux目录介绍</h5><p><img src="/2021/04/30/linux/Linux.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;：Linux系统根目录&lt;&#x2F;font&gt;</span><br><span class="line"></span><br><span class="line">&#x2F;etc：（etcetera)系统配置文件存放的目录，不建议在此目录存放可执行文件</span><br><span class="line"></span><br><span class="line">&#x2F;usr：（unix shared resources)应用程序存放目录</span><br><span class="line"></span><br><span class="line">&#x2F;root：系统管理员root的家目录</span><br><span class="line"></span><br><span class="line">&#x2F;home：家目录，每个用户登录Linux之后，默认进入的目录</span><br><span class="line"></span><br><span class="line">&#x2F;lost+found：系统异常产生错误时，将一些遗失的片段放置此目录下</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Linux常用命令-重点"><a href="#Linux常用命令-重点" class="headerlink" title="Linux常用命令 [重点]"></a>Linux常用命令 [重点]</h3><h5 id="磁盘管理命令"><a href="#磁盘管理命令" class="headerlink" title="磁盘管理命令"></a>磁盘管理命令</h5><p><font size="3">ls</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ls：列出目录内容</span><br><span class="line">参数：</span><br><span class="line">	-a查询所有文件和文件夹，包含隐藏的	ls -a</span><br><span class="line">	-l查询详细列表	ls -l	简写为ll</span><br><span class="line">	-h友好展示信息	ll -h</span><br><span class="line">	ls 目录名	展示某个目录下的内容</span><br><span class="line"></span><br><span class="line">例子：查看&#x2F;etc目录下的内容</span><br><span class="line">命令：ll -h &#x2F;etc</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">cd (change directory)：切换目录</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ..&#x2F;	向上一层目录</span><br><span class="line">cd &#x2F;	切换到Linux的根目录</span><br><span class="line">cd &#x2F;目录名	任意目录切换到指定目录中	&#x2F;目录名	Linux的绝对路径</span><br><span class="line">cd ~	切换到当前用户家目录	root用户家目录&#x2F;root</span><br><span class="line">cd -	切换到上一次访问的目录，只能有两个目录互相切换</span><br><span class="line"></span><br><span class="line">Linux绝对：cd &#x2F;etc&#x2F;x1	先切换到&#x2F;目录，然后在&#x2F;目录中找到etc目录，在ext中找子目录x1,</span><br><span class="line">在任意目录都可以随意切换</span><br><span class="line"></span><br><span class="line">Linux相对：cd x1&#x2F;x2	在当前目录中寻找子目录x1,在x1中寻找子目录路x2,</span><br><span class="line">必须确定当前目录下有子目录x1</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">pwd (print working directory)：显示当前的所在目录，返回绝对路径</font></p>
+<p><font size="3">mkdir (make directory)：创建目录</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir -p 文件夹名称</span><br><span class="line">	-p父目录不存在情况下先生成父目录（praents)</span><br><span class="line">	</span><br><span class="line">例子1：在&#x2F;root&#x2F;t3目录下创建一个t4目录</span><br><span class="line">位置：&#x2F;root	t3和t4都不存在</span><br><span class="line">命令：mkdir -p t3&#x2F;t4</span><br><span class="line"></span><br><span class="line">例子2：需要在&#x2F;root&#x2F;t1目录下创建t2目录</span><br><span class="line">位置：root</span><br><span class="line">命令：相对：mkdir t1&#x2F;t2</span><br><span class="line">	 绝对：mkdir &#x2F;root&#x2F;t1&#x2F;t2</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="文件浏览命令"><a href="#文件浏览命令" class="headerlink" title="文件浏览命令"></a>文件浏览命令</h5><p><font size="3">日志文件、XML、properties文件<br>cat 文件名    快捷查看当前文件的内容，适合查看少量信息的文件<br>more 文件名    分页显示文件内容</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">more操作</span><br><span class="line">	Enter	向下n行，需要定义，默认为1行</span><br><span class="line">	空格键		向下滚动一屏或Ctrl+F</span><br><span class="line">	B	返回上一屏或Ctrl+B</span><br><span class="line">	q	退出more</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">less -mN 文件名    分页显示文件内容，标注每行的行号</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">less操作</span><br><span class="line">	Enter	向下n行，需要定义，默认为1行</span><br><span class="line">	空格键	向下滚动一屏或Ctrl+F</span><br><span class="line">	B	返回上一屏或Ctrl+B</span><br><span class="line">	q	退出more</span><br><span class="line">	适用于大量数据的查看</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">tail -数字 文件名    可以快速查看文件后X行的内容<br>例如：tail -10 文件名    查看文件的后10行内容</font></p>
+<h5 id="文件操作命令"><a href="#文件操作命令" class="headerlink" title="文件操作命令"></a>文件操作命令</h5><p><font size="3">touch 文件    创建文件</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：touch &#x2F;test.txt</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">Alt+P    进入上传界面<br>复制文件：<br>cp 需要复制的文件  复制的位置    </font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子1：把&#x2F;root&#x2F;demo.java文件复制到&#x2F;root&#x2F;t1目录中	位置：root</span><br><span class="line">命令：cp demo.java t1</span><br><span class="line">	 cp &#x2F;root&#x2F;demo.java &#x2F;root&#x2F;t1</span><br><span class="line"></span><br><span class="line">例子2：把&#x2F;rootdemo.java复制到&#x2F;root&#x2F;t1目录中，改名为ddd.java	位置：root</span><br><span class="line">命令：cp demo.java t1&#x2F;ddd.java</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">复制目录：<br>cp -r 需要复制的目录  复制的位置</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;t5目录复制到&#x2F;root&#x2F;t1目录中	位置：root</span><br><span class="line">命令：cp -r t5 t1</span><br><span class="line">	 cp -r &#x2F;root&#x2F;t5 &#x2F;root&#x2F;t1</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">文件移动<br>mv (move)    移动或更名现有的文件或目录<br>文件/目录移动:<br>mv 需要移动的文件 移动的位置</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;t5目录移动到&#x2F;root&#x2F;t3目录中	位置：root</span><br><span class="line">命令：mv t5 t3</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">文件/目录更名操作:</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;demo.java改名为he.java	位置：root</span><br><span class="line">命令：mv demo.java he.java</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">文件删除：<br>rm (remove)    删除文件或目录<br>删除文件；</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm 文件名</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">删除目录：</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm -rf 目录名</span><br><span class="line"></span><br><span class="line">例子：删除&#x2F;root&#x2F;t5目录	位置：root	t5目录下有子目录或文件</span><br><span class="line">命令：rm -rf t5</span><br><span class="line"></span><br><span class="line">注意：</span><br><span class="line">	rm -rf *	删除当前目录下所有内容</span><br><span class="line">	rm -rf &#x2F;*	删除Linux系统根目录下所有文件</span><br></pre></td></tr></table></figure>
+
+<p><font size="3">查找命令：<br>find    查找文件或目录</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">find 目录名 -name &#39;需要查找的字符串&#39;</span><br><span class="line">*表示0~多个任意字符</span><br><span class="line"></span><br><span class="line">例子：查找&#x2F;root目录下，所有以ins开头的文件或目录	位置：root</span><br><span class="line">命令：find &#x2F;root -name &#39;ins*&#39;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="文件编辑命令"><a href="#文件编辑命令" class="headerlink" title="文件编辑命令"></a>文件编辑命令</h5><p><font size="3">Windows是有记事本<br>Linux有类似记事本的功能    VIM编辑器<br>vim命令</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim 文件名	进入“一般模式”</span><br><span class="line">“i” 切换到“插入模式”</span><br><span class="line">“:” 切换到底行模式</span><br><span class="line">“Esc” 从插入模式退出到“一般模式”</span><br><span class="line">“:wq” 保存并退出操作</span><br><span class="line">“:q!” 强制退出不保存操作</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="grep和管道"><a href="#grep和管道" class="headerlink" title="grep和管道"></a>grep和管道</h5><p><font size="3">grep 正则表达式    字符串搜索工作<br>gerp -i 需要搜索的字符串    搜索的文件<br>-i 忽略大小写查找数据<br>符合规则，就返回返回规则的行<br>管道命令：可以链接多个Linux命令</font></p>
+<p><font size="3">|<br>命令1 | 命令2 | 命令3..<br>例子：查询当前目录中，所有带ins关键字的行数据    位置：/root<br>查询当前木兰路内容 ll<br>命令：ll | grep ins</font></p>
+<h5 id="压缩、解压命令-（重要）"><a href="#压缩、解压命令-（重要）" class="headerlink" title="压缩、解压命令 （重要）"></a>压缩、解压命令 （重要）</h5><p><font size="3">压缩包：<br>*.tar    打包，大小不会进行压缩<br>*.tar.gz    打包并压缩文件大小<br>压缩：（参数顺序不变）</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar -zcvf 压缩包名字.tar.gz 需要压缩的内容</span><br><span class="line">例如：tar  -zcvf demo.tar.gz * 将当前目录下所有进行打包压缩，文件名 demo.tar.gz</span><br></pre></td></tr></table></figure>
+<p><font size="3">解压：（参数顺序不变）</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar -zxvf 需要解药的压缩包名称	解药到当前目录</span><br><span class="line">tar -zxvf 需要解药的压缩包名称 -C 指定压缩路径	解药到指定目录中</span><br><span class="line"></span><br><span class="line">例子：需要把&#x2F;root&#x2F;t&#x2F;demo.tar.gz压缩包解压到指定目录中，指定目录&#x2F;root&#x2F;t&#x2F;t1  位置&#x2F;root&#x2F;t</span><br><span class="line">命令：tar -zxvf demo.tar.gz -C &#x2F;root&#x2F;t&#x2F;t1</span><br><span class="line">	 tar -zxvf demo.tar.gz -C t1</span><br></pre></td></tr></table></figure>
+<h5 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h5><p><font></font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ps -ef	查看系统进程</span><br><span class="line"></span><br><span class="line">例子：查看进行中和vim相关的进程</span><br><span class="line">命令：ps -ef|grep -i vim</span><br><span class="line"></span><br><span class="line">Kill -9 pid号	强制杀死某个进程</span><br><span class="line"></span><br><span class="line">例子：查看进程和vim相关的进程有哪些，并将vim进程杀死</span><br><span class="line">命令：ps -ef|grep -i vim</span><br><span class="line">	 Kill -9 pid号</span><br><span class="line"></span><br><span class="line">ifconfig	查看网络配置</span><br><span class="line">ping ip地址	测试和目标的连通性，会持续不断一直测试，直到Ctrl+C</span><br><span class="line"></span><br><span class="line">Linux centos重启命令:reboot	</span><br><span class="line">Linux centos关机命令：halt</span><br></pre></td></tr></table></figure>
+<h5 id="其他命令（了解）"><a href="#其他命令（了解）" class="headerlink" title="其他命令（了解）"></a>其他命令（了解）</h5><p><font size="3">setup    网络设置<br>文件权限<br>chmod (change mode) 变更文件或目录的权限<br>Linux权限格式：&lt;类型&gt;&lt;用户&gt;&lt;组&gt;&lt;其他用户&gt;</font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">字母法：chmod u&#x2F;g&#x2F;o&#x2F;a +&#x2F;-&#x2F;&#x3D;  rwx  文件</span><br><span class="line">u	user表示该文件的所有者root,所属用户权限</span><br><span class="line">g	group表示与该文件的所有者属于同一组(group)者，即用户组,所属组权限</span><br><span class="line">o	other表示其他以外的人，其他用户权限</span><br><span class="line">a	all表示这三者皆是，所有用户的权限</span><br><span class="line">+	增加权限</span><br><span class="line">-	撤销权限</span><br><span class="line">&#x3D;	设定权限</span><br><span class="line">如：   -rw-r--r--.  1  root  root  31  4月  28 06:28  aa.txt</span><br><span class="line">修改：chmod  u+x  aa.txt</span><br><span class="line">结果	  -rwxr--r--.  1  root  root  31  4月  28 06:28  aa.txt</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所属用户的权限为所有权限</span><br><span class="line">命令：chmod u&#x3D;rwx demo.java</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所属用户组用户的权限为r-x</span><br><span class="line">命令：chmod g&#x3D;rx demo.java</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所有用户的权限为r--</span><br><span class="line">chmod a&#x3D;r demo.java</span><br><span class="line"></span><br><span class="line">数字法：“rwx&quot;权限用数字来代替</span><br><span class="line">第一位代表文件类型，info ls命令查看</span><br><span class="line">rwx：</span><br><span class="line">r 可读权限,数字代号“4”	</span><br><span class="line">w 可写程序，“2”	</span><br><span class="line">x 可执行权限“1”	</span><br><span class="line">- 不具有任何权限  “0”</span><br><span class="line">如：执行chmod  u&#x3D;rwx，g&#x3D;rx,o&#x3D;r  aa.txt  </span><br><span class="line">等同于 ：chmod u&#x3D;7,g&#x3D;5,o&#x3D;4  aa.txt  或  chmod 754 a.txt</span><br><span class="line">chmod  751  file</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>工具使用</category>
+      </categories>
+      <tags>
+        <tag>命令</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -216,125 +442,40 @@
       </tags>
   </entry>
   <entry>
-    <title>计算机网络</title>
-    <url>/2021/04/26/internet/</url>
-    <content><![CDATA[<p><img src="/2021/04/26/internet/blog3.jpeg" alt></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">计算机网络如同一个遍布全球的蜘蛛网,将全世界连在一起。</font></p>
+    <title>重拾记忆</title>
+    <url>/2021/04/24/recall_memory/</url>
+    <content><![CDATA[<p><img src="/2021/04/24/recall_memory/blog1.jpeg" alt></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">好久不见，甚是想念。</font><br><font size="3">重拾记忆，保持那份热爱，不忘初心。</font></p>
 <a id="more"></a>
-
-<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><p><font size="3">计算机网络，是指将地理位置不同的具有独立功能的多台计算机及其外部设备，通过通信线路连接起来，在网络操作系统，网络管理软件及网络通信协议的管理和协调下，实现资源共享和信息传递的计算机系统。</font></p>
-<p><font size="3">组成设备：<br>1、两台以上的计算机及终端组成<br>2、前端处理机（FEP）或通行处理机或通行控制处理机（CCP）<br>3、路由器、交换机等连接设备<br>4、通行线路</font><br><font size="3">计算机网络的软件部分包括 协议 和 应用软件 两部分；协议是计算机网络的核心，由 语法、语义、时序 构成</font></p>
-<h3 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h3><p><font size="3">定义：将计算机网络体系结构的通行协议划分为七层；描述了网络活动的特点<br>应用层、表示层、会话层、传输层、网络层、数据链路层、物理层</font></p>
-<h4 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h4><p><font size="3">应用层是操作系统或网络应用层析提供访问网络服务的接口；所有的应用程序的网络在此展开</font></p>
-<h4 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h4><p><font size="3">表示层对上层数据或信息进行交换，保证一个主机应用层信息可以被另一个主机的应用程序理解；表示层完成对的数据转换：包括数据的加密、解密、压缩、格式转换等</font></p>
-<h4 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h4><p><font size="3">会话层管理主机之间的会话进程，负责建立、管理、终止进程之间的会话（session缓存）；<br>会话层还利用在数据中插入校验点来实现数据的同步。</font><br><font size="3">有关会话层、表示层、应用层重点：<br>数据传输基本单位为报文<br>包含的主要协议：<br>FTP（文件传输协议）；<br>Telnet（远程登录协议）；<br>DNS（域名解析协议）；<br>SMTP（邮件传送协议）；<br>POPS协议（邮局协议）；<br>HTTP协议（HyPer Text Transfer Protocol）</font></p>
-<h4 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h4><p><font size="3">传输层负责建立一个可靠的端到端（主机到主机）的链接，负责将上层数据分段并提供端到端的、可靠的或不可靠的传输；还要处理端到端的差错控制和流量控制问题</font></p>
-<p><font size="3">有关传输层的重点：</font></p>
-<p><font size="3">包含的主要协议：TCP协议（Transmission Control Protocol，传输控制协议、UDP协议（User Datagram Protocol，用户数据报协议）</font></p>
-<h4 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h4><p><font size="3">网络层目的是实现两端系统之间的数据透明传送，具体功能包括寻址、路由选择、连接的建立、保持和终止等。它提供的服务使传输层不需要了解网络中的数据传输和交换技术。简单说就是”路由选择，路由及逻辑寻址“</font></p>
-<p><font size="3">网络层涉及协议：IP协议:提供不可靠、无连接的传送服务，IP协议主要功能有：无连接数据报传输、数据报路由选择和差错控制。</font></p>
-<p><font size="3">有关网络层的重点：<br>网络层负责对子网间的数据包进行路由选择；还可以实现拥塞控制、网际互联等功能；<br>基本数据单位是IP数据报<br>包括主要协议：IP协议、地址解析协议ARP、逆地址解析协议RARP、因特网报文协议ICMP、因特网组管理协议IGMP<br>重要的设备：路由器</font></p>
-<h4 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h4><p><font size="3">数据链路层最基本的服务是将原子网络层来的数据可靠地传输到临结点的目标机网络层；数据组合成数据块，在数据链路层中数据块为帧（frame），帧是数据链路层的传送单位； 作用包括：物理地址寻址、数据封装成帧、流量控制、数据检错、重发等</font></p>
-<p><font size="3">有关数据链路层的重点：<br>数据链路层为网路层提供可靠的数据传输<br>基本单位为帧<br>主要协议：以太网协议<br>两个重要设备：网桥、交换机</font></p>
-<h4 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h4><p><font size="3">为上层协议提供一个传数据的可靠物理媒体，物理层确保原始的数据可在各种物理媒体上传输；物理层两个重要设备：中继器（repeater，也叫放大器）、接线器；物理层只负责传输0和1二进制bit流</font></p>
-<h3 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h3><p><font size="3">数据传输基本单位为报文</font></p>
-<p><font size="3">包含的主要协议：<br>FTP（文件传输协议）；<br>Telnet（远程登录协议）；<br>DNS（域名解析协议）；<br>SMTP（邮件传送协议）；<br>POPS协议（邮局协议）；<br>HTTP协议（HyPer Text Transfer Protocol）</font></p>
-<h4 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h4><p><font size="3">Hypertext Transfer Protocol 超文本传输协议，基于请求与相应模式的、应用层和网络协议规定客户端和服务器的数据传输格式，就是一种约定；客户端和服务器通信实现细节</font><br><font size="3">网络模型：<br>应用层   —&gt;HTTP协议<br>传输层   —&gt;TCP协议/UDP协议<br>网络层  —-&gt;IP协议<br>物理层</font></p>
-<p><font size="3">保持连接：http请求和响应，现在客户端和服务器建立tcp连接，不会完成一次http请求响应即关闭，可以在一次tcp连接上完成多次http请求和响应</font></p>
-<h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><p><font size="3">uniform resource locator 统一资源定位符，互联网上标准资源的地址</font></p>
-<p><font size="3">HTTP使用URL来建立连接和传输数据：如：如：<a href="http://www.itcast.cn:8080/news/index.html?uid=123&amp;page=1" target="_blank" rel="noopener">http://www.itcast.cn:8080/news/index.html?uid=123&amp;page=1</a><br>url格式：schema://host[:port#]/path/..[?query-string]<br>scheme：协议：“http”,常见协议有HTTP,HTTPS,FTP等<br>host：域名/IP：“<a href="http://www.iicast.cn&quot;,可以使用IP地址作为域名使用" target="_blank" rel="noopener">www.iicast.cn&quot;,可以使用IP地址作为域名使用</a><br>port：端口：“8080”，端口可省略，默认端口（HTTP:80，HTTPS:443，FTP:21)<br>path：资源路径：“/news/index.html”<br>query-string：发送参数：“uid=123&amp;page=1”,运行有多个参数，用”&amp;“作为分隔符</font></p>
-<h4 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h4><p><font size="3">HTTP请求<br>由三部分组成：请求行、请求头、（空一行）、请求体</font></p>
-<p><font size="3">常用请求方法<br>GET：从服务器获取资源<br>POST：在服务器新建一个资源<br>PUT：在服务器更新资源（客户提供改变后的完整资源）<br>DELETE：从服务器删除资源</font></p>
-<p><font size="3">数据传输格式<br>1、键值对：？xx=11&amp;xxx=22<br>2、Json数据：<br>{<br>“属性名1” : “属性值”,<br>“属性名2” : “属性值”<br>}</font></p>
-<h4 id="HTTP响应"><a href="#HTTP响应" class="headerlink" title="HTTP响应"></a>HTTP响应</h4><p><font size="3">由三部分组成：状态行(协议版本号、状态码、状态消息)、响应行、响应正文<br>状态码：三位数字组成<br>1xx：指示信息–表示请求已接收，继续处理<br>2xx：成功–表示请求已被成功接收、理解、接受<br>3xx：重定向–要完成请求必须进行更进一步的操作<br>4xx：客户端错误–请求有语法错误或请求无法实现<br>5xx：服务器端错误–服务器未能实现合法的请求</font></p>
-<h4 id="TCP-IP协议"><a href="#TCP-IP协议" class="headerlink" title="TCP/IP协议"></a>TCP/IP协议</h4><p><font size="3">定义：网络通讯协议<br>1、应用层：应用程序之间互相沟通的层<br>2、传输层：提供了数据传送，应用程序之间的通信服务<br>3、网络互联层：负责提供基本的数据封包传送功能，让数据包到达目的主机<br>4、网络接口层：接收数据，并进行传输</font></p>
-<h3 id="Windows网络命令"><a href="#Windows网络命令" class="headerlink" title="Windows网络命令"></a>Windows网络命令</h3><p><font size="3">1、ping命令：用于检测网络是否畅通，以及网络时延情况（工作在ICMP协议上）</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ping 主机名</span><br><span class="line">ping 域名</span><br><span class="line">ping IP地址</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">2、ipconfig命令：显示当前TCP/IP配置的设置信息，检验人工设置的TCP/IP设置是否正确；了解计算机是否成功租用到了一个IP地址</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ipconfig:不带任何参数时，显示每个已近配置了的接口的IP地址、子网掩码和缺省网关值</span><br><span class="line"></span><br><span class="line">ipconfig&#x2F;all:当使用all选项时，ipconfig能为DNS和WINS服务器显示它已近配置且所有使用的附加信息；能够显示内置于本地网卡中的物理地址（MAC）</span><br><span class="line"></span><br><span class="line">ipconfig&#x2F;release和ipconfig&#x2F;renew：这两个附加选项，只能在向DHCP服务器租用IP地址的计算机使用。输入ipconfig &#x2F;release，所有接口的租用IP地址便重新交付给DHCP服务器(归还IP地址)。输入ipconfig&#x2F;renew，本地计算机便设法与DHCP服务器取得联系，并租用一个IP地址。大多数情况下网卡将被重新赋予和以前所赋予的相同的IP地址。</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">3、arp命令（地址转换协议）</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ARP是TCP&#x2F;IP协议族中的一个重要协议，用于确定对应IP地址的网卡物理地址。使用arp命令，能够查看本地计算机或另一台计算机的ARP高速缓存中的当前内容。</span><br><span class="line"></span><br><span class="line">arp -a:用于查看高速缓存中的所有项目</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">4、netstat命令</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">netstat用于显示与IP、TCP、UDP和ICMP协议相关的统计数据，一般用于检验本机各端口的网络连接情况</span><br><span class="line">netstat -a	&#x2F;&#x2F; 显示所有连接和监听端口</span><br><span class="line">netstat -n	&#x2F;&#x2F; 以数字格式显示IP地址</span><br><span class="line">netstat -o	&#x2F;&#x2F; 显示每个连接所属的处理id</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">5、net命令</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1、net view 查看远程主机的所有共享资源	</span><br><span class="line">net view &#x2F;IP</span><br><span class="line"></span><br><span class="line">2、net use	把远程主机的某个共享资源映射到本地盘符，图形界面方法使用</span><br><span class="line">net use:&#x2F;IP&#x2F;sharename</span><br><span class="line"></span><br><span class="line">3、net start	启动远程主机上的服务，当和远程主机建立连接，发现它的某些服务没有启动使用此命令</span><br><span class="line">net start servername</span><br><span class="line"></span><br><span class="line">4、net stop	关闭主机的某个服务</span><br><span class="line"></span><br><span class="line">5、net user	查看和账户有关的情况，包括新建账户、删除账户、查看特定账户、激活或禁用账户</span><br><span class="line">net user abcd 1234 &#x2F;add，新建一个用户名为abcd,密码为1234的账号，默认为user组成</span><br><span class="line">net user abcd &#x2F;del，将用户名为abcd的用户删除</span><br><span class="line">net user abcd &#x2F;active:no，将用户名为abcd的用户禁用</span><br><span class="line">net user abcd &#x2F;active:yes，激活用户名为abcd的用户</span><br><span class="line">net user abcd，查看用户名为abcd的用户的情况</span><br><span class="line"></span><br><span class="line">6、net localgroup	查看所有和用户组有关的信息和进行相关操作</span><br><span class="line">netlocalgroup roupname username &#x2F;add</span><br><span class="line"></span><br><span class="line">7、net time	查看远程主机当前的时间</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="常用DOS指令"><a href="#常用DOS指令" class="headerlink" title="常用DOS指令"></a>常用DOS指令</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">win+R	cmd运行窗口</span><br><span class="line"></span><br><span class="line">1、ipconfig&#x2F;all		查看电脑物理地址（mac)信息</span><br><span class="line"></span><br><span class="line">2、arp -a	查看IP地址和物理地址对应关系</span><br><span class="line"></span><br><span class="line">3、ping 网络地址  	查看当前计算机和要访问的计算机之间的连通情况（如ping www.baidu.com)</span><br><span class="line"></span><br><span class="line">4、cls		清屏</span><br><span class="line"></span><br><span class="line">5、盘符：	切换对应的盘符</span><br><span class="line"></span><br><span class="line">6、cd 文件名	进入对应的文件夹（目录）</span><br><span class="line"></span><br><span class="line">7、dir		显示文件夹中的文件目录</span><br><span class="line"></span><br><span class="line">8、cd..		返回上一级</span><br><span class="line"></span><br><span class="line">9、cd&#x2F;		返回根目录</span><br><span class="line"></span><br><span class="line">10、md 文件夹名称		新建文件夹</span><br><span class="line"></span><br><span class="line">11、rd 名字  		删除目录，(不能删除有内容的文件夹）</span><br><span class="line">D:\Users\Administrator&gt;rd D:\Users\Administrator\6</span><br><span class="line"></span><br><span class="line">12、copy 想复制的目录结构和名字   目标目录</span><br><span class="line">D:\Users\Administrator&gt;copy D:\Users\Administrator\6\1.txt D:\Users\Administrator\7</span><br><span class="line">已复制         1 个文件。</span><br><span class="line"></span><br><span class="line">13、move 想剪切的目录结构和名字   目标目录</span><br><span class="line">D:\Users\Administrator&gt;move D:\Users\Administrator\6\1.txt D:\Users\Administrator\7</span><br><span class="line">移动了         1 个文件</span><br><span class="line"></span><br><span class="line">14、del 文件路径\名字	删除目录内的所有文件，注意：如果只写目录，会删除该目录中</span><br><span class="line"></span><br><span class="line">15、del *.*		删除当前目录中的所有文件（不是文件夹）</span><br><span class="line"></span><br><span class="line">16、del 具体的文件目录和名字		可以单独删除某一个文件</span><br><span class="line">D:\1\2\5&gt;del D:\1\2\5\a.txt</span><br><span class="line"></span><br><span class="line">17、format：盘符	格式化，清空数据</span><br><span class="line"></span><br><span class="line">18、键盘上、下、重复之前的代码</span><br><span class="line"></span><br><span class="line">19、exit		关闭dos窗口	</span><br><span class="line"></span><br><span class="line">20、Ctrl+C	退出当前执行的命令</span><br></pre></td></tr></table></figure>
-
+<p><font size="3">还是在学习GitHub时，偶然发现hexo主题，一时兴起借助这两个平台搭建自己的个人博客网站，百度学习了配置主题设置，简单个性化设计；本来想着能不断学习，坚持发布，但由于github突然访问需要验证，并考虑到工作学习的时间原因，后来就断更了。想想真的是一时兴起，未能坚持住；还有只能说自己还要学习的东西太多了，个人博客搭建未能安排上日程。最近下班和同事聊天谈到搭建自己的博客网站，想到自己去年也搭建了一个，再不修一下怕是要塌了吧。这次重拾当年的记忆，保持那份热爱，坚持更新；不是为了写给别人看，更重要是写给自己、总结经验、记录生活、成就自己。</font></p>
+<h3 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h3><p><font size="3">重拾记忆并没有那么简单，一点点回忆主题的配置文件，启动本地预览、生成、发布的命令，老实说是有点简单，但是太久没运行命令，那些指令都在脑中的内存中差不多都清除掉了。好记性不如烂笔头，还好有当时记录的笔记，一顿摸索算是用git、hexo命令启动运行本地预览成功了。尝试修改更新头像、修改样式更新上传线上，这些到算兴奋起来。为了再次熟悉配置，又按照之前写过的配置文件检查了一遍。总之，目前还远远不够，仅仅还是开始，还有好多功能需要去探索，去学习搭建优化。</font></p>
+<h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><p><font size="3">对于next主题配置，绝大部分是不知道，只能按照自己的需求去百度，找到NexT使用文档或其他博文，加上自身的自学能力，一点点修改完善。改一点点本地就预览一次，生怕出错，但其中还是踩了几个坑，就连本地预览都出错，一度挫败感涌上心头，只能修改回之前的配置或是删除安装文件，庆幸的是一点点改回去没问题，不然真的是要崩溃。这些问题也只因自己的无知买单，借鉴需谨慎，否则随便入坑。在失败中探索，积累经验。最简的办法，无非是在B站找到对应配置功能的博主视频，按照人家的步骤操作。在解决问题时，也意外发现两个非常棒的next主题博客，从中也悟出了一些启发，学到了好的设计思想，打算重构一下我的博客网站，毕竟把我的和人家对比起来，真的是差太远了。</font></p>
+<h3 id="重构"><a href="#重构" class="headerlink" title="重构"></a>重构</h3><p><font size="3">首先从另存内容，删除之前写的文章开始，看了别的分类和标签，才知道自己傻乎乎的不会定义文章分类和标签，导致不会自动生成对应的链接，再新建博客文章，重新定义，终于知道为什么之前写的没有日志，还好找到了视频学习一下。next主题框架功能齐全，只是自己不会利用，还费劲的自己设计，想想自己真是无知，而不是闭门造车。日后完善友链、、留言板、统计阅读量、打赏、评论等其他辅助功能，同时上传之前写好的博文，持续总结更新。</font></p>
 ]]></content>
       <categories>
-        <category>测试使用</category>
+        <category>日常记录</category>
       </categories>
       <tags>
-        <tag>计算机网络</tag>
-        <tag>命令</tag>
+        <tag>记录</tag>
+        <tag>反思</tag>
       </tags>
   </entry>
   <entry>
-    <title>Hexo使用</title>
-    <url>/2021/04/26/hello_hexo/</url>
-    <content><![CDATA[<p><img src="/2021/04/26/hello_hexo/blog4.png" alt></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</font></p>
-<a id="more"></a>
+    <title>Hello World</title>
+    <url>/2020/06/21/posts/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
 
+<p><img src="/2020/06/21/posts/hello_hexo.jpg" alt></p>
+<!-- <img src="/2020/06/21/posts/hello_hexo.jpg" class="" title="examplename"> -->
 
-<h3 id="Hexo简介"><a href="#Hexo简介" class="headerlink" title="Hexo简介"></a>Hexo简介</h3><p><font size="3">hexo是一个基于Node.js的静态博客网站生成器，是一个快速、简洁且高效的博客框架，作者是来自台湾的 <a href="http://mailto:tommy351@gmail.com/" target="_blank" rel="noopener">Tommy Chen</a>，依赖少易于安装使用，利用靓丽的主题生成静态网页。</font></p>
-<p><font size="3">特点：<br>1.依赖少（仅依赖node），易于安装；<br>2.速度快，支持多进程，利用靓丽的主题，几百篇文章可以秒生成静态网页；<br>3.流畅的撰写，支持GitHub Flavored Markdown和所有Octopress的插件;<br>4.高扩展性、自订性，hexo支持EJS、Swig和Stylus;<br>5.兼容于Windows、Mac &amp; Linux;</font></p>
-<h3 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h3><h5 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h5><font size="3">
-   widows:到git官网下载，Download git，下载安装后通过Git Bash命令行工具来使用git
-   linux:最早git就是Linux上编写的，只需要一行代码</font>
-   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install	&#x2F;&#x2F; linux命令安装</span><br><span class="line"></span><br><span class="line">git --version &#x2F;&#x2F; 安装后查看版本</span><br></pre></td></tr></table></figure>
-
-
-<h5 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h5><font size="3">
-   hexo是基于nodejs编写的，需要安装node.js里面的npm工具
-   Windows：通过nvs（推荐）或者nvm安装，确保勾选add to path
-   Mac：使用Homebrew或MacPorts安装
-   Linux：（DEB/RPM-based）：从NodeSource安装</font>
-   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">&#x2F;&#x2F; 检查是否安装成功</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-
-<h5 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h5><font size="3">
-   ​前面git和nodejs安装好后，使用npm安装Hexo，先创建一个文件夹blog，然后cd到这个文件夹，右键git bash打开</font>
-   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli	&#x2F;&#x2F; 输入命令安装</span><br><span class="line"></span><br><span class="line">hexo -v	&#x2F;&#x2F; 查看版本</span><br><span class="line"></span><br><span class="line">hexo init myblog&#x2F;&#x2F; 初始化hexo</span><br><span class="line"></span><br><span class="line">cd myblog	</span><br><span class="line"></span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">新建完成后，指定文件夹目录简介：<br>&nbsp;&nbsp;&nbsp;node_modules：依赖包<br>&nbsp;&nbsp;&nbsp;public：存放生成的页面，网站文件，发布的站点文件<br>&nbsp;&nbsp;&nbsp;scaffolds：生成文字的一些模板<br>&nbsp;&nbsp;&nbsp;source：用来存放你的文章，资源文件夹<br>&nbsp;&nbsp;&nbsp;themes：主题<br>&nbsp;&nbsp;&nbsp;config.yml：博客的配置文件<br>&nbsp;&nbsp;&nbsp;tag：标签文件<br>&nbsp;&nbsp;&nbsp;archive：归档文件夹<br>&nbsp;&nbsp;&nbsp;category：分类文件夹</font></p>
-<h5 id="安装Next主题"><a href="#安装Next主题" class="headerlink" title="安装Next主题"></a>安装Next主题</h5><font size="3">
-   ​hexo提供了默认主题landscape，如果需要更改，先在themes目录创建一个next文件夹，然后在hexo站点目录下右击打开Git Bash Here，输入命令</font>
-   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next.git themes&#x2F;next</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">在blog目录下_config.yml里面theme的配置修改为next</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
-<h5 id="Github创建配置和使用"><a href="#Github创建配置和使用" class="headerlink" title="Github创建配置和使用"></a>Github创建配置和使用</h5><font size="3">
-   首先需要在github账户下，新建仓库new repository
-   创建一个和用户名相同的仓库，后面加.github.io，这样到后面部署到github page的时候才会被识别，也就是xxxx.github.io，其他xxxx是注册github的用户名;</font>
-
-<p>   <font size="3">生成SSH密钥添加到github，github的setting中；</font></p>
-<p>   <font size="3">id_rsa是你这台电脑的私人密钥，不能给别看的；</font></p>
-<p>   <font size="3">id_rsa.pub是公共秘钥，可以随便给别人看，把这个公钥放在github上，这样当你链接github自己的账户时，就会根据公共匹配你的私钥，通过git上传你的文件到github上。</font></p>
-<p>   <font size="3">找到SSH keys设置选项，点击New SSh key</font></p>
-<p>   <font size="3">在gitbash中，查看是否成功</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
-<h5 id="将Hexo部署到GitHub"><a href="#将Hexo部署到GitHub" class="headerlink" title="将Hexo部署到GitHub"></a>将Hexo部署到GitHub</h5><font size="3">
-   将hexo和github关联起来，将hexo生成的文章部署到github上，打开站点配置文件_config.yml</font>
-   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deply:</span><br><span class="line"></span><br><span class="line">type: git</span><br><span class="line"></span><br><span class="line">repo: https:&#x2F;&#x2F;jamieslau.github.io&#x2F;index.html</span><br><span class="line"></span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-<font size="3">需先按照deploy-git,也就是部署的命令，这样你才能用命令部署到github</font>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">执行hexo命令</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean	&#x2F;&#x2F; 清除之前生成的东西，可以不加</span><br><span class="line"></span><br><span class="line">hexo generate	&#x2F;&#x2F; 生成静态文章，hexo g 缩写</span><br><span class="line"></span><br><span class="line">hexo deploy	&#x2F;&#x2F; 部署文章， hexo d 缩写</span><br><span class="line"></span><br><span class="line">hexo s	&#x2F;&#x2F; 发布，本地预览</span><br><span class="line"></span><br><span class="line">http:&#x2F;&#x2F;localhost:4000	&#x2F;&#x2F; 本地查看</span><br><span class="line"></span><br><span class="line">使用sublime修改config.yml配置JamiesLau博客</span><br></pre></td></tr></table></figure><br><font size="3">deploy时需要输入username和password</font></p>
-<p><font size="3">创建一个新帖子</font><br>   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new 帖子名称&#x2F;&#x2F; 创建新帖子，hexo n 帖子名称   缩写</span><br><span class="line"></span><br><span class="line">Sublime编辑帖子标签、分类</span><br><span class="line"></span><br><span class="line">title: 重拾记忆</span><br><span class="line">date: 2021-04-24 20:00:39</span><br><span class="line">tags:</span><br><span class="line"> - 记录</span><br><span class="line"> - 分享</span><br><span class="line">categories: 日常记录</span><br><span class="line"></span><br><span class="line">编辑正文，开始你的创作</span><br></pre></td></tr></table></figure></p>
+<p><font size="3">&nbsp;&nbsp;&nbsp;&nbsp;Welcome to <a href="https://jamieslau.github.io/">Jamie’s Blog</a>! This is my very first blog post. It’s a great honor to have my blog captured by you. Blog related resources exist in <a href="https://github.com/JamiesLau/JamiesLau.github.io" target="_blank" rel="noopener">https://github.com/JamiesLau/JamiesLau.github.io</a>. If you want more information，please visit my blog or you can ask me on <a href="https://github.com/JamiesLau/JamiesLau.github.io/issues" target="_blank" rel="noopener">GitHub</a>.</font></p>
+<hr>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">互联网从诞生发展至今日，每天都有无数的人在上面留下自己的足迹，用它记录生活、抒发情感、分享见解、开阔眼界。<a id="more"></a>在这里运用GitHub + Hexo建立第一个博客，通过GitHub Pages这个平台，这里使用你的个性域名，挑选最适合你的主题，设计自己的个性化页面；你可以在线创建和发布网站，也可以本地通过工具、命令管理网站。在这里展示和输出自身价值，打造属于自己的互联网 [身份证]。</font></p>
+<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p><font size="3">GitHub是全球最大的社交编程及代码托管网站。这里聚集了世界上各路技术大牛和最优的代码库。通过邮箱注册免费的github账户，可以用git对服务器仓库进行源代码的管理。</font></p>
+<h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><p><font size="3">GitHub Pages是用来托管GitHub上静态网页的免费站点，很多大牛用它来搭建个人博客.它具有足有的免费空间来管理自己的资料，灵活设计属于自己的域名、DIY网站主题和使用他人开发好的插件，环境搭建、系统维护、文件存储都有GitHub处理，你只需要专注于文章创作。</font></p>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p><font size="3">Hexo是一个基于node.js的静态博客网站生成器，能够极速生成静态页面，支持Markdown，一键部署到GitHub Pages，具有丰富的插件支持，所以熟悉hexo和Markdown语法对于大家个人博客是非常有必要的。hexo会解析Markdown语法生成对应的html，主题就是css样式。</font></p>
+<p><font size="3">经过一番苦心搭建再创作，哈哈哈，这就算是终于开篇了吧，一个在互联网Lazing的工具人@Jamie’s，see you。</font></p>
 ]]></content>
-      <categories>
-        <category>工具使用</category>
-      </categories>
-      <tags>
-        <tag>命令</tag>
-        <tag>hexo</tag>
-      </tags>
   </entry>
   <entry>
     <title>软件测试基础</title>
@@ -399,147 +540,6 @@
       <tags>
         <tag>测试</tag>
         <tag>理论</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux命令</title>
-    <url>/2021/04/30/linux/</url>
-    <content><![CDATA[<p><img src="/2021/04/30/linux/blog6.jpg" alt></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Linux是一套免费使用和自由传播的类Unix操作系统，它主要受到Minix和Unix思想的启发，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它支持32位和64位硬件。Linux继承了Unix网络为和兴的设计思想，是一个性能稳定的多用户网络操作系统。</font></p>
-<a id="more"></a>
-
-
-<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><h5 id="Linux特点"><a href="#Linux特点" class="headerlink" title="Linux特点"></a>Linux特点</h5><p><font size="3">稳定、免费<br>安全性高<br>多任务，多用户<br>耗资源少<br>内核下，它支持多种电子产品，Android手机，PDA</font></p>
-<h5 id="Linux和Windows的区别"><a href="#Linux和Windows的区别" class="headerlink" title="Linux和Windows的区别"></a>Linux和Windows的区别</h5><p><font size="3">1、使用费用不同：<br>​    Linux是开源项目，免费<br>​    Windows是需要付费</font></p>
-<p><font size="3">2、适用使用对象不同：<br>​    Linux适合企业公司服务器系统架构<br>​    Windows适合大众使用</font></p>
-<p><font size="3">3、操作风格不同：<br>​    Linux很多情况需要通过命令来进行操作<br>​    Windows面向大众化，操作上符合普通人操作习惯，大多是通过界面的操作</font></p>
-<p><font size="3">4、支持的软件不同：<br>​    Linux平台只有开发者维护，缺少资金的大量支持，软件方面数量和质量缺乏<br>​    Windows使用人数较多，支持Windows软件在数量和质量上都比Linux有优势</font></p>
-<p><font size="3">5、文件格式不同：<br>​    Linux是shell<br>​    Windows操作系统内核是NT</font></p>
-<p><font size="3">6、安全性不同：<br>​    Linux相比Windows安全很多，使用Linux是不需要安装额外的安全软件<br>​    Windows系统安全性低，需要安装安全防护软件来保护计算机</font></p>
-<p><font size="3">7、可定制性：<br>​    Linux提供更高的定制性，支持开发者通过编码来定义适合自己的操作系统<br>    Windows操作范围大多收到微软的限制，基本上是系统怎样设置，用户就只能规矩操作</font></p>
-<p><font size="3">8、程序可移植性不同：<br>​    Linux可移植性好，不仅可以在不同的Linux之间移植，还可以移植到Windows上<br>    Windows的程序可移植性差，程序基本不兼容Linux</font></p>
-<h3 id="Linux安装"><a href="#Linux安装" class="headerlink" title="Linux安装"></a>Linux安装</h3><h5 id="虚拟机介绍"><a href="#虚拟机介绍" class="headerlink" title="虚拟机介绍"></a>虚拟机介绍</h5><p><font size="3">安装虚拟机，通过虚拟机安装Linux操作系统<br>虚拟机：一台虚拟的计算机，通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。</font></p>
-<p><img src="/2021/04/30/linux/win.png" alt></p>
-<p><font size="3">虚拟机软件：<br>​    VMware Workstation:是一款功能强大的桌面虚拟计算机软件，收费。<br>​    VirtualBox:是一款开源虚拟机软件。</font></p>
-<h5 id="虚拟机及Linux安装"><a href="#虚拟机及Linux安装" class="headerlink" title="虚拟机及Linux安装"></a>虚拟机及Linux安装</h5><p><font size="3">将杀毒软件、防火墙关闭<br>使用管理员权限进行安装<br>5个服务需要启动<br>Linux安装：<br>切换鼠标、键盘    Ctri+alt<br>Linux系统：管理员：root    密码：123456</font></p>
-<h5 id="Linux目录介绍"><a href="#Linux目录介绍" class="headerlink" title="Linux目录介绍"></a>Linux目录介绍</h5><p><img src="/2021/04/30/linux/Linux.png" alt></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;：Linux系统根目录&lt;&#x2F;font&gt;</span><br><span class="line"></span><br><span class="line">&#x2F;etc：（etcetera)系统配置文件存放的目录，不建议在此目录存放可执行文件</span><br><span class="line"></span><br><span class="line">&#x2F;usr：（unix shared resources)应用程序存放目录</span><br><span class="line"></span><br><span class="line">&#x2F;root：系统管理员root的家目录</span><br><span class="line"></span><br><span class="line">&#x2F;home：家目录，每个用户登录Linux之后，默认进入的目录</span><br><span class="line"></span><br><span class="line">&#x2F;lost+found：系统异常产生错误时，将一些遗失的片段放置此目录下</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="Linux常用命令-重点"><a href="#Linux常用命令-重点" class="headerlink" title="Linux常用命令 [重点]"></a>Linux常用命令 [重点]</h3><h5 id="磁盘管理命令"><a href="#磁盘管理命令" class="headerlink" title="磁盘管理命令"></a>磁盘管理命令</h5><p><font size="3">ls</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ls：列出目录内容</span><br><span class="line">参数：</span><br><span class="line">	-a查询所有文件和文件夹，包含隐藏的	ls -a</span><br><span class="line">	-l查询详细列表	ls -l	简写为ll</span><br><span class="line">	-h友好展示信息	ll -h</span><br><span class="line">	ls 目录名	展示某个目录下的内容</span><br><span class="line"></span><br><span class="line">例子：查看&#x2F;etc目录下的内容</span><br><span class="line">命令：ll -h &#x2F;etc</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">cd (change directory)：切换目录</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ..&#x2F;	向上一层目录</span><br><span class="line">cd &#x2F;	切换到Linux的根目录</span><br><span class="line">cd &#x2F;目录名	任意目录切换到指定目录中	&#x2F;目录名	Linux的绝对路径</span><br><span class="line">cd ~	切换到当前用户家目录	root用户家目录&#x2F;root</span><br><span class="line">cd -	切换到上一次访问的目录，只能有两个目录互相切换</span><br><span class="line"></span><br><span class="line">Linux绝对：cd &#x2F;etc&#x2F;x1	先切换到&#x2F;目录，然后在&#x2F;目录中找到etc目录，在ext中找子目录x1,</span><br><span class="line">在任意目录都可以随意切换</span><br><span class="line"></span><br><span class="line">Linux相对：cd x1&#x2F;x2	在当前目录中寻找子目录x1,在x1中寻找子目录路x2,</span><br><span class="line">必须确定当前目录下有子目录x1</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">pwd (print working directory)：显示当前的所在目录，返回绝对路径</font></p>
-<p><font size="3">mkdir (make directory)：创建目录</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir -p 文件夹名称</span><br><span class="line">	-p父目录不存在情况下先生成父目录（praents)</span><br><span class="line">	</span><br><span class="line">例子1：在&#x2F;root&#x2F;t3目录下创建一个t4目录</span><br><span class="line">位置：&#x2F;root	t3和t4都不存在</span><br><span class="line">命令：mkdir -p t3&#x2F;t4</span><br><span class="line"></span><br><span class="line">例子2：需要在&#x2F;root&#x2F;t1目录下创建t2目录</span><br><span class="line">位置：root</span><br><span class="line">命令：相对：mkdir t1&#x2F;t2</span><br><span class="line">	 绝对：mkdir &#x2F;root&#x2F;t1&#x2F;t2</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="文件浏览命令"><a href="#文件浏览命令" class="headerlink" title="文件浏览命令"></a>文件浏览命令</h5><p><font size="3">日志文件、XML、properties文件<br>cat 文件名    快捷查看当前文件的内容，适合查看少量信息的文件<br>more 文件名    分页显示文件内容</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">more操作</span><br><span class="line">	Enter	向下n行，需要定义，默认为1行</span><br><span class="line">	空格键		向下滚动一屏或Ctrl+F</span><br><span class="line">	B	返回上一屏或Ctrl+B</span><br><span class="line">	q	退出more</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">less -mN 文件名    分页显示文件内容，标注每行的行号</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">less操作</span><br><span class="line">	Enter	向下n行，需要定义，默认为1行</span><br><span class="line">	空格键	向下滚动一屏或Ctrl+F</span><br><span class="line">	B	返回上一屏或Ctrl+B</span><br><span class="line">	q	退出more</span><br><span class="line">	适用于大量数据的查看</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">tail -数字 文件名    可以快速查看文件后X行的内容<br>例如：tail -10 文件名    查看文件的后10行内容</font></p>
-<h5 id="文件操作命令"><a href="#文件操作命令" class="headerlink" title="文件操作命令"></a>文件操作命令</h5><p><font size="3">touch 文件    创建文件</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：touch &#x2F;test.txt</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">Alt+P    进入上传界面<br>复制文件：<br>cp 需要复制的文件  复制的位置    </font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子1：把&#x2F;root&#x2F;demo.java文件复制到&#x2F;root&#x2F;t1目录中	位置：root</span><br><span class="line">命令：cp demo.java t1</span><br><span class="line">	 cp &#x2F;root&#x2F;demo.java &#x2F;root&#x2F;t1</span><br><span class="line"></span><br><span class="line">例子2：把&#x2F;rootdemo.java复制到&#x2F;root&#x2F;t1目录中，改名为ddd.java	位置：root</span><br><span class="line">命令：cp demo.java t1&#x2F;ddd.java</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">复制目录：<br>cp -r 需要复制的目录  复制的位置</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;t5目录复制到&#x2F;root&#x2F;t1目录中	位置：root</span><br><span class="line">命令：cp -r t5 t1</span><br><span class="line">	 cp -r &#x2F;root&#x2F;t5 &#x2F;root&#x2F;t1</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">文件移动<br>mv (move)    移动或更名现有的文件或目录<br>文件/目录移动:<br>mv 需要移动的文件 移动的位置</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;t5目录移动到&#x2F;root&#x2F;t3目录中	位置：root</span><br><span class="line">命令：mv t5 t3</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">文件/目录更名操作:</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">例子：把&#x2F;root&#x2F;demo.java改名为he.java	位置：root</span><br><span class="line">命令：mv demo.java he.java</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">文件删除：<br>rm (remove)    删除文件或目录<br>删除文件；</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm 文件名</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">删除目录：</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rm -rf 目录名</span><br><span class="line"></span><br><span class="line">例子：删除&#x2F;root&#x2F;t5目录	位置：root	t5目录下有子目录或文件</span><br><span class="line">命令：rm -rf t5</span><br><span class="line"></span><br><span class="line">注意：</span><br><span class="line">	rm -rf *	删除当前目录下所有内容</span><br><span class="line">	rm -rf &#x2F;*	删除Linux系统根目录下所有文件</span><br></pre></td></tr></table></figure>
-
-<p><font size="3">查找命令：<br>find    查找文件或目录</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">find 目录名 -name &#39;需要查找的字符串&#39;</span><br><span class="line">*表示0~多个任意字符</span><br><span class="line"></span><br><span class="line">例子：查找&#x2F;root目录下，所有以ins开头的文件或目录	位置：root</span><br><span class="line">命令：find &#x2F;root -name &#39;ins*&#39;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="文件编辑命令"><a href="#文件编辑命令" class="headerlink" title="文件编辑命令"></a>文件编辑命令</h5><p><font size="3">Windows是有记事本<br>Linux有类似记事本的功能    VIM编辑器<br>vim命令</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim 文件名	进入“一般模式”</span><br><span class="line">“i” 切换到“插入模式”</span><br><span class="line">“:” 切换到底行模式</span><br><span class="line">“Esc” 从插入模式退出到“一般模式”</span><br><span class="line">“:wq” 保存并退出操作</span><br><span class="line">“:q!” 强制退出不保存操作</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="grep和管道"><a href="#grep和管道" class="headerlink" title="grep和管道"></a>grep和管道</h5><p><font size="3">grep 正则表达式    字符串搜索工作<br>gerp -i 需要搜索的字符串    搜索的文件<br>-i 忽略大小写查找数据<br>符合规则，就返回返回规则的行<br>管道命令：可以链接多个Linux命令</font></p>
-<p><font size="3">|<br>命令1 | 命令2 | 命令3..<br>例子：查询当前目录中，所有带ins关键字的行数据    位置：/root<br>查询当前木兰路内容 ll<br>命令：ll | grep ins</font></p>
-<h5 id="压缩、解压命令-（重要）"><a href="#压缩、解压命令-（重要）" class="headerlink" title="压缩、解压命令 （重要）"></a>压缩、解压命令 （重要）</h5><p><font size="3">压缩包：<br>*.tar    打包，大小不会进行压缩<br>*.tar.gz    打包并压缩文件大小<br>压缩：（参数顺序不变）</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar -zcvf 压缩包名字.tar.gz 需要压缩的内容</span><br><span class="line">例如：tar  -zcvf demo.tar.gz * 将当前目录下所有进行打包压缩，文件名 demo.tar.gz</span><br></pre></td></tr></table></figure>
-<p><font size="3">解压：（参数顺序不变）</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tar -zxvf 需要解药的压缩包名称	解药到当前目录</span><br><span class="line">tar -zxvf 需要解药的压缩包名称 -C 指定压缩路径	解药到指定目录中</span><br><span class="line"></span><br><span class="line">例子：需要把&#x2F;root&#x2F;t&#x2F;demo.tar.gz压缩包解压到指定目录中，指定目录&#x2F;root&#x2F;t&#x2F;t1  位置&#x2F;root&#x2F;t</span><br><span class="line">命令：tar -zxvf demo.tar.gz -C &#x2F;root&#x2F;t&#x2F;t1</span><br><span class="line">	 tar -zxvf demo.tar.gz -C t1</span><br></pre></td></tr></table></figure>
-<h5 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h5><p><font></font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ps -ef	查看系统进程</span><br><span class="line"></span><br><span class="line">例子：查看进行中和vim相关的进程</span><br><span class="line">命令：ps -ef|grep -i vim</span><br><span class="line"></span><br><span class="line">Kill -9 pid号	强制杀死某个进程</span><br><span class="line"></span><br><span class="line">例子：查看进程和vim相关的进程有哪些，并将vim进程杀死</span><br><span class="line">命令：ps -ef|grep -i vim</span><br><span class="line">	 Kill -9 pid号</span><br><span class="line"></span><br><span class="line">ifconfig	查看网络配置</span><br><span class="line">ping ip地址	测试和目标的连通性，会持续不断一直测试，直到Ctrl+C</span><br><span class="line"></span><br><span class="line">Linux centos重启命令:reboot	</span><br><span class="line">Linux centos关机命令：halt</span><br></pre></td></tr></table></figure>
-<h5 id="其他命令（了解）"><a href="#其他命令（了解）" class="headerlink" title="其他命令（了解）"></a>其他命令（了解）</h5><p><font size="3">setup    网络设置<br>文件权限<br>chmod (change mode) 变更文件或目录的权限<br>Linux权限格式：&lt;类型&gt;&lt;用户&gt;&lt;组&gt;&lt;其他用户&gt;</font></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">字母法：chmod u&#x2F;g&#x2F;o&#x2F;a +&#x2F;-&#x2F;&#x3D;  rwx  文件</span><br><span class="line">u	user表示该文件的所有者root,所属用户权限</span><br><span class="line">g	group表示与该文件的所有者属于同一组(group)者，即用户组,所属组权限</span><br><span class="line">o	other表示其他以外的人，其他用户权限</span><br><span class="line">a	all表示这三者皆是，所有用户的权限</span><br><span class="line">+	增加权限</span><br><span class="line">-	撤销权限</span><br><span class="line">&#x3D;	设定权限</span><br><span class="line">如：   -rw-r--r--.  1  root  root  31  4月  28 06:28  aa.txt</span><br><span class="line">修改：chmod  u+x  aa.txt</span><br><span class="line">结果	  -rwxr--r--.  1  root  root  31  4月  28 06:28  aa.txt</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所属用户的权限为所有权限</span><br><span class="line">命令：chmod u&#x3D;rwx demo.java</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所属用户组用户的权限为r-x</span><br><span class="line">命令：chmod g&#x3D;rx demo.java</span><br><span class="line"></span><br><span class="line">例子：更改demo.java所有用户的权限为r--</span><br><span class="line">chmod a&#x3D;r demo.java</span><br><span class="line"></span><br><span class="line">数字法：“rwx&quot;权限用数字来代替</span><br><span class="line">第一位代表文件类型，info ls命令查看</span><br><span class="line">rwx：</span><br><span class="line">r 可读权限,数字代号“4”	</span><br><span class="line">w 可写程序，“2”	</span><br><span class="line">x 可执行权限“1”	</span><br><span class="line">- 不具有任何权限  “0”</span><br><span class="line">如：执行chmod  u&#x3D;rwx，g&#x3D;rx,o&#x3D;r  aa.txt  </span><br><span class="line">等同于 ：chmod u&#x3D;7,g&#x3D;5,o&#x3D;4  aa.txt  或  chmod 754 a.txt</span><br><span class="line">chmod  751  file</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>工具使用</category>
-      </categories>
-      <tags>
-        <tag>命令</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>杭州之旅</title>
-    <url>/2021/05/06/holiday1/</url>
-    <content><![CDATA[<p><font size="3">于2021年五一假期拍摄</font></p>
-<p><font size="3">记录一下杭州之旅，见许久想见的人，看未曾看过的风景！</font></p>
-<a id="more"></a>
-
-<p><font size="4">九溪烟树</font></p>
-<p><font size="3">不知名的绿色，看上去像是小号的枫树叶，透过阳光下显得格外的嫩绿。都说杭州的西湖龙井非常有名，这次一睹满山的龙井茶树，只可惜错过了采摘时那嫩绿的景观，只剩下修剪过后的枝头。</font><br><img src="/2021/05/06/holiday1/hz1.jpg" style="zoom:40%"></p>
-<img src="/2021/05/06/holiday1/hz2.jpg" style="zoom:40%">
-
-<br>
-
-<p><font size="4">西湖名胜</font></p>
-<p><font size="3">每年五一西湖断桥上的人人桥都要上热搜，今年我们也从众一下去看看，景色还是非常棒的。但游客非常多，这就考验拍摄技术了，找好角度赶紧抓拍，再慢一点就可能被游客挡住镜头了。还有好多地方没时间看，也没记录到，希望以后有机会补上。</font><br><img src="/2021/05/06/holiday1/hz3.jpg" style="zoom:40%"></p>
-<img src="/2021/05/06/holiday1/hz4.jpg" style="zoom:40%">
-
-<img src="/2021/05/06/holiday1/hz5.jpg" style="zoom:40%">
-
-<br>
-
-<p><font size="4">见许久想见的人</font></p>
-<p><font size="3">积攒了很多的思念，这次我们见面了，两个多月未见，甚是想念。去哪里玩不重要，重要的是要和你去玩。在一起玩的几天，聊了很多，对彼此有了更多的了解，我感觉我们相处的还是很愉快的。就是没能多拍几张照片记录一下，希望下次换个地方我们一起玩，互相了解更多，有机会记录更多的我们。</font><br><img src="/2021/05/06/holiday1/hz6.jpg" style="zoom:40%"></p>
-<br>
-
-<p><font size="4">西溪且留下</font></p>
-<p><font size="3">由于那天上午下雨，取消了部分行程，正好去看看同学，逛逛西溪国家湿地公园，进入这里的第一感觉就是清新，好多未曾见过的花草树木，里面还有地方特色景点商铺，是个游玩的好地方，还有里面的游船真的是绝了，看别人坐是一番景色，想象自己坐定是独有一番意境。唯一遗憾的是这次没能和你一起玩，错过了一次这么好的机会，这就当是我先来体验攻略一下吧，留着这片风景给我们下次玩。</font><br><img src="/2021/05/06/holiday1/hz7.jpg" style="zoom:40%"></p>
-<img src="/2021/05/06/holiday1/hz8.jpg" style="zoom:40%">
-
-<img src="/2021/05/06/holiday1/hz9.jpg" style="zoom:40%">
-
-<img src="/2021/05/06/holiday1/hz10.jpg" style="zoom:40%">
-
-<br>
-
-
-<p><font size="3">杭州之旅，见想见的人，看想看的景，离别略带不舍，回忆甚是难忘，珍惜这段美好的时光，期待我们下次再见。</font></p>
-]]></content>
-      <categories>
-        <category>假日生活</category>
-      </categories>
-      <tags>
-        <tag>假日</tag>
-        <tag>生活</tag>
-        <tag>照片</tag>
       </tags>
   </entry>
 </search>
