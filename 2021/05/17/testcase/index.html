@@ -20,28 +20,27 @@
     var CONFIG = {"hostname":"jamieslau.github.io","root":"/","scheme":"Gemini","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言Github，一个面向开源及私有软件项目的托管平台。">
+  <meta name="description" content="前言带着问题学习是最高效的学习方法。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub使用说明">
-<meta property="og:url" content="https://jamieslau.github.io/2021/05/09/git_tool/index.html">
+<meta property="og:title" content="设计测试用例">
+<meta property="og:url" content="https://jamieslau.github.io/2021/05/17/testcase/index.html">
 <meta property="og:site_name" content="Jamie&#39;s Blog">
-<meta property="og:description" content="前言Github，一个面向开源及私有软件项目的托管平台。">
+<meta property="og:description" content="前言带着问题学习是最高效的学习方法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://jamieslau.github.io/2021/05/09/git_tool/github.png">
-<meta property="og:image" content="https://jamieslau.github.io/2021/05/09/git_tool/status.png">
-<meta property="og:image" content="https://jamieslau.github.io/2021/05/09/git_tool/git.png">
-<meta property="og:image" content="https://jamieslau.github.io/2021/05/09/git_tool/working.png">
-<meta property="og:image" content="https://jamieslau.github.io/2021/05/09/git_tool/question1.png">
-<meta property="og:image" content="https://jamieslau.github.io/2021/05/09/git_tool/question2.png">
-<meta property="article:published_time" content="2021-05-09T12:56:56.000Z">
-<meta property="article:modified_time" content="2021-05-09T13:23:34.822Z">
+<meta property="og:image" content="https://jamieslau.github.io/2021/05/17/testcase/blog11.png">
+<meta property="og:image" content="https://jamieslau.github.io/2021/05/17/testcase/ces1.png">
+<meta property="og:image" content="https://jamieslau.github.io/2021/05/17/testcase/ces2.png">
+<meta property="og:image" content="https://jamieslau.github.io/2021/05/17/testcase/ces3.png">
+<meta property="article:published_time" content="2021-05-16T16:05:57.000Z">
+<meta property="article:modified_time" content="2021-05-16T16:40:53.885Z">
 <meta property="article:author" content="JamiesLau">
-<meta property="article:tag" content="工具">
-<meta property="article:tag" content="github">
+<meta property="article:tag" content="测试">
+<meta property="article:tag" content="理论">
+<meta property="article:tag" content="测试用例">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jamieslau.github.io/2021/05/09/git_tool/github.png">
+<meta name="twitter:image" content="https://jamieslau.github.io/2021/05/17/testcase/blog11.png">
 
-<link rel="canonical" href="https://jamieslau.github.io/2021/05/09/git_tool/">
+<link rel="canonical" href="https://jamieslau.github.io/2021/05/17/testcase/">
 
 
 <script id="page-configurations">
@@ -54,7 +53,7 @@
   };
 </script>
 
-  <title>GitHub使用说明 | Jamie's Blog</title>
+  <title>设计测试用例 | Jamie's Blog</title>
   
 
 
@@ -212,7 +211,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jamieslau.github.io/2021/05/09/git_tool/">
+    <link itemprop="mainEntityOfPage" href="https://jamieslau.github.io/2021/05/17/testcase/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -225,7 +224,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          GitHub使用说明
+          设计测试用例
         </h1>
 
         <div class="post-meta">
@@ -236,7 +235,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-09 20:56:56 / 修改时间：21:23:34" itemprop="dateCreated datePublished" datetime="2021-05-09T20:56:56+08:00">2021-05-09</time>
+              <time title="创建时间：2021-05-17 00:05:57 / 修改时间：00:40:53" itemprop="dateCreated datePublished" datetime="2021-05-17T00:05:57+08:00">2021-05-17</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -244,12 +243,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">工具使用</span></a>
+                  <a href="/categories/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">测试使用</span></a>
                 </span>
             </span>
 
           
-            <span id="/2021/05/09/git_tool/" class="post-meta-item leancloud_visitors" data-flag-title="GitHub使用说明" title="阅读次数">
+            <span id="/2021/05/17/testcase/" class="post-meta-item leancloud_visitors" data-flag-title="设计测试用例" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -271,8 +270,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/05/09/git_tool/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/05/09/git_tool/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/05/17/testcase/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/05/17/testcase/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -282,7 +281,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -301,40 +300,48 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <img src="/2021/05/09/git_tool/github.png" style="zoom:50%">
+        <img src="/2021/05/17/testcase/blog11.png" style="zoom:180%">
 
-
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Github，一个面向开源及私有软件项目的托管平台。</font></p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">带着问题学习是最高效的学习方法。</font></p>
 <a id="more"></a>
 
+<h3 id="如何设计测试用例"><a href="#如何设计测试用例" class="headerlink" title="如何设计测试用例"></a>如何设计测试用例</h3><h4 id="测试用例的定义"><a href="#测试用例的定义" class="headerlink" title="测试用例的定义"></a>测试用例的定义</h4><p><font size="3">测试用例(Test Case)，是为某个特殊目标而编制的一组测试输入、执行条件以及预期结果，以便测试某个程序路径或核实是否满足某个特定需求。</font></p>
+<h4 id="编写测试用例目的"><a href="#编写测试用例目的" class="headerlink" title="编写测试用例目的"></a>编写测试用例目的</h4><ol>
+<li><font size="3">理清测试思路：一个大而且复杂的项目，需要把项目功能细分，根据每个功能编写测试用例的方式整理测试系统的思路，避免遗漏要测试的功能点。</font></li>
+<li><font size="3">明确测试任务：编写完用例后，可以明确自己需要执行的用例总数，以便预估测试工作量。并且可以很清楚的知道实际测试的进度，方便统计和跟踪剩余工作量和回归工作量。</font></li>
+<li><font size="3">规范测试行为：每个人对于功能和开发原理的理解都是不同的，同一个案例，每个人的理解程度和扩展都是不一样的。需要详细明确的用例来规范，以减少遗漏。</font></li>
+</ol>
+<h4 id="如何编写用例"><a href="#如何编写用例" class="headerlink" title="如何编写用例"></a>如何编写用例</h4><h5 id="测试用例的来源"><a href="#测试用例的来源" class="headerlink" title="测试用例的来源"></a>测试用例的来源</h5><ol>
+<li><font size="3">分析需求文档：了解需求的背景；分析需求的合理性；明确需求的范围；挖掘隐含需求；将部分需求罗列出来，可作为需求粗略的测试点。</font></li>
+<li><font size="3">了解开发原理：确定开发的实现框架；明确输入和输出代码规则；减少测试方向偏差</font></li>
+</ol>
+<h5 id="测试用例的要素"><a href="#测试用例的要素" class="headerlink" title="测试用例的要素"></a>测试用例的要素</h5><ol>
+<li><font size="3">测试环境：测试的系统是什么？硬件软件的要求是什么？</font></li>
+<li><font size="3">测试数据：测试执行的输入值</font></li>
+<li><font size="3">测试步骤：提供测试执行过程的步骤</font></li>
+<li><font size="3">预期结果：预期结果根据软件需求中的输出得出。</font></li>
+<li><font size="3">用例标题：对测试用例主旨的描述，言简意赅，清除表单测试用例的目的</font></li>
+<li><font size="3">用例编号：定义测试用例编号，用来标识每个用例的唯一性，进行用例的跟踪和维护</font></li>
+<li><font size="3">用例级别：P1、P2、P3、P4</font><img src="/2021/05/17/testcase/ces1.png" style="zoom:80%">
 
 
-<h3 id="GitHub简介"><a href="#GitHub简介" class="headerlink" title="GitHub简介"></a>GitHub简介</h3><p><font size="3">GitHub是最大的开源代码托管平台，旨在促进在一个共同项目上工作的个人之间的代码托管、版本控制和协作；因为只支持git作为唯一的版本库格式进行托管，故名GitHub，付费用户可以建私人仓库，我们一般的免费用户只能使用公共仓库，也就是代码要公开。</font></p>
-<p><font size="3">github相关词语介绍：<br>1.Repository    仓库，用来存放项目代码，每个项目对应一个仓库<br>2.Star    收藏，收藏项目<br>3.Fork    复制克隆项目<br>&nbsp;&nbsp;你的开源项目，别人想在你这个项目的基础上做些改进，然后应用到自己项目，然后他fork项目，他的主页就多了一个项目，（本质上在原有项目的基础上新建了一个分支），他可以随意改进，不影响原有项目<br>4. Pull Request    发起请求<br>&nbsp;&nbsp;如别人Fork你的项目后，在该基础上改进，为让更多人受益，想把自己的合并到原有项目里向你发起pull request，待你review代码测试OK，接受他的请求，就可以改进原有项目<br>5. Watch    关注，watch某个项目，该项目更新后能收到通知提醒<br>6. Issue    事务卡片、问题，发现代码bug，给项目提个issue/问题，然后被修复OK就可以close</font></p>
-<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p><font size="3">git管理github托管项目代码</font></p>
-<p><font size="3">Git工作区域<br>1.Git Repository（git仓库）最终确定的文件保存到仓库，成为一个新的版本，对他人可见；<br>2.暂存区    暂存已经修改的文件最后统一提交到git仓库中；<br>3.工作区（Working Directory）添加、编辑、修改文件等动作；</font></p>
-<p><img src="/2021/05/09/git_tool/status.png" alt></p>
-<p><font size="3">目标文件夹Shift+右键==》Powershell窗口==》输入start cmd 回车==》进入cmd窗口</font></p>
-<p><font size="3">git命令</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">克隆</span><br><span class="line"></span><br><span class="line">git clone git@github.com:JamiesLau&#x2F;demo.git</span><br><span class="line"></span><br><span class="line">Git本地仓库管理</span><br><span class="line"></span><br><span class="line">git status	&#x2F;&#x2F;查看工作区中文件的状态</span><br><span class="line"></span><br><span class="line">git add first.txt	&#x2F;&#x2F; 将文件添加到暂存区</span><br><span class="line"></span><br><span class="line">git commit -m &quot;first commit&quot;	&#x2F;&#x2F; 提交到git仓库</span><br><span class="line"></span><br><span class="line">git config --global user.email &quot;you@example.com&quot;	&#x2F;&#x2F; 设置用户名 邮箱           </span><br><span class="line"></span><br><span class="line">git config --global user.name &quot;Your Name&quot;	&#x2F;&#x2F; 设置用户名</span><br><span class="line"></span><br><span class="line">git config --list	&#x2F;&#x2F; 查看设置</span><br><span class="line"></span><br><span class="line">git log	&#x2F;&#x2F; 查看log</span><br><span class="line"></span><br><span class="line">git reset id (log 查看commit的id)	 &#x2F;&#x2F;能将文件从仓库回退到暂存区</span><br><span class="line"></span><br><span class="line">git push	&#x2F;&#x2F; 文件push到远端</span><br><span class="line"></span><br><span class="line">rm -rf second.txt</span><br><span class="line"></span><br><span class="line">git rm second.txt</span><br><span class="line"></span><br><span class="line">git commit -m &quot;提交描述&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Git远程仓库"><a href="#Git远程仓库" class="headerlink" title="Git远程仓库"></a>Git远程仓库</h3><p><font size="3">使用远程仓库的目的：备份、实现代码共享集中化管理<br>git puh </font></p>
-<p><img src="/2021/05/09/git_tool/git.png" alt></p>
-<p><font size="3">本地仓库同步到git远程仓库</font></p>
-<p><img src="/2021/05/09/git_tool/working.png" alt></p>
-<p><font size="3">Git克隆操作<br>目的：将远程仓库GitHub对应的项目复制到本地<br>git clone 仓库地址</font></p>
-<p><font size="3">问题1：</font></p>
-<p><img src="/2021/05/09/git_tool/question1.png" alt></p>
-<p><font size="3">如果在GitHub网站上编辑了README文件，所有在本地需要先使用 git pull 命令更新然后在git push</font></p>
-<p><font size="3">问题2：</font></p>
-<p><img src="/2021/05/09/git_tool/question2.png" alt></p>
-<p><font size="3">GitHub Pages 搭建完整<br>个人热点<br>访问：https://用户名.github.io</font></p>
-<p><font size="3">搭建步骤：<br>1）创建个人站点==》新建仓库（注：仓库名必须是【用户名.github.io】）<br>2）在仓库下新建index.html的文件即可</font></p>
-<p><font size="3">1、github pages 仅支持静态网页<br>2、仓库里面只能是.html文件</font></p>
-<p><font size="3">Project Pages项目站点<br>https://用户名.github.io/仓库名<br>搭建<br>1）进入项目首页 ，点击settings<br>2）在settings页面，GitHub Pages点击【Launch automatic page generator】来自动生成主题页面<br>3）新建站点基础信息设置<br>4）选择主题<br>5）生成网页</font></p>
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">安装</span><br><span class="line"></span><br><span class="line">前提已经安装了node、git</span><br><span class="line"></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init JamiesLau	(博客名)初始化</span><br><span class="line"></span><br><span class="line">进入博客目录安装依赖</span><br><span class="line"></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">本地使用</span><br><span class="line"></span><br><span class="line">hexo s -p 5555	发布，本地预览</span><br><span class="line"></span><br><span class="line">&lt;http:&#x2F;&#x2F;localhost:5555&gt;	本地查看自带主题hexo</span><br><span class="line"></span><br><span class="line">使用sublime修改_config.yml配置JamiesLau博客</span><br><span class="line"></span><br><span class="line">根据[https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;](https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs&#x2F;setup)文档说明配置基本信息</span><br><span class="line"></span><br><span class="line">url: &lt;https:&#x2F;&#x2F;JamiesLau.github.io&gt;</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line"></span><br><span class="line">  type: git</span><br><span class="line"></span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;JamiesLau&#x2F;JamiesLau.github.io.git</span><br><span class="line"></span><br><span class="line">  branch: master</span><br><span class="line"></span><br><span class="line">安装插件</span><br><span class="line"></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">hexo发布至github</span><br><span class="line"></span><br><span class="line">设置github邮箱、用户名</span><br><span class="line"></span><br><span class="line">hexo g	生成</span><br><span class="line"></span><br><span class="line">hexo d	提交</span><br><span class="line"></span><br><span class="line">个性化主题</span><br><span class="line"></span><br><span class="line">hexo new page tags 	生成页面</span><br></pre></td></tr></table></figure>
-
-
+</li>
+</ol>
+<h5 id="测试用例设计方法"><a href="#测试用例设计方法" class="headerlink" title="测试用例设计方法"></a>测试用例设计方法</h5><h6 id="等价类划分"><a href="#等价类划分" class="headerlink" title="等价类划分"></a>等价类划分</h6><p><font size="3">将输入的值分为有效等价类和无效等价类</font><br><font size="3">有效等价类：指符合需求规格说明书，输入合理的数据集合</font><br><font size="3">无效等价类：指不符合需求规格说明书，输入不合理的数据集合</font><br><font size="3">具有共同输入特性的输入子集<br>将不能穷举的测试过程进行合理分类，保证设计的测试用例具有完整性、代表性</font><br><font size="3">步骤：<br>1、需求分析，确定有效和无效等价类<br>2、有效等价类划分（条件、注意边界值(极值)，中间再找个值）<br>3、无效等价类划分（跟有效等价类相反，其他特殊情况（中文、英文、特殊符号、空格、空））</font><br><font size="3">测试文本框总结<br>文本框要输入的长度<br>输入的类型<br>组成规则<br>是否为空<br>是否重复–区分大小写<br>是否去除空格（程序中文字最前和最后部分空格，程序员一般会清除，文本中间空格保留）</font></p>
+<h6 id="边界值分析"><a href="#边界值分析" class="headerlink" title="边界值分析"></a>边界值分析</h6><p><font size="3">任何测试场景下都可以使用边界值分析，选取正好等于、刚刚大于或刚刚小于边界值作为测试数据<br>上点、内点、离点<br>明确需求<br>确定有效和无效等价类<br>确定边界值<br></font></p>
+<h6 id="错误推断法"><a href="#错误推断法" class="headerlink" title="错误推断法"></a>错误推断法</h6><p><font size="3">利用直觉、经验，列举出可能犯的错误或错误易发生清单，编写测试用例<br>已经进过几轮测试后也可以使用推断法进行测试用例补充<br>时间紧急、测试时间少、考虑使用</font></p>
+<h6 id="因果图法"><a href="#因果图法" class="headerlink" title="因果图法"></a>因果图法</h6><p><font size="3">罗列出所有的输入和输出，将输入和输出整理出因果图和依赖关系，根据每个依赖做设计。因果图方法考虑输入的组合，特别适合多个输入条件相关有关联又相互约束的情况</font><br><font size="3">特点：<br>输入、输出条件的相互制约关系以及组合关系 ，输出结果对输入条件的依赖关系</font></p>
+<h6 id="判定表"><a href="#判定表" class="headerlink" title="判定表"></a>判定表</h6><p><font size="3">判定表适合解决多个逻辑条件的组合，将各种逻辑的组合罗列出来，避免遗漏，列出每个对应条件所有可能情况下的取值，不需要考虑条件和顺序，再列出结果动作项，对每个条件进行结果判定。</font><br><img src="/2021/05/17/testcase/ces2.png" style="zoom:70%"><br><font size="3">判定表</font><br><img src="/2021/05/17/testcase/ces3.png" style="zoom:90%"></p>
+<h6 id="正交法"><a href="#正交法" class="headerlink" title="正交法"></a>正交法</h6><p><font size="3">正交法的核心思想是从大量测试数据中选取有代表性的点来测试，从而减少测试用例数量。</font><br><font size="3">正交排列能够使用最小的测试过程集合获得最大的测试覆盖率<br>当要测试的内容需要排列组合的情况非常多的时候，用正交表科学减少测试用例的个数<br>特点：均匀分散、齐整可比（所有情况应该均匀被测试一次）<br>如何查询正交表<br>因素：控件的个数<br>水平：控件里面的可选项个数</font></p>
+<h6 id="场景法"><a href="#场景法" class="headerlink" title="场景法"></a>场景法</h6><p><font size="3">用流程图描述用户的使用场景，覆盖流程路径设计测试用例<br>模拟用户操作软件时的场景，用于测试系统的业务流程</font><br><font size="3">基本流：正确的业务流程（模拟正确操作流程）<br>备选流：有问题的业务流程（模拟错误操作流程）<br>简单说就是把软件中正确路径和错误路径走一遍<br>在冒烟测试时，主要采用场景法进行测试</font></p>
+<h6 id="用例设计方法推荐"><a href="#用例设计方法推荐" class="headerlink" title="用例设计方法推荐"></a>用例设计方法推荐</h6><p><font size="3">具有输入功能，但输入之间没有组合关系—推荐是 等价类划分法</font><br><font size="3">输入有边界如长度、类型—用边界值法补充测试用例</font><br><font size="3">多输入、多输出、输入与输出之间存在组合关系、输入与输出之间存在依赖关系和制约–推荐<br>使用因果图法和判定表</font><br><font size="3">用最少的测试用例获得最大测试覆盖率时—推荐使用正交法</font><br><font size="3">多个功能的组合测试—流程图与场景法</font><br><font size="3">使用错误推测法来进一步补充测试用例</font></p>
+<h4 id="如何提升用例编写能力"><a href="#如何提升用例编写能力" class="headerlink" title="如何提升用例编写能力"></a>如何提升用例编写能力</h4><ol>
+<li><font size="3">从大往小抓起测试框架先行</font><br><font size="3">使用思维导图，快速梳理清晰要测试的模块、测试点、以及结构关系，让自己对要测试的内容有整体的框架和印象，脑图能够快速的让开发、接手的测试同学快速理解和看出大方向的偏差和遗漏。</font><br><font size="3">其他图像工具，流程图、鱼骨图、N-S图</font></li>
+<li><font size="3">多维度的思考和覆盖</font><br><font size="3">从界面、功能、性能、兼容、异常等角度思考，尽可能的覆盖更全更广。</font></li>
+<li><font size="3">熟悉被测的业务和系统</font><br><font size="3">任何系统都有大的业务背景，要了解系统的业务逻辑，才能更准确的把握好测试重点写好测试用例。</font></li>
+<li><font size="3">站在用户角度分析</font><br><font size="3">站在客户的角度分析：客户需求，客户使用场景，有利于更好挖掘和思考隐含的需求，或拉上几个同事体验下产品，看看他们的操作行为和顺序是怎样的。</font></li>
+<li><font size="3">重视用例评审</font><br><font size="3">重视测试评审和评审意见，把经常见到的用例设计的误区和一些好多用例设计，还可以多看看透明人的测试思路和用例，查漏补缺。</font></li>
+</ol>
 
     </div>
 
@@ -378,8 +385,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag"># 工具</a>
-              <a href="/tags/github/" rel="tag"># github</a>
+              <a href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag"># 测试</a>
+              <a href="/tags/%E7%90%86%E8%AE%BA/" rel="tag"># 理论</a>
+              <a href="/tags/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B/" rel="tag"># 测试用例</a>
           </div>
 
         
@@ -388,13 +396,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/05/06/holiday1/" rel="prev" title="杭州之旅">
-      <i class="fa fa-chevron-left"></i> 杭州之旅
+    <a href="/2021/05/13/mysql_db/" rel="prev" title="MySQL">
+      <i class="fa fa-chevron-left"></i> MySQL
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/05/13/mysql_db/" rel="next" title="MySQL">
-      MySQL <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
 
 
@@ -459,7 +464,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub简介"><span class="nav-number">2.</span> <span class="nav-text">GitHub简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git"><span class="nav-number">3.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git远程仓库"><span class="nav-number">4.</span> <span class="nav-text">Git远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo"><span class="nav-number">5.</span> <span class="nav-text">Hexo</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何设计测试用例"><span class="nav-number">2.</span> <span class="nav-text">如何设计测试用例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#测试用例的定义"><span class="nav-number">2.1.</span> <span class="nav-text">测试用例的定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编写测试用例目的"><span class="nav-number">2.2.</span> <span class="nav-text">编写测试用例目的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何编写用例"><span class="nav-number">2.3.</span> <span class="nav-text">如何编写用例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#测试用例的来源"><span class="nav-number">2.3.1.</span> <span class="nav-text">测试用例的来源</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试用例的要素"><span class="nav-number">2.3.2.</span> <span class="nav-text">测试用例的要素</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#测试用例设计方法"><span class="nav-number">2.3.3.</span> <span class="nav-text">测试用例设计方法</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#等价类划分"><span class="nav-number">2.3.3.1.</span> <span class="nav-text">等价类划分</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#边界值分析"><span class="nav-number">2.3.3.2.</span> <span class="nav-text">边界值分析</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#错误推断法"><span class="nav-number">2.3.3.3.</span> <span class="nav-text">错误推断法</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#因果图法"><span class="nav-number">2.3.3.4.</span> <span class="nav-text">因果图法</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#判定表"><span class="nav-number">2.3.3.5.</span> <span class="nav-text">判定表</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#正交法"><span class="nav-number">2.3.3.6.</span> <span class="nav-text">正交法</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#场景法"><span class="nav-number">2.3.3.7.</span> <span class="nav-text">场景法</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#用例设计方法推荐"><span class="nav-number">2.3.3.8.</span> <span class="nav-text">用例设计方法推荐</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何提升用例编写能力"><span class="nav-number">2.4.</span> <span class="nav-text">如何提升用例编写能力</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
