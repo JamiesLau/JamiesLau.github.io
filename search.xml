@@ -799,4 +799,53 @@
         <tag>测试用例</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Fiddler使用</title>
+    <url>/2021/05/22/fiddler/</url>
+    <content><![CDATA[<img src="/2021/05/22/fiddler/blog12.png" style="zoom:60%">
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Fiddler一款优秀的Web调试工具，记录所有客户端和服务器的http和https请求；允许监视、设置断点、修改输入输出数据。</font></p>
+<a id="more"></a>
+
+
+<h3 id="Fiddler"><a href="#Fiddler" class="headerlink" title="Fiddler"></a>Fiddler</h3><p><font size="3">fiddler工作原理：位于客户端和服务端的HTTP代理，web服务器代理的形式；fiddler截获浏览器发送给服务器的数据，冒充浏览器发送给服务器；服务器返回的数据，也会被fiddler截获，经fiddler返回浏览器</font></p>
+<p><font size="3">功能：<br>监控浏览器所有HTTP/HTTPS流量<br>查看、分析请求内容细节<br>伪造客户端请求和服务器响应<br>测试网站的性能<br>解密HTPPS的web会话<br>全局、局部断点功能</font></p>
+<h4 id="Fiddler过滤"><a href="#Fiddler过滤" class="headerlink" title="Fiddler过滤"></a>Fiddler过滤</h4><img src="/2021/05/22/fiddler/host_filter.png" style="zoom:70%">
+
+<p><font size="3">1、User Fiters启用：Filters–&gt;勾选Use Filters;<br>2、过滤条件设置：（ir.baidu.com,或全域名，或通配符 星号.baidu.com）<br>3、保存应用配置：选择Ations中Run Filterset now</font></p>
+<h4 id="Fiddler抓包"><a href="#Fiddler抓包" class="headerlink" title="Fiddler抓包"></a>Fiddler抓包</h4><p><font size="3">抓包：将网络传输发送与接收的数据包进行截获、重发、编辑、转存；也用来检查网络安全</font></p>
+<p><font size="3">获取请求<br>1、启动fiddler，确保在抓包状态(file–&gt;capture traffic 勾选或点击底部状态栏左下角capture)<br>2、使用浏览器输入访问网址<br>3、fiddler会话列表中选中要查看的请求，在右侧inspector面板点击raw查看详情</font></p>
+<h4 id="仿真http请求"><a href="#仿真http请求" class="headerlink" title="仿真http请求"></a>仿真http请求</h4><p><font size="3">捕获要测试的请求<br>1、选中composer面板，<br>2、将要测试的请求从会话列表中拖拽到composer面板下<br>3、修改下面的Request Body中参数数据，点击execute</font></p>
+<h4 id="设置断点"><a href="#设置断点" class="headerlink" title="设置断点"></a>设置断点</h4><p><font size="3">打请求前断点<br>1、抓包，获取要修改的http请求的会话<br>2、rules–&gt;automoatic  brakpoints—&gt;before requests<br>3、选中该请求，点击replay，再次发送请求<br>4、在右侧Inspectors-&gt;TextView或WebForms等界面修改请求的数据，<br>点击run to completetion<br>请求断点：打在客户端返回数据之后，数据未到达服务端之前，fiddler停留在断点处</font></p>
+<p><font size="3">修改响应数据<br>响应后断点：<br>1、rules–&gt;automoatic  brakpoints—&gt;after responses<br>2、浏览器中刷新页面（客户端向服务器发送一次请求）<br>3、fiddler中选中要修改请求<br>4、在右下页面的响应tab页中修改响应数据，点击run  to  completetion<br>响应断点：打在服务端返回数据之后，但未到达浏览器之前，fiddler停留在断点处</font></p>
+<h4 id="模拟网络中断"><a href="#模拟网络中断" class="headerlink" title="模拟网络中断"></a>模拟网络中断</h4><p><font size="3">条件过滤<br>点击面板filters，勾选use  filters<br>设置条件<br>点击action–&gt;run filtersetNow</font></p>
+<p><font size="3">AutoResponder（自动响应器）<br>autoresponder用于拦截某一请求<br>重定向到本地的资源<br>使用Fiddler的内置响应<br>自定义响应</font></p>
+<h4 id="模拟弱网测试"><a href="#模拟弱网测试" class="headerlink" title="模拟弱网测试"></a>模拟弱网测试</h4><p><font size="3">1、模拟弱网环境<br>    打开Fiddler，Rules-&gt;Performance（性能）-&gt;勾选 Simulate Modem Speeds（模拟调制解调器速度），勾选之后访问网站会发现网络慢了很多</font></p>
+<p><font size="3">2、Fiddler弱网的原理<br>    Rules–&gt;Customize Rules（自定义规则）,打开CustomRules.js 文档，在文件中查找关键字m_SimulateModem或300，可进行修改<br>发送速度和接收速度</font></p>
+<img src="/2021/05/22/fiddler/modem.png" style="zoom:80%">
+
+<p><font size="3">分析代码：<br>oSession[“request-trickle-delay”] = “300”;<br>注释，Delay sends by 300ms per KB uploaded.上传1KB需要300ms，<br>转化一下上传速度：1Kb/0.3s = 10/3(KB/s)<br>如果想设置上传的速度为50KB/s，你则需要设置Delay 时间为 20ms<br>同样的方法，也可以限制上传的速度，调整oSession[“response-trickle-delay”]即可。<br>设置后保存后生效</font></p>
+<p><font size="3">选择第一个请求和最后一个请求，可获得整个页面加载所消耗的总体时间。从条形图表中还可以分别出哪些请求耗时最多，从而对页面的访问进行访问速度优化</font></p>
+<img src="/2021/05/22/fiddler/overalltime.png" style="zoom:80%">
+
+<p><font size="3">不同请求耗时多少的图形表，获取那种资源耗时最大，进而进行优化：</font></p>
+<img src="/2021/05/22/fiddler/timeline.png" style="zoom:70%">
+
+
+<h4 id="HTTP抓包"><a href="#HTTP抓包" class="headerlink" title="HTTP抓包"></a>HTTP抓包</h4><p><font size="3">Tools–&gt;Options–&gt;HTTPs–&gt;勾选Decrypt HTTPS traffic</font></p>
+<p><font size="3">Android设备抓APP包：<br>    1、Tools-&gt;Options–&gt;Connections.勾选Allow remote comoputers to connect.<br>    2、重启Fiddler,确保防火墙允许（电脑关闭防火墙），Fiddler进程可以远程连接Android设备连接同一WiFi，确保设备可以访问到<a href="https://FiddlerMachineIP:8888该地址会返回Fiddler">https://FiddlerMachineIP:8888该地址会返回Fiddler</a> Echo Service页面<br>    3、手机打开设置–WLAN–连接上WLAN设置，点击代理–手动–设置主机名Fiddler所在的主机IP,端口为Fiddler监听端口</font></p>
+<p><font size="3">手机设备抓HTTPS包<br>    要安装证书打开设备浏览器，访问<a href="http://ipv4:8888/" target="_blank" rel="noopener">http://ipv4:8888/</a>    (如：<a href="http://192.168.0.101:8888/" target="_blank" rel="noopener">http://192.168.0.101:8888/</a>)<br>点击底部FiddlerRoot certificate下载证书<br>打开更多设置–系统安全–加密与凭据–从存储设备安装–选择下载的FiddlerRoot.cer进行安装<br>浏览器打开<a href="http://www.baidu.com，查看抓取HTTPS包" target="_blank" rel="noopener">www.baidu.com，查看抓取HTTPS包</a></font></p>
+<p><font size="3">鼠标定位在左边会话框区域，快捷键：Ctrl+X  清空屏幕</font></p>
+<h4 id="Charles"><a href="#Charles" class="headerlink" title="Charles"></a>Charles</h4><p><font size="3">Charles是一个HTTP代理服务器,HTTP监视器,反转代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收的所有数据。它允许一个开发者查看所有连接互联网的HTTP通信，这些包括request, response和HTTP headers （包含cookies与caching信息）</font></p>
+<p><font size="3">代理：Proxy–Access Control Settings–add IP(手机和电脑连接统一WiFi，手动代理，设置主机名和端口)</font></p>
+<p><font size="3"></font></p>
+]]></content>
+      <categories>
+        <category>功能测试</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>Fiddler</tag>
+      </tags>
+  </entry>
 </search>
