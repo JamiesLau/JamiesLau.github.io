@@ -876,4 +876,60 @@
         <tag>Fiddler</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Postman</title>
+    <url>/2021/05/29/postman/</url>
+    <content><![CDATA[<img src="/2021/05/29/postman/blog13.png" style="zoom:75%">
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">Postman是一个可扩展的API开发和接口测试工具。</font></p>
+<a id="more"></a>
+
+<p><font size="3"></font></p>
+<h3 id="Postman"><a href="#Postman" class="headerlink" title="Postman"></a>Postman</h3><p><font size="3">Postman: 简单方便的接口调试工具，便于分享和协作。具有接口调试，接口集管理，环境配置，参数化，断言，批量执行，录制接口，Mock Server, 接口文档， 接口监控等功能</font></p>
+<h5 id="postman工作原理"><a href="#postman工作原理" class="headerlink" title="postman工作原理"></a>postman工作原理</h5><p><font size="3">postman地址栏输入请求地址，send发送请求给服务器，服务器响应，对数据进行处理，然后返回给postman对返回内容进行加工处理，把格式化后的内容显示出来</font></p>
+<h5 id="环境变量和全局变量"><a href="#环境变量和全局变量" class="headerlink" title="环境变量和全局变量"></a>环境变量和全局变量</h5><p><font size="3">环境管理中还可以点击“Global”添加全局变量，环境变量只有当选择了该环境时才生效，全局变量在任何环境中都生效，测试集中的变量只在当前测试集生效；<br>    当测试集变量，环境变量，全局变量有重复的变量名时，优先级为：环境变量&gt;全局变量&gt;测试集变量。</font></p>
+<p><font size="3">添加环境变量：设置-add-环境变量信息填写<br>环境变量使用方法: 选择环境,在请求URL或者请求Body里使用来使用环境变量，变量可以在请求Body的各种格式中使用，但不能直接在请求前脚本(Pre-request Script)和请求后脚本(Tests)中使用。</font></p>
+<img src="/2021/05/29/postman/postman1.png" style="zoom:70%">
+
+
+
+<h5 id="请求设计"><a href="#请求设计" class="headerlink" title="请求设计"></a>请求设计</h5><p><font size="3">form-data混合表单格式传参示例（上传文件-选择file类型，传文本选择text类型）;<br>x-www-form-urlencoded（文本表单）;<br>raw：原始格式，支持json和xml格式;<br>binary：二进制格式，用于发送二进制数据流;<br>Pre-request Script：请求前脚本，Javascript语法，用于在发送请求前生成一些动态数据或做一些处理;<br>Tests：请求后脚本，Javascript语法，用于请求返回后做一些处理或断言结果<br></font></p>
+<h5 id="Tests断言"><a href="#Tests断言" class="headerlink" title="Tests断言"></a>Tests断言</h5><p><font size="3"><a href="http://apis.juhe.cn/simpleWeather/query?city=深圳&amp;key=0a5b806300f8055ff7c6e9f699a8c4e6" target="_blank" rel="noopener">http://apis.juhe.cn/simpleWeather/query?city=深圳&amp;key=0a5b806300f8055ff7c6e9f699a8c4e6</a></font></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">	</span><br><span class="line">&#x2F;&#x2F;判断响应状态码是否等于200</span><br><span class="line">pm.test(&quot;Status code is 200&quot;, function () &#123;</span><br><span class="line">    pm.response.to.have.status(200);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;判断响应体数据是否等于指定的字符串</span><br><span class="line">pm.test(&quot;Body matches string，深圳&quot;, function () &#123;</span><br><span class="line">    pm.expect(pm.response.text()).to.include(&quot;深圳&quot;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 校验响应的JSON数据</span><br><span class="line">pm.test(&quot;校验城市天气&quot;, function () &#123;</span><br><span class="line">    var jsonData &#x3D; pm.response.json();</span><br><span class="line">    pm.expect(jsonData.result.city).to.eql(&quot;深圳&quot;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 获取响应数据中的token，设置为环境变量</span><br><span class="line">&#x2F;&#x2F; var response &#x3D; JSON.parse(responseBody);</span><br><span class="line">&#x2F;&#x2F; postman.setEnvironmentVariable(&quot;token&quot;, response.data.token);</span><br><span class="line">&#x2F;&#x2F; console.log(response.data.token)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 获取响应数据中的token，设置为环境变量</span><br><span class="line">var jsonData &#x3D; pm.response.json();</span><br><span class="line">pm.environment.set(&quot;token&quot;, jsonData.data.token);</span><br><span class="line">console.log(jsonData.data.token)</span><br></pre></td></tr></table></figure>
+<img src="/2021/05/29/postman/postman2.png" style="zoom:80%">
+
+
+<h5 id="批量发送请求"><a href="#批量发送请求" class="headerlink" title="批量发送请求"></a>批量发送请求</h5><font size="3">
+Runner：批量执行测试集,支持设置迭代次数,支持加载csv或json、txt类格式测试数据。</font>
+<font size="3">
+一：创建txt或者csv文件（这里以txt文件为例）在首行写入变量名称，以逗号隔开
+
+<img src="/2021/05/29/postman/postman3.png" style="zoom:90%">
+<img src="/2021/05/29/postman/postman4.png" style="zoom:80%">
+
+<p>二：在接口请求参数填入变量，格式为</p>
+<img src="/2021/05/29/postman/postman5.png" style="zoom:80%">
+
+<p>三：在Tests进行断言</p>
+<img src="/2021/05/29/postman/postman2.png" style="zoom:83%">
+
+<p>四：点击Runner,找到测试的接口，选择环境变量，选择测试数据txt或者csv文件，格式，迭代次数</p>
+<img src="/2021/05/29/postman/postman6.png" style="zoom:70%">
+
+
+<p>五：点击Run,查看测试结果</p>
+<img src="/2021/05/29/postman/postman7.png" style="zoom:45%">
+
+</font>
+
+
+]]></content>
+      <categories>
+        <category>接口测试</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>postman</tag>
+      </tags>
+  </entry>
 </search>
