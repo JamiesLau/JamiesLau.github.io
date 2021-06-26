@@ -23,20 +23,25 @@
 
     
 
-  <meta name="description" content="Welcome to my blog, click enter password to read.">
+  <meta name="description" content="前言性能测试的时候，在某些场景下通过增加用户梯度逐渐加压一段时间，待TPS稳定后再继续往上加用户，如此循环，直到TPS不再增加为止，找出服务的性能拐点。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="阶梯压测线程">
 <meta property="og:url" content="https://jamieslau.github.io/2021/06/26/stress/index.html">
 <meta property="og:site_name" content="Jamie&#39;s Blog">
-<meta property="og:description" content="Welcome to my blog, click enter password to read.">
+<meta property="og:description" content="前言性能测试的时候，在某些场景下通过增加用户梯度逐渐加压一段时间，待TPS稳定后再继续往上加用户，如此循环，直到TPS不再增加为止，找出服务的性能拐点。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jamieslau.github.io/2021/06/26/stress/blog14.png">
+<meta property="og:image" content="https://jamieslau.github.io/2021/06/26/stress/step1.png">
+<meta property="og:image" content="https://jamieslau.github.io/2021/06/26/stress/step2.png">
+<meta property="og:image" content="https://jamieslau.github.io/2021/06/26/stress/step3.png">
 <meta property="article:published_time" content="2021-06-26T08:19:32.000Z">
-<meta property="article:modified_time" content="2021-06-26T08:52:29.080Z">
+<meta property="article:modified_time" content="2021-06-26T17:27:36.293Z">
 <meta property="article:author" content="JamiesLau">
 <meta property="article:tag" content="工具">
 <meta property="article:tag" content="测试">
 <meta property="article:tag" content="JMeter">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jamieslau.github.io/2021/06/26/stress/blog14.png">
 
 <link rel="canonical" href="https://jamieslau.github.io/2021/06/26/stress/">
 
@@ -231,10 +236,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-06-26 16:19:32 / 修改时间：16:52:29" itemprop="dateCreated datePublished" datetime="2021-06-26T16:19:32+08:00">2021-06-26</time>
+              <time title="创建时间：2021-06-26 16:19:32" itemprop="dateCreated datePublished" datetime="2021-06-26T16:19:32+08:00">2021-06-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-27 01:27:36" itemprop="dateModified" datetime="2021-06-27T01:27:36+08:00">2021-06-27</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -279,7 +290,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>777</span>
+              <span>1.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -298,18 +309,49 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="20d7b2a89a7378e49fc8edd3c5846cd69885eb73522b73f249c7e44b1461db55">4ddf7ce7117f9beedd60fc994fde7db1d93df9224cf6fa937b520472d72ffd5d0a682212ff01f0e910b2f531cffa9cb6229fded760b23200b698feb69ad5a85651f80c308d8a94aa67d9f6da2707dbb6501e82c6cf7d5718ddced8ddbaf5fce37e4facc3024c272cd4bb6d2cdfe5566fad7aec07d7cd72e126f163afacc3f5d46ad634b648d9599e0be6f1a824e73dc41585b31f99e1c53f2baadb4bb0575cf00d61fab78fa8eca69c94cdb324bea867a599277ea9b12774368c29add9b4e72d7591d72fe2f1a0809b151bfd7f0ab0920e624f88ab43bb5753de82cb277d512883e1637a66c6de37c60b550ff0491aa7fe981e723dcf3f6a02125280b683121b3585640e0a264142a5c7ad6176a6ba07d8d89c7291cc569b49f2c2b73839fe28d678312975ead2ea0523edcc40326ee72b0164dcb480ae4f58c81deea8c9401b76d7c24298eb380f496ef5a155ca9aac9f482bcb4e051d8a5ca205821af3b8186657003c5467f50d9b9ebe954c1afb17</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Welcome to my blog, click enter password to read.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+        <img src="/2021/06/26/stress/blog14.png" style="zoom:9%">
+
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><font size="3">性能测试的时候，在某些场景下通过增加用户梯度逐渐加压一段时间，待TPS稳定后再继续往上加用户，如此循环，直到TPS不再增加为止，找出服务的性能拐点。</font></p>
+<a id="more"></a>
+
+<h3 id="JMeter三种阶梯式加压（逐渐加压）"><a href="#JMeter三种阶梯式加压（逐渐加压）" class="headerlink" title="JMeter三种阶梯式加压（逐渐加压）"></a>JMeter三种阶梯式加压（逐渐加压）</h3><h4 id="阶梯压测-线程-jp-gc-Stepping-Thread-Group-deprecated"><a href="#阶梯压测-线程-jp-gc-Stepping-Thread-Group-deprecated" class="headerlink" title="阶梯压测 线程 jp@gc - Stepping Thread Group (deprecated)"></a>阶梯压测 线程 jp@gc - Stepping Thread Group (deprecated)</h4><img src="/2021/06/26/stress/step1.png" style="zoom:70%">
+
+<p><font size="3">添加：测试计划–添加线程–选择jp@gc - Stepping Thread Group (deprecated)</font></p>
+<p><font size="3">例如：最大并发500，以100的并发递增压，达到500后持续360秒</font></p>
+<ol>
+<li><font size="3">This group will start：总共要生成的最大线程数，如图：设置为500个，表示总共会加载到500个线程</font></li>
+<li><font size="3">First,wait for：第一个线程从点击执行之后多长时间开始加载，如图：设置为0秒，表示点击执行之后立即执行，和思考时间不同！！</font></li>
+<li><font size="3">Then start：初次加载多少个线程，如图：设置为100个，表示100并发开始</font></li>
+<li><font size="3">Next, add：之后每次梯度加载多个线程，如图：设置为100个，表示每个梯度加载100个线程，初次加载后剩余的数据每次加载的线程数</font></li>
+<li><font size="3">threads every：当运行多长时间后再次加载线程，及每次加载完成之后的持续时间，如图：设置为20秒，每梯次加载完线程之后运行20秒</font></li>
+<li><font size="3">using ranp-up：加载线程的时间，如图：设置为0秒，表示每次加载立刻完成</font></li>
+<li><font size="3">Then hold load for：线程全部加载完之后运行多长时间，如图：设置为180秒，表示最后500个线程加载完成之后再持续180秒</font></li>
+<li><font size="3">Finally,stop / threads every：每多长时间释放多个线程，如图：设置为100个和30秒,表示所有持续负载结束之后每30秒释放100个线程，总线程分500个分为5次</font></li>
+</ol>
+<h4 id="阶梯压测-线程-bzm-Concurrency-Thread-Group"><a href="#阶梯压测-线程-bzm-Concurrency-Thread-Group" class="headerlink" title="阶梯压测 线程 bzm - Concurrency Thread Group"></a>阶梯压测 线程 bzm - Concurrency Thread Group</h4><img src="/2021/06/26/stress/step2.png" style="zoom:70%">
+
+<p><font size="3">添加：测试计划–添加线程–选择bzm - Concurrency Thread Group</font></p>
+<p><font size="3">例如：最大并发500，以100的并发递增压，达到500后持续180秒</font></p>
+<ol>
+<li><font size="3">Target Concurrency: 目标并发数（线程数），如图：设置为500，表示预期客户端最大并发线程数为500</font></li>
+<li><font size="3">Ramp Up Time(sec): 加速时间,如图：设置为100秒，表示在100秒内启动500个线程</font></li>
+<li><font size="3">Ramp-up Steps Count: 加速步骤计数，如图：设置为5，表示在上述时间内，分5次启动</font></li>
+<li><font size="3">Hold Target Rate Time (sec): 保存目标速率时间，如图：设置为180秒，表示100秒达到目标并发线程数500后，再持续并发运行180秒</font></li>
+<li><font size="3">Thread Iterations Limit：线程迭代次数限制，即循环次数（空，即为一次）（无特殊情况，建议不设置该选项的值）</font></li>
+<li><font size="3">Log Threads Status into File：将线程状态记录到文件中（将线程启动和线程停止事件保存日志文件）</font></li>
+</ol>
+<h4 id="阶梯压测-线程-jp-gc-Ultimate-Thread-Group"><a href="#阶梯压测-线程-jp-gc-Ultimate-Thread-Group" class="headerlink" title="阶梯压测 线程 jp@gc - Ultimate Thread Group"></a>阶梯压测 线程 jp@gc - Ultimate Thread Group</h4><img src="/2021/06/26/stress/step3.png" style="zoom:70%">
+
+<p><font size="3">添加：测试计划–添加线程–选择jp@gc - Ultimate Thread Group</font></p>
+<ol>
+<li><font size="3">Start Threads Count：当前行启动的线程总数</font></li>
+<li><font size="3">Initial Delay/sec：延时启动当前行的线程，单位:秒</font></li>
+<li><font size="3">Startup Time/sec：启动当前行所有线程达峰值所需时间，单位:秒</font></li>
+<li><font size="3">Hold Load For/sec：当前行线程达到峰值后的稳定加载时间，单位:秒</font></li>
+<li><font size="3">Shutdown Time：停止当前行所有线程所需时间，单位:秒</font></li>
+</ol>
+<p><font size="3">注意：使用阶梯加压线程组时，同时添加监听器jp@gc - Active Threads Over Time(不同时间活动数<br>量展示)结合起来，方便看到动态的阶梯加压效果。</font></p>
+
     </div>
 
     
@@ -431,6 +473,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JMeter三种阶梯式加压（逐渐加压）"><span class="nav-number">2.</span> <span class="nav-text">JMeter三种阶梯式加压（逐渐加压）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#阶梯压测-线程-jp-gc-Stepping-Thread-Group-deprecated"><span class="nav-number">2.1.</span> <span class="nav-text">阶梯压测 线程 jp@gc - Stepping Thread Group (deprecated)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶梯压测-线程-bzm-Concurrency-Thread-Group"><span class="nav-number">2.2.</span> <span class="nav-text">阶梯压测 线程 bzm - Concurrency Thread Group</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#阶梯压测-线程-jp-gc-Ultimate-Thread-Group"><span class="nav-number">2.3.</span> <span class="nav-text">阶梯压测 线程 jp@gc - Ultimate Thread Group</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -530,7 +573,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">49k</span>
+    <span title="站点总字数">50k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
